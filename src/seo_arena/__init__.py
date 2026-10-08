@@ -1,3 +1,3 @@
-"""Static site builder for on-page SEO. It does not score rankings."""
+"""Agent that generates a crawlable site from on-page SEO actions."""
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"

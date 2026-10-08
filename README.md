@@ -1,39 +1,18 @@
-# 可索引
+# seo-arena
 
-这个仓库只做网站本身：标题、说明、规范链接、站点地图、面包屑和站内链接。它不给页面打分，也不模拟排序。
+一个生成站点的 agent。它按目录里的页面级步骤补全标题、说明、正文、规范链接、面包屑和站点地图，然后写出 `docs/`。
 
-站点发布之后，对照分两处看：
+公司的 SEO 检测系统不在这里运行。生成结果交给检测系统，检测结论填到 `records/serp.json` 的 `detector_label`。谷歌名次用 Chrome 打开谷歌，只数自然结果，填到 `google_position`。
 
-- 对抗和排位以 Chrome 里的谷歌搜索为准。打开 google.com，搜索 `records/serp.json` 里的查询，只数自然结果。广告、地图和「人们也问」不算。第 1 名就是第一条自然结果。
-- 公司排序模型的效果在你自己的模型输出里看。把名次填进 `company_position`。本仓库填不了这一列。
+目录里的步骤来自 Google Search Central 的公开说明，每一步在 `records/agent-trace.json` 里带有来源地址。这个仓库不根据检测结果回改页面。
 
-两列现在都是空的。没有真实展现之前，不要写成已经排到第几。
-
-## 页面
-
-| 查询 | 路径 |
-| --- | --- |
-| 网页 title 和 h1 要一样吗 | `/seo/title-h1/` |
-| canonical 和 sitemap 不一致怎么办 | `/seo/canonical-sitemap/` |
-| 面包屑 JSON-LD 怎么写 | `/seo/breadcrumb-jsonld/` |
-| 搜索引擎怎样识别网页正文 | `/seo/main-content/` |
-| 站内链接的锚文本怎么写 | `/seo/anchor-text/` |
-
-默认站点地址是 `https://wuwuww.github.io/seo-arena`。换成自己的域名时，改 `content/site.json` 的 `site_url`，再重新生成。canonical 和 sitemap 会跟着这个地址走。
-
-## 生成
+## 运行
 
 ```bash
-PYTHONPATH=src python -m seo_arena
+PYTHONPATH=src python -m seo_arena --brief briefs/nanmen.json
 PYTHONPATH=src python -m pytest -q
 ```
 
-页面写到 `docs/`。GitHub Pages 用这个目录时，Chrome 里能打开的就是爬虫能抓的那一版。
+换一个站时，复制 `briefs/nanmen.json`，改品牌、问题和每页不同的说明。页面内容要彼此不同，否则检测系统看到的会是一组重复页。
 
-## 记一次排位
-
-1. 用 Chrome 打开谷歌，搜索表里的原句。
-2. 从上往下只数自然结果，记下 `google_position` 和日期。
-3. 把同一条 URL 放进公司排序模型，记下 `company_position`。
-
-页面正文不写名次。名次只留在 `records/serp.json`。
+默认发布地址是 https://wuwuww.github.io/seo-arena/ 。`site_url` 要和实际上线的地址一致，canonical 和 sitemap 才指向同一条网址。

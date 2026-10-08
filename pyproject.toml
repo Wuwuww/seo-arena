@@ -1,7 +1,7 @@
 [project]
 name = "seo-arena"
 version = "0.1.0"
-description = "A small site built for on-page SEO. Rankings are recorded from Google and a company model, not computed here."
+description = "Agent workflow that generates a crawlable site from on-page SEO actions"
 requires-python = ">=3.10"
 dependencies = []
 

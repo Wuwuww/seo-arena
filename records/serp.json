@@ -1,40 +1,33 @@
 {
   "judge": "谷歌自然结果在 Chrome 中的展现顺序。广告、地图和「人们也问」不计入名次。",
-  "company_model": "公司排序模型的名次由你在公司环境里导出后填写，本仓库不计算。",
+  "company_detector": "把生成的站点交给公司的 SEO 检测系统。检测结果写在 detector_label，本仓库不跑检测，也不根据检测结果改页面。",
   "rows": [
     {
-      "query": "网页 title 和 h1 要一样吗",
-      "path": "/seo/title-h1/",
+      "query": "自行车胎压打到多少",
+      "path": "/tire-pressure/",
       "google_position": null,
-      "company_position": null,
+      "detector_label": null,
       "checked_at": null
     },
     {
-      "query": "canonical 和 sitemap 不一致怎么办",
-      "path": "/seo/canonical-sitemap/",
+      "query": "自行车内胎补好能骑多久",
+      "path": "/patch-life/",
       "google_position": null,
-      "company_position": null,
+      "detector_label": null,
       "checked_at": null
     },
     {
-      "query": "面包屑 JSON-LD 怎么写",
-      "path": "/seo/breadcrumb-jsonld/",
+      "query": "自行车气嘴是美嘴还是法嘴",
+      "path": "/valve-type/",
       "google_position": null,
-      "company_position": null,
+      "detector_label": null,
       "checked_at": null
     },
     {
-      "query": "搜索引擎怎样识别网页正文",
-      "path": "/seo/main-content/",
+      "query": "自行车蛇咬是什么",
+      "path": "/snake-bite/",
       "google_position": null,
-      "company_position": null,
-      "checked_at": null
-    },
-    {
-      "query": "站内链接的锚文本怎么写",
-      "path": "/seo/anchor-text/",
-      "google_position": null,
-      "company_position": null,
+      "detector_label": null,
       "checked_at": null
     }
   ]

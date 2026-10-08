@@ -1,0 +1,375 @@
+{
+  "brand": "南门单车",
+  "steps": [
+    {
+      "tool": "lookup_methods",
+      "gap": "title",
+      "hits": [
+        "unique_title"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "unique_title",
+      "source": "https://developers.google.com/search/docs/appearance/title-link",
+      "page": "/tire-pressure/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "description",
+      "hits": [
+        "meta_description"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "meta_description",
+      "source": "https://developers.google.com/search/docs/appearance/snippet",
+      "page": "/tire-pressure/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "h1",
+      "hits": [
+        "single_h1"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "single_h1",
+      "source": "https://developers.google.com/search/docs/appearance/title-link",
+      "page": "/tire-pressure/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "body",
+      "hits": [
+        "answer_first"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "answer_first",
+      "source": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "page": "/tire-pressure/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "canonical",
+      "hits": [
+        "self_canonical"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "self_canonical",
+      "source": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "page": "/tire-pressure/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "links",
+      "hits": [
+        "descriptive_anchor"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "descriptive_anchor",
+      "source": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+      "page": "/tire-pressure/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "jsonld",
+      "hits": [
+        "breadcrumb_jsonld"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "breadcrumb_jsonld",
+      "source": "https://developers.google.com/search/docs/appearance/structured-data/breadcrumb",
+      "page": "/tire-pressure/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "title",
+      "hits": [
+        "unique_title"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "unique_title",
+      "source": "https://developers.google.com/search/docs/appearance/title-link",
+      "page": "/patch-life/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "description",
+      "hits": [
+        "meta_description"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "meta_description",
+      "source": "https://developers.google.com/search/docs/appearance/snippet",
+      "page": "/patch-life/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "h1",
+      "hits": [
+        "single_h1"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "single_h1",
+      "source": "https://developers.google.com/search/docs/appearance/title-link",
+      "page": "/patch-life/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "body",
+      "hits": [
+        "answer_first"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "answer_first",
+      "source": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "page": "/patch-life/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "canonical",
+      "hits": [
+        "self_canonical"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "self_canonical",
+      "source": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "page": "/patch-life/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "links",
+      "hits": [
+        "descriptive_anchor"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "descriptive_anchor",
+      "source": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+      "page": "/patch-life/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "jsonld",
+      "hits": [
+        "breadcrumb_jsonld"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "breadcrumb_jsonld",
+      "source": "https://developers.google.com/search/docs/appearance/structured-data/breadcrumb",
+      "page": "/patch-life/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "title",
+      "hits": [
+        "unique_title"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "unique_title",
+      "source": "https://developers.google.com/search/docs/appearance/title-link",
+      "page": "/valve-type/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "description",
+      "hits": [
+        "meta_description"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "meta_description",
+      "source": "https://developers.google.com/search/docs/appearance/snippet",
+      "page": "/valve-type/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "h1",
+      "hits": [
+        "single_h1"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "single_h1",
+      "source": "https://developers.google.com/search/docs/appearance/title-link",
+      "page": "/valve-type/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "body",
+      "hits": [
+        "answer_first"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "answer_first",
+      "source": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "page": "/valve-type/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "canonical",
+      "hits": [
+        "self_canonical"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "self_canonical",
+      "source": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "page": "/valve-type/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "links",
+      "hits": [
+        "descriptive_anchor"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "descriptive_anchor",
+      "source": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+      "page": "/valve-type/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "jsonld",
+      "hits": [
+        "breadcrumb_jsonld"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "breadcrumb_jsonld",
+      "source": "https://developers.google.com/search/docs/appearance/structured-data/breadcrumb",
+      "page": "/valve-type/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "title",
+      "hits": [
+        "unique_title"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "unique_title",
+      "source": "https://developers.google.com/search/docs/appearance/title-link",
+      "page": "/snake-bite/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "description",
+      "hits": [
+        "meta_description"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "meta_description",
+      "source": "https://developers.google.com/search/docs/appearance/snippet",
+      "page": "/snake-bite/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "h1",
+      "hits": [
+        "single_h1"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "single_h1",
+      "source": "https://developers.google.com/search/docs/appearance/title-link",
+      "page": "/snake-bite/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "body",
+      "hits": [
+        "answer_first"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "answer_first",
+      "source": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "page": "/snake-bite/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "canonical",
+      "hits": [
+        "self_canonical"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "self_canonical",
+      "source": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "page": "/snake-bite/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "links",
+      "hits": [
+        "descriptive_anchor"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "descriptive_anchor",
+      "source": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+      "page": "/snake-bite/"
+    },
+    {
+      "tool": "lookup_methods",
+      "gap": "jsonld",
+      "hits": [
+        "breadcrumb_jsonld"
+      ]
+    },
+    {
+      "tool": "apply",
+      "method": "breadcrumb_jsonld",
+      "source": "https://developers.google.com/search/docs/appearance/structured-data/breadcrumb",
+      "page": "/snake-bite/"
+    },
+    {
+      "tool": "apply",
+      "method": "sitemap_and_robots",
+      "source": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",
+      "page": "/sitemap.xml"
+    }
+  ]
+}
