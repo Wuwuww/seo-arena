@@ -1,7 +1,7 @@
 [project]
 name = "seo-arena"
 version = "0.1.0"
-description = "A sandbox web where SEO edits and ranker defenses play against each other"
+description = "A small site built for on-page SEO. Rankings are recorded from Google and a company model, not computed here."
 requires-python = ">=3.10"
 dependencies = []
 

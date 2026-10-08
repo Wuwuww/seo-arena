@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>面包屑 JSON-LD 要和页面上的路径一致｜可索引</title>
+  <meta name="description" content="结构化数据里的面包屑是给机器读的路径。它应当和页面上能看见的链接顺序相同，位置从 1 开始，最后一项是当前页。">
+  <link rel="canonical" href="https://wuwuww.github.io/seo-arena/seo/breadcrumb-jsonld/">
+  <meta property="og:title" content="面包屑 JSON-LD 要和页面上的路径一致｜可索引">
+  <meta property="og:description" content="结构化数据里的面包屑是给机器读的路径。它应当和页面上能看见的链接顺序相同，位置从 1 开始，最后一项是当前页。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://wuwuww.github.io/seo-arena/seo/breadcrumb-jsonld/">
+  <link rel="stylesheet" href="../../assets/site.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "可索引", "item": "https://wuwuww.github.io/seo-arena/"}, {"@type": "ListItem", "position": 2, "name": "面包屑 JSON-LD 要和页面上的路径一致", "item": "https://wuwuww.github.io/seo-arena/seo/breadcrumb-jsonld/"}]}, {"@type": "Article", "headline": "面包屑 JSON-LD 要和页面上的路径一致", "description": "结构化数据里的面包屑是给机器读的路径。它应当和页面上能看见的链接顺序相同，位置从 1 开始，最后一项是当前页。", "dateModified": "2026-10-08", "inLanguage": "zh-CN", "mainEntityOfPage": "https://wuwuww.github.io/seo-arena/seo/breadcrumb-jsonld/"}]}</script>
+</head>
+<body>
+  <header>
+    <a href="../../">可索引</a>
+    <nav><a href="../../">全部笔记</a></nav>
+  </header>
+  
+  <main>
+    <p class="crumb"><a href="../../">可索引</a> / 面包屑 JSON-LD 要和页面上的路径一致</p>
+    <article>
+      <h1>面包屑 JSON-LD 要和页面上的路径一致</h1>
+      <p class="meta">更新于 2026-10-08</p>
+      <h2>机器读的是你写进脚本的那一段</h2><p>面包屑 JSON-LD 怎么写，取决于页面上已经能看见的那条路径。用 BreadcrumbList，itemListElement 按从首页到当前页的顺序排列。position 从 1 开始，每一项都有名字和网址，最后一项是这一页自己。</p><p>看不见的路径不要写进 JSON-LD。页面顶部如果是「首页 / 笔记 / 当前标题」，脚本里也应当是这三步，名字和链接都对得上。</p><h2>它不能代替正文</h2><p>结构化数据是正文的旁注。把结论只写进 JSON-LD、正文留空，读者和抽取正文的系统都得不到这篇文章。先把段落写在 article 里，再附上同顺序的面包屑。</p><p>本站每一篇笔记都按这个顺序生成：首页，然后是当前这篇。可以查看源代码里的 application/ld+json，对照页面上方的链接。</p><h2>发布后看结果页，而不是看本地分数</h2><p>本地生成成功，只说明标记没有写错。是否出现在搜索结果里，用 Chrome 打开谷歌，搜索「面包屑 JSON-LD 怎么写」，数自然结果的位置。公司排序模型如果会吃进这些页面，名次在模型那边看。</p>
+      <h2>相关笔记</h2>
+      <ul class="links"><li><a href="../title-h1/">网页 title 和 h1 不必逐字相同</a></li><li><a href="../canonical-sitemap/">canonical 和 sitemap 要指向同一条网址</a></li><li><a href="../main-content/">把结论放进 main 里的 article</a></li><li><a href="../anchor-text/">站内链接的锚文本写下一页的题目</a></li></ul>
+    </article>
+  </main>
+
+  <footer>
+    <p>这个网站只发布页面。谷歌名次以 Chrome 搜索结果里的自然排名为准，公司排序模型的名次在模型那边看。</p>
+  </footer>
+</body>
+</html>

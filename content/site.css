@@ -1,0 +1,69 @@
+:root {
+  color: #1c1917;
+  background: #fafaf9;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Songti SC", "Noto Serif SC", serif;
+  line-height: 1.7;
+}
+
+body {
+  margin: 0;
+}
+
+header, main, footer {
+  width: min(42rem, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #e7e5e4;
+}
+
+header a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav a {
+  margin-left: 0.75rem;
+}
+
+main {
+  padding: 1.5rem 0 3rem;
+}
+
+article h1, .home h1 {
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+
+.meta, footer, .crumb {
+  color: #57534e;
+  font-family: "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif;
+  font-size: 0.92rem;
+}
+
+.crumb {
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.links li {
+  margin: 0.4rem 0;
+}
+
+footer {
+  padding-bottom: 2rem;
+  border-top: 1px solid #e7e5e4;
+}
