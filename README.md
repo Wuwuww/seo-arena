@@ -1,6 +1,6 @@
 # seo-arena
 
-一个生成站点的 agent。它按目录里的页面级步骤补全标题、说明、正文、规范链接、面包屑和站点地图，然后写出 `docs/`。
+一个用 LangGraph 串起来的生成流程。`inspect` 看当前页还缺什么，缺就走 `lookup` → `choose` → `apply`，再回到 `inspect`。这一页齐了就 `next_page`。全部页面齐了以后 `cross_link` 写站内链接，最后 `sitemap` 收口。
 
 公司的 SEO 检测系统不在这里运行。生成结果交给检测系统，检测结论填到 `records/serp.json` 的 `detector_label`。谷歌名次用 Chrome 打开谷歌，只数自然结果，填到 `google_position`。
 

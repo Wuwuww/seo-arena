@@ -2,9 +2,16 @@ import json
 from pathlib import Path
 
 from seo_arena.agent import load_brief, run_agent
+from seo_arena.flow import build_graph
 from seo_arena.render import render_site
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def test_flow_routes_gaps_before_sitemap():
+    graph = build_graph()
+    nodes = set(graph.get_graph().nodes)
+    assert {"inspect", "lookup", "choose", "apply", "next_page", "cross_link", "sitemap"} <= nodes
 
 
 def test_agent_fills_every_page_from_catalog_tools():

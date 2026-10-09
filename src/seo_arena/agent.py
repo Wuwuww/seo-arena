@@ -5,11 +5,6 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from seo_arena.catalog import lookup_methods
-
-GAPS = ("title", "description", "h1", "body", "canonical", "links", "jsonld")
-
-
 def load_brief(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
@@ -95,36 +90,9 @@ class ScriptedAgent:
 
 
 def run_agent(brief: dict, agent=None) -> tuple[list[dict], list[dict]]:
-    agent = agent or ScriptedAgent()
-    site_url = brief["site_url"]
-    plans = [_empty_plan(page, brief["brand"]) for page in brief["pages"]]
-    trace: list[dict] = []
-    for plan in plans:
-        while (gap := _missing(plan)) is not None:
-            found = lookup_methods(gap)
-            trace.append({"tool": "lookup_methods", "gap": gap, "hits": [item["id"] for item in found]})
-            method = agent.choose(gap, found)
-            if method["gap"] != gap:
-                raise RuntimeError(f"步骤 {method['id']} 不能补上 {gap}")
-            apply_method(method, plan, site_url)
-            trace.append(
-                {
-                    "tool": "apply",
-                    "method": method["id"],
-                    "source": method["source"],
-                    "page": plan["path"],
-                }
-            )
-    _link_pages(plans)
-    trace.append(
-        {
-            "tool": "apply",
-            "method": "sitemap_and_robots",
-            "source": lookup_methods("sitemap")[0]["source"],
-            "page": "/sitemap.xml",
-        }
-    )
-    return plans, trace
+    from seo_arena.flow import run_flow
+
+    return run_flow(brief, agent or ScriptedAgent())
 
 
 def write_records(brief: dict, plans: list[dict], trace: list[dict], root: Path) -> None:
