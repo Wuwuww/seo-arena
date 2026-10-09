@@ -10,6 +10,7 @@ from langgraph.graph import END, START, StateGraph
 from seo_arena.agent import ScriptedAgent, _empty_plan, _link_pages, _missing, apply_method
 from seo_arena.audit import FIXABLE, audit_plans, revise_plans
 from seo_arena.catalog import lookup_methods
+from seo_arena.present import present_plans
 
 
 class FlowState(TypedDict, total=False):
@@ -98,13 +99,19 @@ def build_graph(chooser=None):
         fixable = [issue for issue in state.get("issues") or [] if issue["code"] in FIXABLE]
         if fixable and not state.get("revised"):
             return "revise"
-        return "sitemap"
+        return "present"
 
     def revise(state: FlowState) -> dict:
         plans = revise_plans(copy.deepcopy(state["plans"]), state["issues"])
         trace = list(state["trace"])
         trace.append({"tool": "revise", "codes": sorted({issue["code"] for issue in state["issues"] if issue["code"] in FIXABLE})})
         return {"plans": plans, "revised": True, "trace": trace}
+
+    def present(state: FlowState) -> dict:
+        plans = present_plans(copy.deepcopy(state["plans"]))
+        trace = list(state["trace"])
+        trace.append({"tool": "present", "pages": [plan["path"] for plan in plans]})
+        return {"plans": plans, "trace": trace}
 
     def sitemap(state: FlowState) -> dict:
         trace = list(state["trace"])
@@ -127,6 +134,7 @@ def build_graph(chooser=None):
     graph.add_node("cross_link", cross_link)
     graph.add_node("audit", audit)
     graph.add_node("revise", revise)
+    graph.add_node("present", present)
     graph.add_node("sitemap", sitemap)
     graph.add_edge(START, "inspect")
     graph.add_conditional_edges(
@@ -139,8 +147,9 @@ def build_graph(chooser=None):
     graph.add_edge("apply", "inspect")
     graph.add_edge("next_page", "inspect")
     graph.add_edge("cross_link", "audit")
-    graph.add_conditional_edges("audit", route_audit, {"revise": "revise", "sitemap": "sitemap"})
+    graph.add_conditional_edges("audit", route_audit, {"revise": "revise", "present": "present"})
     graph.add_edge("revise", "audit")
+    graph.add_edge("present", "sitemap")
     graph.add_edge("sitemap", END)
     return graph.compile()
 

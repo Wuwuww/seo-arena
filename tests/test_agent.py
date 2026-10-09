@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_flow_routes_gaps_before_sitemap():
     graph = build_graph()
     nodes = set(graph.get_graph().nodes)
-    assert {"inspect", "lookup", "choose", "apply", "next_page", "cross_link", "audit", "revise", "sitemap"} <= nodes
+    assert {"inspect", "lookup", "choose", "apply", "next_page", "cross_link", "audit", "revise", "present", "sitemap"} <= nodes
 
 
 def test_audit_flags_stuffing_and_revision_removes_the_extra_repeats():
@@ -78,6 +78,10 @@ def test_rendered_site_matches_the_plan(tmp_path):
         assert plan["canonical"] in text
         assert plan["canonical"] in sitemap
         assert plan["query"] in text
+        assert "<figure>" in text
+        assert plan["figure"]["alt"] in text
+        assert "<figcaption>" in text
+        assert 'role="img"' in text
         payload = json.loads(text.split('application/ld+json">', 1)[1].split("</script>", 1)[0])
         crumbs = payload["@graph"][0]
         assert crumbs["itemListElement"][-1]["name"] == plan["h1"]

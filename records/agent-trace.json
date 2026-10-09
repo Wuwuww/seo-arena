@@ -370,6 +370,15 @@
       "issues": []
     },
     {
+      "tool": "present",
+      "pages": [
+        "/tire-pressure/",
+        "/patch-life/",
+        "/valve-type/",
+        "/snake-bite/"
+      ]
+    },
+    {
       "tool": "apply",
       "method": "sitemap_and_robots",
       "source": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",

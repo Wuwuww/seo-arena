@@ -38,12 +38,13 @@ def _jsonld(plan: dict, brand: str, home: str) -> str:
 
 
 def _page(plan: dict, brand: str, home: str, css: str) -> str:
-    paragraphs = "".join(f"<p>{html.escape(text)}</p>" for text in plan["paragraphs"])
+    paragraphs = "".join(f"<p>{html.escape(text)}</p>" for text in plan["paragraphs"][1:])
     links = "".join(
-        f'<li><a href="{html.escape(rel_link(plan["path"], item["href"]))}">{html.escape(item["anchor"])}</a></li>'
+        f'<li><a class="card" href="{html.escape(rel_link(plan["path"], item["href"]))}"><strong>{html.escape(item["anchor"])}</strong></a></li>'
         for item in plan["links"]
     )
     crumb = rel_link(plan["path"], "/")
+    figure = plan["figure"]
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -56,16 +57,24 @@ def _page(plan: dict, brand: str, home: str, css: str) -> str:
   <script type="application/ld+json">{_jsonld(plan, brand, home)}</script>
 </head>
 <body>
-  <header><a href="{html.escape(crumb)}">{html.escape(brand)}</a></header>
+  <header class="site-header"><div class="wrap"><a href="{html.escape(crumb)}">{html.escape(brand)}</a></div></header>
   <main>
-    <p class="crumb"><a href="{html.escape(crumb)}">{html.escape(brand)}</a> / {html.escape(plan["h1"])}</p>
-    <article>
+    <article class="wrap sheet">
+      <p class="crumb"><a href="{html.escape(crumb)}">{html.escape(brand)}</a> / {html.escape(plan["h1"])}</p>
       <h1>{html.escape(plan["h1"])}</h1>
-      {paragraphs}
+      <p class="lede">{html.escape(plan["paragraphs"][0])}</p>
+      <figure>
+        {figure["svg"].replace('role="img"', f'role="img" aria-label="{html.escape(figure["alt"])}"', 1)}
+        <figcaption>{html.escape(figure["caption"])}</figcaption>
+      </figure>
+      <section>
+        {paragraphs}
+      </section>
       <h2>店里其他问题</h2>
-      <ul>{links}</ul>
+      <ul class="cards">{links}</ul>
     </article>
   </main>
+  <footer><div class="wrap"><p>{html.escape(brand)}。图和文字说的是同一件事，正文不依赖脚本才出现。</p></div></footer>
 </body>
 </html>
 """
@@ -73,7 +82,12 @@ def _page(plan: dict, brand: str, home: str, css: str) -> str:
 
 def _home(brief: dict, plans: list[dict], css: str) -> str:
     items = "".join(
-        f'<li><a href="{html.escape(rel_link("/", plan["path"]))}">{html.escape(plan["h1"])}</a><p>{html.escape(plan["description"])}</p></li>'
+        "<li><a class=\"card\" href=\"{href}\">{svg}<strong>{title}</strong><span>{desc}</span></a></li>".format(
+            href=html.escape(rel_link("/", plan["path"])),
+            svg=plan["figure"]["svg"],
+            title=html.escape(plan["h1"]),
+            desc=html.escape(plan["description"]),
+        )
         for plan in plans
     )
     return f"""<!DOCTYPE html>
@@ -87,11 +101,13 @@ def _home(brief: dict, plans: list[dict], css: str) -> str:
   <link rel="stylesheet" href="{html.escape(css)}">
 </head>
 <body>
-  <header><a href="./">{html.escape(brief["brand"])}</a></header>
+  <header class="site-header"><div class="wrap"><a href="./">{html.escape(brief["brand"])}</a></div></header>
   <main>
-    <h1>{html.escape(brief["brand"])}</h1>
-    <p>{html.escape(brief["description"])}</p>
-    <ul>{items}</ul>
+    <div class="wrap">
+      <h1>{html.escape(brief["brand"])}</h1>
+      <p class="lede">{html.escape(brief["description"])}</p>
+      <ul class="cards">{items}</ul>
+    </div>
   </main>
 </body>
 </html>
