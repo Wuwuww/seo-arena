@@ -8,6 +8,7 @@ from typing import TypedDict
 from langgraph.graph import END, START, StateGraph
 
 from seo_arena.agent import ScriptedAgent, _empty_plan, _link_pages, _missing, apply_method
+from seo_arena.audit import FIXABLE, audit_plans, revise_plans
 from seo_arena.catalog import lookup_methods
 
 
@@ -20,6 +21,8 @@ class FlowState(TypedDict, total=False):
     candidates: list[dict]
     chosen: dict
     trace: list[dict]
+    issues: list[dict]
+    revised: bool
 
 
 def build_graph(chooser=None):
@@ -83,7 +86,25 @@ def build_graph(chooser=None):
     def cross_link(state: FlowState) -> dict:
         plans = copy.deepcopy(state["plans"])
         _link_pages(plans)
-        return {"plans": plans}
+        return {"plans": plans, "revised": False}
+
+    def audit(state: FlowState) -> dict:
+        issues = audit_plans(state["plans"], state["site_url"])
+        trace = list(state["trace"])
+        trace.append({"tool": "audit", "issues": [issue["code"] for issue in issues]})
+        return {"issues": issues, "trace": trace}
+
+    def route_audit(state: FlowState) -> str:
+        fixable = [issue for issue in state.get("issues") or [] if issue["code"] in FIXABLE]
+        if fixable and not state.get("revised"):
+            return "revise"
+        return "sitemap"
+
+    def revise(state: FlowState) -> dict:
+        plans = revise_plans(copy.deepcopy(state["plans"]), state["issues"])
+        trace = list(state["trace"])
+        trace.append({"tool": "revise", "codes": sorted({issue["code"] for issue in state["issues"] if issue["code"] in FIXABLE})})
+        return {"plans": plans, "revised": True, "trace": trace}
 
     def sitemap(state: FlowState) -> dict:
         trace = list(state["trace"])
@@ -104,6 +125,8 @@ def build_graph(chooser=None):
     graph.add_node("apply", apply)
     graph.add_node("next_page", next_page)
     graph.add_node("cross_link", cross_link)
+    graph.add_node("audit", audit)
+    graph.add_node("revise", revise)
     graph.add_node("sitemap", sitemap)
     graph.add_edge(START, "inspect")
     graph.add_conditional_edges(
@@ -115,7 +138,9 @@ def build_graph(chooser=None):
     graph.add_edge("choose", "apply")
     graph.add_edge("apply", "inspect")
     graph.add_edge("next_page", "inspect")
-    graph.add_edge("cross_link", "sitemap")
+    graph.add_edge("cross_link", "audit")
+    graph.add_conditional_edges("audit", route_audit, {"revise": "revise", "sitemap": "sitemap"})
+    graph.add_edge("revise", "audit")
     graph.add_edge("sitemap", END)
     return graph.compile()
 

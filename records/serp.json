@@ -1,33 +1,28 @@
 {
   "judge": "谷歌自然结果在 Chrome 中的展现顺序。广告、地图和「人们也问」不计入名次。",
-  "company_detector": "把生成的站点交给公司的 SEO 检测系统。检测结果写在 detector_label，本仓库不跑检测，也不根据检测结果改页面。",
   "rows": [
     {
       "query": "自行车胎压打到多少",
       "path": "/tire-pressure/",
       "google_position": null,
-      "detector_label": null,
       "checked_at": null
     },
     {
       "query": "自行车内胎补好能骑多久",
       "path": "/patch-life/",
       "google_position": null,
-      "detector_label": null,
       "checked_at": null
     },
     {
       "query": "自行车气嘴是美嘴还是法嘴",
       "path": "/valve-type/",
       "google_position": null,
-      "detector_label": null,
       "checked_at": null
     },
     {
       "query": "自行车蛇咬是什么",
       "path": "/snake-bite/",
       "google_position": null,
-      "detector_label": null,
       "checked_at": null
     }
   ]

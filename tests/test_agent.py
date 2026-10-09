@@ -11,7 +11,32 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_flow_routes_gaps_before_sitemap():
     graph = build_graph()
     nodes = set(graph.get_graph().nodes)
-    assert {"inspect", "lookup", "choose", "apply", "next_page", "cross_link", "sitemap"} <= nodes
+    assert {"inspect", "lookup", "choose", "apply", "next_page", "cross_link", "audit", "revise", "sitemap"} <= nodes
+
+
+def test_audit_flags_stuffing_and_revision_removes_the_extra_repeats():
+    from seo_arena.audit import audit_plans, revise_plans
+
+    plans = [
+        {
+            "path": "/a/",
+            "query": "胎压",
+            "title": "胎压｜南门",
+            "description": "按侧壁区间充气，公路车和山地车分开看，雨天取中段。",
+            "h1": "胎压",
+            "paragraphs": ["胎压？可以打。", "胎压胎压胎压胎压，这段只是在重复查询。"],
+            "canonical": "https://example.com/a/",
+            "links": [],
+            "offer": "按侧壁区间充气",
+            "detail": "雨天取中段，避免打满后碾坑爆胎。",
+            "close": "充完在门口压一压胎侧。",
+            "brand": "南门",
+        }
+    ]
+    issues = audit_plans(plans, "https://example.com")
+    assert "query_stuffing" in {issue["code"] for issue in issues}
+    revised = revise_plans(plans, issues)
+    assert revised[0]["paragraphs"][1].count("胎压") == 0
 
 
 def test_agent_fills_every_page_from_catalog_tools():

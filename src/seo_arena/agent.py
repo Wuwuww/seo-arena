@@ -1,4 +1,4 @@
-"""Tool loop that fills a site plan. It does not score or evade a detector."""
+"""Tool loop that fills a site plan, then checks it against public SEO audit items."""
 
 from __future__ import annotations
 
@@ -100,13 +100,11 @@ def write_records(brief: dict, plans: list[dict], trace: list[dict], root: Path)
     records.mkdir(exist_ok=True)
     serp = {
         "judge": "谷歌自然结果在 Chrome 中的展现顺序。广告、地图和「人们也问」不计入名次。",
-        "company_detector": "把生成的站点交给公司的 SEO 检测系统。检测结果写在 detector_label，本仓库不跑检测，也不根据检测结果改页面。",
         "rows": [
             {
                 "query": plan["query"],
                 "path": plan["path"],
                 "google_position": None,
-                "detector_label": None,
                 "checked_at": None,
             }
             for plan in plans
