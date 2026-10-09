@@ -11,7 +11,21 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_flow_routes_gaps_before_sitemap():
     graph = build_graph()
     nodes = set(graph.get_graph().nodes)
-    assert {"inspect", "lookup", "choose", "apply", "next_page", "cross_link", "audit", "revise", "present", "sitemap"} <= nodes
+    assert {
+        "inspect",
+        "lookup",
+        "choose",
+        "apply",
+        "next_page",
+        "cross_link",
+        "audit",
+        "revise",
+        "present",
+        "lookup_template",
+        "choose_template",
+        "apply_template",
+        "sitemap",
+    } <= nodes
 
 
 def test_audit_flags_stuffing_and_revision_removes_the_extra_repeats():
@@ -41,7 +55,9 @@ def test_audit_flags_stuffing_and_revision_removes_the_extra_repeats():
 
 def test_agent_fills_every_page_from_catalog_tools():
     brief = load_brief(ROOT / "briefs" / "nanmen.json")
-    plans, trace = run_agent(brief)
+    plans, trace, template = run_agent(brief)
+    assert template["id"] == "night-poster"
+    assert any(step.get("template") == "night-poster" for step in trace if step["tool"] == "apply_template")
     assert len(plans) == 4
     titles = [plan["title"] for plan in plans]
     assert len(titles) == len(set(titles))
@@ -65,8 +81,8 @@ def test_agent_fills_every_page_from_catalog_tools():
 
 def test_rendered_site_matches_the_plan(tmp_path):
     brief = load_brief(ROOT / "briefs" / "nanmen.json")
-    plans, _trace = run_agent(brief)
-    render_site(brief, plans, ROOT, tmp_path)
+    plans, _trace, template = run_agent(brief)
+    render_site(brief, plans, ROOT, tmp_path, template)
     css = (tmp_path / "assets" / "site.css").read_text(encoding="utf-8")
     assert "display:none" not in css.replace(" ", "")
     sitemap = (tmp_path / "sitemap.xml").read_text(encoding="utf-8")
@@ -82,6 +98,10 @@ def test_rendered_site_matches_the_plan(tmp_path):
         assert plan["figure"]["alt"] in text
         assert "<figcaption>" in text
         assert 'role="img"' in text
+        assert 'data-template="night-poster"' in text
+        assert 'property="og:title"' in text
+        assert 'aria-label="全站"' in text
+        assert all(other["h1"] in text for other in plans)
         payload = json.loads(text.split('application/ld+json">', 1)[1].split("</script>", 1)[0])
         crumbs = payload["@graph"][0]
         assert crumbs["itemListElement"][-1]["name"] == plan["h1"]

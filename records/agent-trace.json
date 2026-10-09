@@ -379,6 +379,18 @@
       ]
     },
     {
+      "tool": "lookup_templates",
+      "hits": [
+        "night-poster",
+        "day-sheet"
+      ]
+    },
+    {
+      "tool": "apply_template",
+      "template": "night-poster",
+      "source": "https://docs.astro.build/en/basics/layouts/"
+    },
+    {
       "tool": "apply",
       "method": "sitemap_and_robots",
       "source": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",

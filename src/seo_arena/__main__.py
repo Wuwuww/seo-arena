@@ -12,8 +12,8 @@ def main() -> None:
     args = parser.parse_args()
     root = Path.cwd()
     brief = load_brief(args.brief)
-    plans, trace = run_agent(brief)
-    render_site(brief, plans, root, args.out)
+    plans, trace, template = run_agent(brief)
+    render_site(brief, plans, root, args.out, template)
     write_records(brief, plans, trace, root)
     print(f"pages={len(plans)} steps={len(trace)} out={args.out}")
 

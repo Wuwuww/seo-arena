@@ -88,8 +88,13 @@ class ScriptedAgent:
             raise RuntimeError(f"没有能补上 {gap} 的步骤")
         return methods[0]
 
+    def choose_template(self, templates: list[dict]) -> dict:
+        if not templates:
+            raise RuntimeError("没有可用的建站模板")
+        return templates[0]
 
-def run_agent(brief: dict, agent=None) -> tuple[list[dict], list[dict]]:
+
+def run_agent(brief: dict, agent=None) -> tuple[list[dict], list[dict], dict]:
     from seo_arena.flow import run_flow
 
     return run_flow(brief, agent or ScriptedAgent())

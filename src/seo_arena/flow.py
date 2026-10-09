@@ -11,6 +11,7 @@ from seo_arena.agent import ScriptedAgent, _empty_plan, _link_pages, _missing, a
 from seo_arena.audit import FIXABLE, audit_plans, revise_plans
 from seo_arena.catalog import lookup_methods
 from seo_arena.present import present_plans
+from seo_arena.templates import lookup_templates
 
 
 class FlowState(TypedDict, total=False):
@@ -24,6 +25,8 @@ class FlowState(TypedDict, total=False):
     trace: list[dict]
     issues: list[dict]
     revised: bool
+    templates: list[dict]
+    template: dict
 
 
 def build_graph(chooser=None):
@@ -113,6 +116,27 @@ def build_graph(chooser=None):
         trace.append({"tool": "present", "pages": [plan["path"] for plan in plans]})
         return {"plans": plans, "trace": trace}
 
+    def lookup_template(state: FlowState) -> dict:
+        found = lookup_templates()
+        trace = list(state["trace"])
+        trace.append({"tool": "lookup_templates", "hits": [item["id"] for item in found]})
+        return {"templates": found, "trace": trace}
+
+    def choose_template(state: FlowState) -> dict:
+        picked = chooser.choose_template(state["templates"])
+        return {"template": picked}
+
+    def apply_template(state: FlowState) -> dict:
+        trace = list(state["trace"])
+        trace.append(
+            {
+                "tool": "apply_template",
+                "template": state["template"]["id"],
+                "source": state["template"]["source"],
+            }
+        )
+        return {"trace": trace}
+
     def sitemap(state: FlowState) -> dict:
         trace = list(state["trace"])
         trace.append(
@@ -135,6 +159,9 @@ def build_graph(chooser=None):
     graph.add_node("audit", audit)
     graph.add_node("revise", revise)
     graph.add_node("present", present)
+    graph.add_node("lookup_template", lookup_template)
+    graph.add_node("choose_template", choose_template)
+    graph.add_node("apply_template", apply_template)
     graph.add_node("sitemap", sitemap)
     graph.add_edge(START, "inspect")
     graph.add_conditional_edges(
@@ -149,12 +176,15 @@ def build_graph(chooser=None):
     graph.add_edge("cross_link", "audit")
     graph.add_conditional_edges("audit", route_audit, {"revise": "revise", "present": "present"})
     graph.add_edge("revise", "audit")
-    graph.add_edge("present", "sitemap")
+    graph.add_edge("present", "lookup_template")
+    graph.add_edge("lookup_template", "choose_template")
+    graph.add_edge("choose_template", "apply_template")
+    graph.add_edge("apply_template", "sitemap")
     graph.add_edge("sitemap", END)
     return graph.compile()
 
 
-def run_flow(brief: dict, chooser=None) -> tuple[list[dict], list[dict]]:
+def run_flow(brief: dict, chooser=None) -> tuple[list[dict], list[dict], dict]:
     graph = build_graph(chooser)
     final = graph.invoke({"brief": brief}, config={"recursion_limit": 250})
-    return final["plans"], final["trace"]
+    return final["plans"], final["trace"], final["template"]
