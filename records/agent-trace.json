@@ -381,13 +381,13 @@
     {
       "tool": "lookup_templates",
       "hits": [
-        "night-poster",
+        "repair-stand",
         "day-sheet"
       ]
     },
     {
       "tool": "apply_template",
-      "template": "night-poster",
+      "template": "repair-stand",
       "source": "https://docs.astro.build/en/basics/layouts/"
     },
     {

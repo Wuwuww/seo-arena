@@ -4,8 +4,15 @@ from __future__ import annotations
 
 import html
 import json
+import math
 import shutil
 from pathlib import Path
+
+_FONTS = (
+    '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
+    '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
+    '  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">'
+)
 
 
 def rel_link(from_path: str, to_path: str, *, directory: bool = True) -> str:
@@ -29,17 +36,32 @@ def _tokens(template: dict) -> str:
     return "\n".join(lines) + "\n\n"
 
 
+def _wheel() -> str:
+    spokes = []
+    for step in range(12):
+        angle = math.radians(step * 30 - 90)
+        x2 = 200 + 148 * math.cos(angle)
+        y2 = 200 + 148 * math.sin(angle)
+        spokes.append(f'<line x1="200" y1="200" x2="{x2:.1f}" y2="{y2:.1f}"/>')
+    return (
+        '<svg class="wheel-svg" viewBox="0 0 400 400">'
+        f'<g fill="none" stroke="currentColor" stroke-width="1.5">{"".join(spokes)}</g>'
+        '<circle cx="200" cy="200" r="170" fill="none" stroke="currentColor" stroke-width="9"/>'
+        '<circle cx="200" cy="200" r="14" fill="currentColor"/>'
+        '<circle class="patch" cx="200" cy="30" r="16"/>'
+        "</svg>"
+    )
+
+
 def _nav(from_path: str, brand: str, plans: list[dict], current: str) -> str:
     brand_attrs = ' aria-current="page"' if current == "/" else ""
     parts = [
         f'<a class="brand" href="{html.escape(rel_link(from_path, "/"))}"{brand_attrs}>{html.escape(brand)}</a>'
     ]
-    for index, plan in enumerate(plans, start=1):
+    for plan in plans:
         current_attrs = ' aria-current="page"' if plan["path"] == current else ""
         href = html.escape(rel_link(from_path, plan["path"]))
-        parts.append(
-            f'<a href="{href}"{current_attrs}><span class="index">{index:02d}</span> {html.escape(plan["h1"])}</a>'
-        )
+        parts.append(f'<a href="{href}"{current_attrs}>{html.escape(plan["h1"])}</a>')
     return f'<nav class="site-nav" aria-label="全站">{"".join(parts)}</nav>'
 
 
@@ -70,9 +92,8 @@ def _jsonld(plan: dict, brand: str, home: str) -> str:
 
 def _page(plan: dict, plans: list[dict], brand: str, home: str, css: str, template: dict) -> str:
     paragraphs = "".join(f"<p>{html.escape(text)}</p>" for text in plan["paragraphs"][1:])
-    order = {item["path"]: index for index, item in enumerate(plans, start=1)}
     links = "".join(
-        f'<li><a class="card" href="{html.escape(rel_link(plan["path"], item["href"]))}"><span class="index">{order[item["href"]]:02d}</span><strong>{html.escape(item["anchor"])}</strong></a></li>'
+        f'<li><a href="{html.escape(rel_link(plan["path"], item["href"]))}"><strong>{html.escape(item["anchor"])}</strong></a></li>'
         for item in plan["links"]
     )
     crumb = rel_link(plan["path"], "/")
@@ -87,6 +108,7 @@ def _page(plan: dict, plans: list[dict], brand: str, home: str, css: str, templa
   {_social(plan["title"], plan["description"], plan["canonical"], "article")}
   <meta name="theme-color" content="{html.escape(template["tokens"]["paper"])}">
   <link rel="canonical" href="{html.escape(plan["canonical"])}">
+  {_FONTS}
   <link rel="stylesheet" href="{html.escape(css)}">
   <script type="application/ld+json">{_jsonld(plan, brand, home)}</script>
 </head>
@@ -95,24 +117,22 @@ def _page(plan: dict, plans: list[dict], brand: str, home: str, css: str, templa
   <main>
     <article class="wrap">
       <p class="crumb"><a href="{html.escape(crumb)}">{html.escape(brand)}</a> / {html.escape(plan["h1"])}</p>
-      <div class="stage">
-        <div class="prose">
-          <h1>{html.escape(plan["h1"])}</h1>
-          <p class="lede">{html.escape(plan["paragraphs"][0])}</p>
-          <section>
-            {paragraphs}
-          </section>
-        </div>
+      <div class="prose">
+        <h1>{html.escape(plan["h1"])}</h1>
+        <p class="lede">{html.escape(plan["paragraphs"][0])}</p>
         <figure>
           {figure["svg"].replace('role="img"', f'role="img" aria-label="{html.escape(figure["alt"])}"', 1)}
           <figcaption>{html.escape(figure["caption"])}</figcaption>
         </figure>
+        <section>
+          {paragraphs}
+        </section>
       </div>
       <h2>店里其他问题</h2>
-      <ul class="cards">{links}</ul>
+      <ul class="jobs jobs-text">{links}</ul>
     </article>
   </main>
-  <footer><div class="wrap"><p>{html.escape(brand)}。图、导航和正文都在页面里，不靠脚本才出现。</p></div></footer>
+  <footer><div class="wrap"><p>{html.escape(brand)}。修胎压、补内胎、看气嘴。</p></div></footer>
 </body>
 </html>
 """
@@ -120,14 +140,13 @@ def _page(plan: dict, plans: list[dict], brand: str, home: str, css: str, templa
 
 def _home(brief: dict, plans: list[dict], css: str, template: dict) -> str:
     items = "".join(
-        "<li><a class=\"card\" href=\"{href}\"><span class=\"index\">{index:02d}</span>{svg}<strong>{title}</strong><span>{desc}</span></a></li>".format(
+        '<li><a href="{href}"><span class="job-fig" aria-hidden="true">{svg}</span><span class="job-copy"><strong>{title}</strong><span class="job-desc">{desc}</span></span></a></li>'.format(
             href=html.escape(rel_link("/", plan["path"])),
-            index=index,
             svg=plan["figure"]["svg"],
             title=html.escape(plan["h1"]),
-            desc=html.escape(plan["description"]),
+            desc=html.escape(plan["offer"]),
         )
-        for index, plan in enumerate(plans, start=1)
+        for plan in plans
     )
     canonical = brief["site_url"].rstrip("/") + "/"
     return f"""<!DOCTYPE html>
@@ -140,19 +159,25 @@ def _home(brief: dict, plans: list[dict], css: str, template: dict) -> str:
   {_social(brief["brand"], brief["description"], canonical, "website")}
   <meta name="theme-color" content="{html.escape(template["tokens"]["paper"])}">
   <link rel="canonical" href="{html.escape(canonical)}">
+  {_FONTS}
   <link rel="stylesheet" href="{html.escape(css)}">
 </head>
 <body>
   <header class="bar"><div class="wrap bar-inner">{_nav("/", brief["brand"], plans, "/")}</div></header>
   <main>
     <section class="wrap hero">
-      <p class="kicker">{html.escape(template["label"])}</p>
-      <h1>{html.escape(brief["brand"])}</h1>
-      <p class="lede">{html.escape(brief["description"])}</p>
+      <div>
+        <h1>{html.escape(brief["brand"])}</h1>
+        <p class="lede">{html.escape(brief["description"])}</p>
+      </div>
+      <div class="wheel" aria-hidden="true">{_wheel()}</div>
     </section>
-    <ul class="wrap poster-grid">{items}</ul>
+    <section class="wrap jobs-block">
+      <h2>到店前可以先看</h2>
+      <ul class="jobs">{items}</ul>
+    </section>
   </main>
-  <footer><div class="wrap"><p>{html.escape(brief["brand"])}。同一套版式套在每一页上。</p></div></footer>
+  <footer><div class="wrap"><p>{html.escape(brief["brand"])}。修胎压、补内胎、看气嘴。</p></div></footer>
 </body>
 </html>
 """

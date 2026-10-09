@@ -56,8 +56,8 @@ def test_audit_flags_stuffing_and_revision_removes_the_extra_repeats():
 def test_agent_fills_every_page_from_catalog_tools():
     brief = load_brief(ROOT / "briefs" / "nanmen.json")
     plans, trace, template = run_agent(brief)
-    assert template["id"] == "night-poster"
-    assert any(step.get("template") == "night-poster" for step in trace if step["tool"] == "apply_template")
+    assert template["id"] == "repair-stand"
+    assert any(step.get("template") == "repair-stand" for step in trace if step["tool"] == "apply_template")
     assert len(plans) == 4
     titles = [plan["title"] for plan in plans]
     assert len(titles) == len(set(titles))
@@ -98,7 +98,7 @@ def test_rendered_site_matches_the_plan(tmp_path):
         assert plan["figure"]["alt"] in text
         assert "<figcaption>" in text
         assert 'role="img"' in text
-        assert 'data-template="night-poster"' in text
+        assert 'data-template="repair-stand"' in text
         assert 'property="og:title"' in text
         assert 'aria-label="全站"' in text
         assert all(other["h1"] in text for other in plans)
