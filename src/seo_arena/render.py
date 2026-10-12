@@ -62,6 +62,8 @@ def _nav(from_path: str, brand: str, plans: list[dict], current: str) -> str:
         current_attrs = ' aria-current="page"' if plan["path"] == current else ""
         href = html.escape(rel_link(from_path, plan["path"]))
         parts.append(f'<a href="{href}"{current_attrs}>{html.escape(plan["h1"])}</a>')
+    digest_attrs = ' aria-current="page"' if current == "/ai/" else ""
+    parts.append(f'<a href="{html.escape(rel_link(from_path, "/ai/"))}"{digest_attrs}>今日简报</a>')
     return f'<nav class="site-nav" aria-label="全站">{"".join(parts)}</nav>'
 
 
@@ -169,6 +171,7 @@ def _home(brief: dict, plans: list[dict], css: str, template: dict) -> str:
       <div>
         <h1>{html.escape(brief["brand"])}</h1>
         <p class="lede">{html.escape(brief["description"])}</p>
+        <p class="briefing-link"><a href="ai/">看今日 AI 简报</a></p>
       </div>
       <div class="wheel" aria-hidden="true">{_wheel()}</div>
     </section>

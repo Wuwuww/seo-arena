@@ -1,0 +1,134 @@
+{
+  "fetched_at": "2026-10-12 10:52",
+  "modules": [
+    {
+      "id": "papers",
+      "title": "论文",
+      "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
+      "items": [
+        {
+          "title": "Can Language Models Play the Wikipedia Game?",
+          "url": "https://arxiv.org/abs/2610.13948v1",
+          "detail": "Language models increasingly support or automate information retrieval from document collections too large to index. This task is difficult when it requires spe…",
+          "meta": "cs.AI · 2026-10-09 · Alexander Hickey 等"
+        },
+        {
+          "title": "Hide and Seek: HIDE Concepts to SEEK explanations for black box models",
+          "url": "https://arxiv.org/abs/2610.13935v1",
+          "detail": "Interpreting machine learning model predictions is a central challenge, particularly for black-box vision models. Concept-based attribution methods interpret mo…",
+          "meta": "cs.CV · 2026-10-09 · Bhanu Tokas 等"
+        },
+        {
+          "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+          "url": "https://arxiv.org/abs/2610.13912v1",
+          "detail": "Recursive self-improvement (RSI) aims to transform interaction experience into persistent improvements, yet external feedback is costly and world-model predicti…",
+          "meta": "cs.CL · 2026-10-09 · Taoyong Cui 等"
+        },
+        {
+          "title": "When VLMs Destroy What They Know: Spatial Representations Fall Below Lexical Priors",
+          "url": "https://arxiv.org/abs/2610.13910v1",
+          "detail": "Vision-Language Models (VLMs) increasingly analyze and reason about images, yet it remains unclear whether their internal representations faithfully encode the…",
+          "meta": "cs.CL · 2026-10-09 · Shubh Garg 等"
+        },
+        {
+          "title": "Revisiting Tabular Deep Regression: Objectives and the Limits of Global Early Stopping",
+          "url": "https://arxiv.org/abs/2610.13909v1",
+          "detail": "While deep learning models for tabular data have recently received significant research attention, the choice of objective functions for regression tasks remain…",
+          "meta": "cs.LG · 2026-10-09 · Danil Rudenko 等"
+        },
+        {
+          "title": "Structural Automata for Neural Semantic Parsing",
+          "url": "https://arxiv.org/abs/2610.13896v1",
+          "detail": "Neural semantic parsers generate meaning representations token by token, yet well-formedness depends on references, scope, and graph relations that unfold durin…",
+          "meta": "cs.CL · 2026-10-09 · Xiao Zhang"
+        }
+      ]
+    },
+    {
+      "id": "models",
+      "title": "大模型",
+      "note": "Hugging Face 上文本生成模型的趋势列表。",
+      "items": [
+        {
+          "title": "jialinyyzz/humanizer",
+          "url": "https://huggingface.co/jialinyyzz/humanizer",
+          "detail": "",
+          "meta": "1,107 次点赞 · 37,647 次下载"
+        },
+        {
+          "title": "Aleph-Alpha/Kolibri-1",
+          "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+          "detail": "",
+          "meta": "887 次点赞 · 12,550 次下载"
+        },
+        {
+          "title": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
+          "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
+          "detail": "",
+          "meta": "691 次点赞 · 48,389 次下载"
+        },
+        {
+          "title": "ConwayResearch/Underdog-Saluki-27B-1.0",
+          "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
+          "detail": "",
+          "meta": "324 次点赞 · 108,900 次下载"
+        },
+        {
+          "title": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+          "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
+          "detail": "",
+          "meta": "2,633 次点赞 · 4,549,911 次下载"
+        },
+        {
+          "title": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+          "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+          "detail": "",
+          "meta": "103 次点赞 · 803 次下载"
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "title": "Skill",
+      "note": "anthropics/skills 里写文档、做设计和搭 agent 时会打开的几条。",
+      "items": [
+        {
+          "title": "frontend-design",
+          "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
+          "detail": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making ch…",
+          "meta": "anthropics/skills"
+        },
+        {
+          "title": "skill-creator",
+          "url": "https://github.com/anthropics/skills/tree/main/skills/skill-creator",
+          "detail": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an e…",
+          "meta": "anthropics/skills"
+        },
+        {
+          "title": "mcp-builder",
+          "url": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder",
+          "detail": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when b…",
+          "meta": "anthropics/skills"
+        },
+        {
+          "title": "docx",
+          "url": "https://github.com/anthropics/skills/tree/main/skills/docx",
+          "detail": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files) or Word templates (.dotx files). Triggers include: any…",
+          "meta": "anthropics/skills"
+        },
+        {
+          "title": "pdf",
+          "url": "https://github.com/anthropics/skills/tree/main/skills/pdf",
+          "detail": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple P…",
+          "meta": "anthropics/skills"
+        },
+        {
+          "title": "webapp-testing",
+          "url": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing",
+          "detail": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing br…",
+          "meta": "anthropics/skills"
+        }
+      ]
+    }
+  ]
+}

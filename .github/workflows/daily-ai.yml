@@ -1,0 +1,35 @@
+name: daily-ai
+
+on:
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-ai
+  cancel-in-progress: false
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install "langgraph>=1.0"
+      - name: Fetch the briefing
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: PYTHONPATH=src python -m seo_arena.digest_main --out docs
+      - name: Commit the briefing
+        run: |
+          git add docs/ai docs/sitemap.xml records/digest.json records/digest-trace.json
+          git diff --cached --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update the daily AI briefing."
+          git push

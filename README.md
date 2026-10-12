@@ -14,3 +14,13 @@ PYTHONPATH=src python -m pytest -q
 换一个站时，复制 `briefs/nanmen.json`，改品牌、问题和每页不同的说明。每页内容保持不同，搜索结果里才分得清。
 
 默认发布地址是 https://wuwuww.github.io/seo-arena/ 。`site_url` 要和实际上线的地址一致，canonical 和 sitemap 才指向同一条网址。
+
+## 今日简报
+
+另一个 agent 按论文、大模型、Skill 三个模块拉取公开接口，写到 `/ai/`。论文来自 arXiv，模型来自 Hugging Face 的趋势列表，Skill 来自 [anthropics/skills](https://github.com/anthropics/skills)。页面上的标题和数字是接口原文。
+
+```bash
+PYTHONPATH=src python -m seo_arena.digest_main --out docs
+```
+
+GitHub Actions 在每天北京时间 9:00 跑一次，也可以手动触发 `daily-ai`。

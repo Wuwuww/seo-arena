@@ -2,6 +2,7 @@ import argparse
 from pathlib import Path
 
 from seo_arena.agent import load_brief, run_agent, write_records
+from seo_arena.digest import publish_digest
 from seo_arena.render import render_site
 
 
@@ -14,8 +15,9 @@ def main() -> None:
     brief = load_brief(args.brief)
     plans, trace, template = run_agent(brief)
     render_site(brief, plans, root, args.out, template)
+    report = publish_digest(brief, plans, template, args.out, root)
     write_records(brief, plans, trace, root)
-    print(f"pages={len(plans)} steps={len(trace)} out={args.out}")
+    print(f"pages={len(plans)} steps={len(trace)} digest={report['fetched_at']} out={args.out}")
 
 
 if __name__ == "__main__":

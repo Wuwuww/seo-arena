@@ -101,6 +101,7 @@ def test_rendered_site_matches_the_plan(tmp_path):
         assert 'data-template="repair-stand"' in text
         assert 'property="og:title"' in text
         assert 'aria-label="全站"' in text
+        assert "今日简报" in text
         assert all(other["h1"] in text for other in plans)
         payload = json.loads(text.split('application/ld+json">', 1)[1].split("</script>", 1)[0])
         crumbs = payload["@graph"][0]
