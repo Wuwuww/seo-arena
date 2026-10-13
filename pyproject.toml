@@ -1,7 +1,7 @@
 [project]
 name = "seo-arena"
 version = "0.1.0"
-description = "Agent workflow that generates a crawlable site from on-page SEO actions"
+description = "Agent that publishes a daily briefing of papers, models, and skills"
 requires-python = ">=3.10"
 dependencies = ["langgraph>=1.0"]
 

@@ -1,22 +1,17 @@
-"""Daily briefing agent: papers, models, and skills from public APIs."""
+"""Briefing agent: collect papers, models, and skills, then trim and check the issue."""
 
 from __future__ import annotations
 
-import html
 import json
 import os
 import subprocess
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime
-from pathlib import Path
 from typing import Callable, TypedDict
 from zoneinfo import ZoneInfo
 
 from langgraph.graph import END, START, StateGraph
-
-from seo_arena.render import _FONTS, _nav, _social
-from seo_arena.templates import TEMPLATES
 
 UA = "seo-arena-digest/0.1 (https://github.com/Wuwuww/seo-arena)"
 ATOM = "{http://www.w3.org/2005/Atom}"
@@ -28,13 +23,20 @@ SKILL_ORDER = (
     "pdf",
     "webapp-testing",
 )
-
-
-class DigestState(TypedDict, total=False):
+class BriefingState(TypedDict, total=False):
     papers: list[dict]
     models: list[dict]
     skills: list[dict]
+    issue: dict
+    issues: list[dict]
     trace: list[dict]
+
+
+SECTION_NOTES = {
+    "papers": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
+    "models": "Hugging Face 上文本生成模型的趋势列表。",
+    "skills": "anthropics/skills 里写文档、做设计和搭 agent 时会打开的几条。",
+}
 
 
 def _clip(text: str, limit: int = 160) -> str:
@@ -63,16 +65,20 @@ def _github_headers() -> dict:
     return headers
 
 
+def _text(entry: ET.Element, tag: str) -> str:
+    node = entry.find(f"{ATOM}{tag}")
+    return node.text if node is not None and node.text else ""
+
+
 def fetch_papers() -> list[dict]:
-    query = "search_query=cat:cs.CL+OR+cat:cs.AI&sortBy=submittedDate&sortOrder=descending&start=0&max_results=6"
-    raw = _get(f"https://export.arxiv.org/api/query?{query}")
-    root = ET.fromstring(raw)
+    query = "search_query=cat:cs.CL+OR+cat:cs.AI&sortBy=submittedDate&sortOrder=descending&start=0&max_results=8"
+    root = ET.fromstring(_get(f"https://export.arxiv.org/api/query?{query}"))
     items = []
     for entry in root.findall(f"{ATOM}entry"):
-        link = entry.find(f"{ATOM}id").text or ""
+        link = _text(entry, "id")
         for candidate in entry.findall(f"{ATOM}link"):
             if candidate.get("rel") == "alternate" and candidate.get("href"):
-                link = candidate.get("href")
+                link = candidate.get("href") or link
                 break
         authors = [node.text or "" for node in entry.findall(f"{ATOM}author/{ATOM}name")]
         who = authors[0] if authors else ""
@@ -80,13 +86,13 @@ def fetch_papers() -> list[dict]:
             who = f"{who} 等"
         category = entry.find(f"{ATOM}category")
         term = category.get("term") if category is not None else "cs"
-        updated = (entry.find(f"{ATOM}updated").text or "")[:10]
+        updated = _text(entry, "updated")[:10]
         items.append(
             {
-                "title": _clip(entry.find(f"{ATOM}title").text or "", 200),
+                "title": _clip(_text(entry, "title"), 200),
                 "url": link.replace("http://", "https://"),
-                "detail": _clip(entry.find(f"{ATOM}summary").text or ""),
-                "meta": f"{term} · {updated} · {who}",
+                "detail": _clip(_text(entry, "summary")),
+                "bits": [bit for bit in (term, updated, who) if bit],
             }
         )
     return items
@@ -94,7 +100,7 @@ def fetch_papers() -> list[dict]:
 
 def fetch_models() -> list[dict]:
     raw = _get(
-        "https://huggingface.co/api/models?pipeline_tag=text-generation&sort=trendingScore&direction=-1&limit=6"
+        "https://huggingface.co/api/models?pipeline_tag=text-generation&sort=trendingScore&direction=-1&limit=8"
     )
     items = []
     for model in json.loads(raw):
@@ -106,7 +112,7 @@ def fetch_models() -> list[dict]:
                 "title": name,
                 "url": f"https://huggingface.co/{name}",
                 "detail": "",
-                "meta": f"{likes:,} 次点赞 · {downloads:,} 次下载",
+                "bits": [f"{likes:,} 次点赞", f"{downloads:,} 次下载"],
             }
         )
     return items
@@ -128,152 +134,100 @@ def fetch_skills() -> list[dict]:
     headers = _github_headers()
     listing = json.loads(_get("https://api.github.com/repos/anthropics/skills/contents/skills", headers))
     available = {item["name"] for item in listing if item.get("type") == "dir"}
-    chosen = [name for name in SKILL_ORDER if name in available]
     items = []
-    for name in chosen:
+    for name in SKILL_ORDER:
+        if name not in available:
+            continue
         items.append(
             {
                 "title": name,
                 "url": f"https://github.com/anthropics/skills/tree/main/skills/{name}",
                 "detail": _skill_description(name, headers),
-                "meta": "anthropics/skills",
+                "bits": ["anthropics/skills"],
             }
         )
     return items
 
 
-def build_digest_graph(fetchers: dict[str, Callable[[], list[dict]]] | None = None):
-    fetchers = fetchers or {
-        "papers": fetch_papers,
-        "models": fetch_models,
-        "skills": fetch_skills,
-    }
+def trim_items(items: list[dict]) -> list[dict]:
+    seen: set[str] = set()
+    kept = []
+    for item in items:
+        title = " ".join((item.get("title") or "").split())
+        url = (item.get("url") or "").strip()
+        if not title or not url.startswith("https://") or url in seen:
+            continue
+        seen.add(url)
+        kept.append({**item, "title": title, "url": url})
+        if len(kept) == 6:
+            break
+    return kept
 
-    def fetch_papers_node(state: DigestState) -> dict:
-        items = fetchers["papers"]()
+
+def build_graph(fetchers: dict[str, Callable[[], list[dict]]] | None = None, now: Callable[[], datetime] | None = None):
+    fetchers = fetchers or {"papers": fetch_papers, "models": fetch_models, "skills": fetch_skills}
+    clock = now or (lambda: datetime.now(ZoneInfo("Asia/Shanghai")))
+
+    def collect(key: str, source: str):
+        def node(state: BriefingState) -> dict:
+            items = fetchers[key]()
+            trace = list(state.get("trace") or [])
+            trace.append({"tool": f"fetch_{key}", "source": source, "count": len(items)})
+            return {key: items, "trace": trace}
+
+        return node
+
+    def trim(state: BriefingState) -> dict:
+        papers = trim_items(state.get("papers") or [])
+        models = trim_items(state.get("models") or [])
+        skills = trim_items(state.get("skills") or [])
         trace = list(state.get("trace") or [])
-        trace.append({"tool": "fetch_papers", "source": "https://export.arxiv.org/api/query", "count": len(items)})
-        return {"papers": items, "trace": trace}
+        trace.append({"tool": "trim", "kept": {"papers": len(papers), "models": len(models), "skills": len(skills)}})
+        return {"papers": papers, "models": models, "skills": skills, "trace": trace}
 
-    def fetch_models_node(state: DigestState) -> dict:
-        items = fetchers["models"]()
+    def compose(state: BriefingState) -> dict:
+        moment = clock()
+        issue = {
+            "h1": f"{moment.month}月{moment.day}日",
+            "year": str(moment.year),
+            "fetched_at": moment.strftime("%Y-%m-%d %H:%M"),
+            "sections": [
+                {"id": "papers", "title": "论文", "note": SECTION_NOTES["papers"], "items": state.get("papers") or []},
+                {"id": "models", "title": "大模型", "note": SECTION_NOTES["models"], "items": state.get("models") or []},
+                {"id": "skills", "title": "Skill", "note": SECTION_NOTES["skills"], "items": state.get("skills") or []},
+            ],
+        }
         trace = list(state.get("trace") or [])
-        trace.append({"tool": "fetch_models", "source": "https://huggingface.co/api/models", "count": len(items)})
-        return {"models": items, "trace": trace}
+        trace.append({"tool": "compose", "h1": issue["h1"]})
+        return {"issue": issue, "trace": trace}
 
-    def fetch_skills_node(state: DigestState) -> dict:
-        items = fetchers["skills"]()
+    def audit(state: BriefingState) -> dict:
+        issues = [
+            {"code": "empty_section", "section": section["id"]}
+            for section in state["issue"]["sections"]
+            if not section["items"]
+        ]
         trace = list(state.get("trace") or [])
-        trace.append({"tool": "fetch_skills", "source": "https://github.com/anthropics/skills", "count": len(items)})
-        return {"skills": items, "trace": trace}
+        trace.append({"tool": "audit", "issues": [issue["code"] for issue in issues]})
+        return {"issues": issues, "trace": trace}
 
-    graph = StateGraph(DigestState)
-    graph.add_node("fetch_papers", fetch_papers_node)
-    graph.add_node("fetch_models", fetch_models_node)
-    graph.add_node("fetch_skills", fetch_skills_node)
+    graph = StateGraph(BriefingState)
+    graph.add_node("fetch_papers", collect("papers", "https://export.arxiv.org/api/query"))
+    graph.add_node("fetch_models", collect("models", "https://huggingface.co/api/models"))
+    graph.add_node("fetch_skills", collect("skills", "https://github.com/anthropics/skills"))
+    graph.add_node("trim", trim)
+    graph.add_node("compose", compose)
+    graph.add_node("audit", audit)
     graph.add_edge(START, "fetch_papers")
     graph.add_edge("fetch_papers", "fetch_models")
     graph.add_edge("fetch_models", "fetch_skills")
-    graph.add_edge("fetch_skills", END)
+    graph.add_edge("fetch_skills", "trim")
+    graph.add_edge("trim", "compose")
+    graph.add_edge("compose", "audit")
+    graph.add_edge("audit", END)
     return graph.compile()
 
 
-def run_digest(fetchers: dict[str, Callable[[], list[dict]]] | None = None) -> tuple[dict, list[dict]]:
-    final = build_digest_graph(fetchers).invoke({})
-    fetched_at = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d %H:%M")
-    report = {
-        "fetched_at": fetched_at,
-        "modules": [
-            {
-                "id": "papers",
-                "title": "论文",
-                "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
-                "items": final["papers"],
-            },
-            {
-                "id": "models",
-                "title": "大模型",
-                "note": "Hugging Face 上文本生成模型的趋势列表。",
-                "items": final["models"],
-            },
-            {
-                "id": "skills",
-                "title": "Skill",
-                "note": "anthropics/skills 里写文档、做设计和搭 agent 时会打开的几条。",
-                "items": final["skills"],
-            },
-        ],
-    }
-    return report, final["trace"]
-
-
-def render_digest(report: dict, brief: dict, plans: list[dict], template: dict) -> str:
-    sections = []
-    for module in report["modules"]:
-        rows = []
-        for item in module["items"]:
-            detail = f'<span class="job-desc">{html.escape(item["detail"])}</span>' if item["detail"] else ""
-            rows.append(
-                f'<li><a href="{html.escape(item["url"])}"><strong>{html.escape(item["title"])}</strong>'
-                f'<span class="job-meta">{html.escape(item["meta"])}</span>{detail}</a></li>'
-            )
-        sections.append(
-            f'<section id="{html.escape(module["id"])}">'
-            f'<h2>{html.escape(module["title"])}</h2>'
-            f'<p>{html.escape(module["note"])}</p>'
-            f'<ul class="jobs jobs-text">{"".join(rows)}</ul>'
-            "</section>"
-        )
-    canonical = brief["site_url"].rstrip("/") + "/ai/"
-    title = "今日 AI 简报"
-    description = "论文、大模型和 Skill 的当日条目，链接指向原文。"
-    return f"""<!DOCTYPE html>
-<html lang="zh-CN" data-template="{html.escape(template["id"])}">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{html.escape(title)}｜{html.escape(brief["brand"])}</title>
-  <meta name="description" content="{html.escape(description)}">
-  {_social(title, description, canonical, "website")}
-  <meta name="theme-color" content="{html.escape(template["tokens"]["paper"])}">
-  <link rel="canonical" href="{html.escape(canonical)}">
-  {_FONTS}
-  <link rel="stylesheet" href="../assets/site.css">
-</head>
-<body>
-  <header class="bar"><div class="wrap bar-inner">{_nav("/ai/", brief["brand"], plans, "/ai/")}</div></header>
-  <main>
-    <article class="wrap">
-      <h1>{html.escape(title)}</h1>
-      <p class="lede">更新于 {html.escape(report["fetched_at"])}。下面每条都能点进原文，标题和数字来自接口，没有另写摘要。</p>
-      {"".join(sections)}
-    </article>
-  </main>
-  <footer><div class="wrap"><p>{html.escape(brief["brand"])}。这一页每天重新拉取。</p></div></footer>
-</body>
-</html>
-"""
-
-
-def _add_sitemap(out: Path, url: str) -> None:
-    path = out / "sitemap.xml"
-    if not path.exists() or url in path.read_text(encoding="utf-8"):
-        return
-    text = path.read_text(encoding="utf-8")
-    path.write_text(text.replace("</urlset>", f"  <url><loc>{html.escape(url)}</loc></url>\n</urlset>"), encoding="utf-8")
-
-
-def publish_digest(brief: dict, plans: list[dict], template: dict, out: Path, root: Path, fetchers=None) -> dict:
-    report, trace = run_digest(fetchers)
-    folder = out / "ai"
-    folder.mkdir(parents=True, exist_ok=True)
-    (folder / "index.html").write_text(render_digest(report, brief, plans, template), encoding="utf-8")
-    _add_sitemap(out, brief["site_url"].rstrip("/") + "/ai/")
-    records = root / "records"
-    records.mkdir(exist_ok=True)
-    (records / "digest.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    (records / "digest-trace.json").write_text(
-        json.dumps({"fetched_at": report["fetched_at"], "steps": trace}, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-    return report
+def run_briefing(fetchers=None, now=None) -> tuple[dict, list[dict]]:
+    final = build_graph(fetchers, now).invoke({})
+    return final["issue"], final["trace"]

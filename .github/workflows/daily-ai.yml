@@ -24,10 +24,10 @@ jobs:
       - name: Fetch the briefing
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: PYTHONPATH=src python -m seo_arena.digest_main --out docs
+        run: PYTHONPATH=src python -m seo_arena
       - name: Commit the briefing
         run: |
-          git add docs/ai docs/sitemap.xml records/digest.json records/digest-trace.json
+          git add docs records/digest.json records/digest-trace.json
           git diff --cached --quiet && exit 0
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

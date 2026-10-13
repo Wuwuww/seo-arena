@@ -1,23 +1,27 @@
 import argparse
+import json
 from pathlib import Path
 
-from seo_arena.agent import load_brief, run_agent, write_records
-from seo_arena.digest import publish_digest
-from seo_arena.render import render_site
+from seo_arena.digest import run_briefing
+from seo_arena.render import write_site
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="用 SEO 步骤生成一个可抓取的站点")
-    parser.add_argument("--brief", type=Path, default=Path("briefs/nanmen.json"))
+    parser = argparse.ArgumentParser(description="拉取论文、大模型和 Skill，写成一期 AI 简报")
     parser.add_argument("--out", type=Path, default=Path("docs"))
     args = parser.parse_args()
     root = Path.cwd()
-    brief = load_brief(args.brief)
-    plans, trace, template = run_agent(brief)
-    render_site(brief, plans, root, args.out, template)
-    report = publish_digest(brief, plans, template, args.out, root)
-    write_records(brief, plans, trace, root)
-    print(f"pages={len(plans)} steps={len(trace)} digest={report['fetched_at']} out={args.out}")
+    issue, trace = run_briefing()
+    write_site(issue, root, args.out)
+    records = root / "records"
+    records.mkdir(exist_ok=True)
+    (records / "digest.json").write_text(json.dumps(issue, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (records / "digest-trace.json").write_text(
+        json.dumps({"fetched_at": issue["fetched_at"], "steps": trace}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    counts = ", ".join(f"{section['id']}={len(section['items'])}" for section in issue["sections"])
+    print(f"issue={issue['h1']} {counts} out={args.out}")
 
 
 if __name__ == "__main__":
