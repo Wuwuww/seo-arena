@@ -2,7 +2,7 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 from seo_arena.digest import build_graph, run_briefing, trim_items
-from seo_arena.render import render_issue
+from seo_arena.render import render_issue, render_missing
 
 
 def _item(title: str, url: str | None = None) -> dict:
@@ -58,3 +58,6 @@ def test_loop_trims_then_composes_an_issue():
     assert "https://example.com/paper" in page
     assert "这次没有拉到" in page
     assert "display:none" not in page.replace(" ", "")
+    missing = render_missing()
+    assert "南门" not in missing
+    assert "回到今天的简报" in missing

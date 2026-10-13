@@ -1,7 +1,7 @@
 {
   "h1": "10月13日",
   "year": "2026",
-  "fetched_at": "2026-10-13 20:21",
+  "fetched_at": "2026-10-13 20:29",
   "sections": [
     {
       "id": "papers",
@@ -89,7 +89,7 @@
           "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
           "detail": "",
           "bits": [
-            "394 次点赞",
+            "396 次点赞",
             "269,829 次下载"
           ]
         },
@@ -125,7 +125,7 @@
           "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking",
           "detail": "",
           "bits": [
-            "116 次点赞",
+            "117 次点赞",
             "1,471 次下载"
           ]
         }

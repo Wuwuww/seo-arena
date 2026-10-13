@@ -83,6 +83,37 @@ def render_issue(issue: dict) -> str:
 """
 
 
+def render_missing() -> str:
+    home = SITE_URL.rstrip("/") + "/"
+    return f"""<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>没有这个页面｜{SITE_NAME}</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="{html.escape(home)}">
+  {_FONTS}
+  <link rel="stylesheet" href="{html.escape(home)}assets/site.css">
+</head>
+<body>
+  <header class="bar">
+    <div class="wrap bar-inner">
+      <a class="brand" href="{html.escape(home)}">{SITE_NAME}</a>
+    </div>
+  </header>
+  <main>
+    <article class="wrap">
+      <h1>没有这个页面</h1>
+      <p class="standfirst">原来的演示页已经撤掉。现在只保留每天的 AI 简报。</p>
+      <p><a href="{html.escape(home)}">回到今天的简报</a></p>
+    </article>
+  </main>
+</body>
+</html>
+"""
+
+
 def write_site(issue: dict, root: Path, out: Path) -> None:
     if out.exists():
         shutil.rmtree(out)
@@ -90,6 +121,7 @@ def write_site(issue: dict, root: Path, out: Path) -> None:
     (out / "assets").mkdir()
     shutil.copyfile(root / "content" / "site.css", out / "assets" / "site.css")
     (out / "index.html").write_text(render_issue(issue), encoding="utf-8")
+    (out / "404.html").write_text(render_missing(), encoding="utf-8")
     home = SITE_URL.rstrip("/") + "/"
     sitemap = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
