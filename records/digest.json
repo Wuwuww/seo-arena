@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-12 10:52",
+  "fetched_at": "2026-10-13 15:23",
   "modules": [
     {
       "id": "papers",
@@ -53,37 +53,37 @@
           "title": "jialinyyzz/humanizer",
           "url": "https://huggingface.co/jialinyyzz/humanizer",
           "detail": "",
-          "meta": "1,107 次点赞 · 37,647 次下载"
-        },
-        {
-          "title": "Aleph-Alpha/Kolibri-1",
-          "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
-          "detail": "",
-          "meta": "887 次点赞 · 12,550 次下载"
-        },
-        {
-          "title": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
-          "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
-          "detail": "",
-          "meta": "691 次点赞 · 48,389 次下载"
+          "meta": "1,362 次点赞 · 46,070 次下载"
         },
         {
           "title": "ConwayResearch/Underdog-Saluki-27B-1.0",
           "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
           "detail": "",
-          "meta": "324 次点赞 · 108,900 次下载"
+          "meta": "383 次点赞 · 242,329 次下载"
+        },
+        {
+          "title": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
+          "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
+          "detail": "",
+          "meta": "707 次点赞 · 52,788 次下载"
+        },
+        {
+          "title": "Aleph-Alpha/Kolibri-1",
+          "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+          "detail": "",
+          "meta": "917 次点赞 · 14,018 次下载"
         },
         {
           "title": "prism-ml/Ternary-Bonsai-2-27B-gguf",
           "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
           "detail": "",
-          "meta": "2,633 次点赞 · 4,549,911 次下载"
+          "meta": "2,665 次点赞 · 4,615,462 次下载"
         },
         {
           "title": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
           "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking",
           "detail": "",
-          "meta": "103 次点赞 · 803 次下载"
+          "meta": "115 次点赞 · 1,068 次下载"
         }
       ]
     },
