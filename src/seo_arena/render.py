@@ -9,10 +9,11 @@ from pathlib import Path
 SITE_NAME = "AI 简报"
 SITE_URL = "https://wuwuww.github.io/seo-arena"
 SITE_DESCRIPTION = "每天列出新论文、正在热的文本模型，以及会用到的 Skill。点标题打开原文。"
+CSS_HREF = "assets/site.css?v=signal1"
 _FONTS = (
     '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
     '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-    '  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600&family=Noto+Serif+SC:wght@600&display=swap" rel="stylesheet">'
+    '  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">'
 )
 
 
@@ -28,6 +29,17 @@ def _items(items: list[dict]) -> str:
             f'<span class="bits">{bits}</span>{detail}</a></li>'
         )
     return f'<ul class="items">{"".join(rows)}</ul>'
+
+
+def _nav(sections: list[dict]) -> str:
+    links = []
+    for section in sections:
+        count = len(section.get("items") or [])
+        links.append(
+            f'<a href="#{html.escape(section["id"])}">{html.escape(section["title"])}'
+            f'<span class="count">{count}</span></a>'
+        )
+    return f'<nav class="site-nav" aria-label="这一期">{"".join(links)}</nav>'
 
 
 def render_issue(issue: dict) -> str:
@@ -53,27 +65,26 @@ def render_issue(issue: dict) -> str:
   <meta property="og:description" content="{html.escape(SITE_DESCRIPTION)}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{html.escape(canonical)}">
-  <meta name="theme-color" content="#e4ebf0">
+  <meta name="theme-color" content="#0c1218">
   <link rel="canonical" href="{html.escape(canonical)}">
   {_FONTS}
-  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="{CSS_HREF}">
 </head>
 <body>
   <header class="bar">
     <div class="wrap bar-inner">
-      <a class="brand" href="./">{SITE_NAME}</a>
-      <nav class="site-nav" aria-label="这一期">
-        <a href="#papers">论文</a>
-        <a href="#models">大模型</a>
-        <a href="#skills">Skill</a>
-      </nav>
+      <a class="brand" href="./"><span class="live" aria-hidden="true"></span>{SITE_NAME}</a>
+      {_nav(issue["sections"])}
     </div>
   </header>
   <main>
     <article class="wrap">
-      <h1>{html.escape(issue["h1"])}</h1>
-      <p class="standfirst">{SITE_DESCRIPTION}</p>
-      <p class="when">更新于 {html.escape(issue["fetched_at"])}</p>
+      <div class="hero">
+        <h1>{html.escape(issue["h1"])}</h1>
+        <p class="standfirst">{SITE_DESCRIPTION}</p>
+        <p class="when">更新于 {html.escape(issue["fetched_at"])}</p>
+        <div class="rail" aria-hidden="true"></div>
+      </div>
       {"".join(sections)}
     </article>
   </main>
@@ -85,6 +96,7 @@ def render_issue(issue: dict) -> str:
 
 def render_missing() -> str:
     home = SITE_URL.rstrip("/") + "/"
+    css = html.escape(home + CSS_HREF)
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -92,21 +104,25 @@ def render_missing() -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>没有这个页面｜{SITE_NAME}</title>
   <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0c1218">
   <link rel="canonical" href="{html.escape(home)}">
   {_FONTS}
-  <link rel="stylesheet" href="{html.escape(home)}assets/site.css">
+  <link rel="stylesheet" href="{css}">
 </head>
 <body>
   <header class="bar">
     <div class="wrap bar-inner">
-      <a class="brand" href="{html.escape(home)}">{SITE_NAME}</a>
+      <a class="brand" href="{html.escape(home)}"><span class="live" aria-hidden="true"></span>{SITE_NAME}</a>
     </div>
   </header>
   <main>
     <article class="wrap">
-      <h1>没有这个页面</h1>
-      <p class="standfirst">原来的演示页已经撤掉。现在只保留每天的 AI 简报。</p>
-      <p><a href="{html.escape(home)}">回到今天的简报</a></p>
+      <div class="hero">
+        <h1>没有这个页面</h1>
+        <p class="standfirst">原来的演示页已经撤掉。现在只保留每天的 AI 简报。</p>
+        <div class="rail" aria-hidden="true"></div>
+      </div>
+      <p><a class="missing-link" href="{html.escape(home)}">回到今天的简报</a></p>
     </article>
   </main>
 </body>
