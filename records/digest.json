@@ -1,7 +1,7 @@
 {
-  "h1": "10月14日",
+  "h1": "10月15日",
   "year": "2026",
-  "fetched_at": "2026-10-14 13:51",
+  "fetched_at": "2026-10-15 13:35",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "ChunkAct: Action Chunking for Agentic Robotics",
-          "url": "https://arxiv.org/abs/2610.18874v1",
-          "detail": "Agentic robotics places a large language model (LLM) agent in the robot control loop, where it composes perception, motion, and vision-language-action (VLA) too…",
+          "title": "Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion",
+          "url": "https://arxiv.org/abs/2610.20606v1",
+          "detail": "Recent advances in robot learning have driven rapid progress in humanoid control, enabling increasingly agile behaviors in the real world. However, humanoid con…",
           "bits": [
             "cs.RO",
-            "2026-10-13",
-            "Bingxin Xu 等"
+            "2026-10-14",
+            "Huixuan Cheng 等"
           ]
         },
         {
-          "title": "What Matters in Quality-Aware VLA Pretraining: A Benchmark and Empirical Study",
-          "url": "https://arxiv.org/abs/2610.18869v1",
-          "detail": "How should demonstration quality be used during vision-language-action (VLA) pretraining to improve performance after target-task fine-tuning? We compare weight…",
+          "title": "Hierarchical Residual Policy Learning for Real-World Mobile Manipulation with Sparse Human Guidance",
+          "url": "https://arxiv.org/abs/2610.20607v1",
+          "detail": "Mobile Manipulation (MoMa) is a cornerstone of autonomous robotic systems, yet real-world fine-tuning remains a formidable challenge because of high-dimensional…",
           "bits": [
             "cs.RO",
-            "2026-10-13",
-            "Mingxuan Yan 等"
+            "2026-10-14",
+            "Zhefei Gong 等"
           ]
         },
         {
-          "title": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
-          "url": "https://arxiv.org/abs/2610.18868v1",
-          "detail": "Long-horizon agents have drawn growing attention for their ability to work autonomously -- from hours to days -- on economically valuable tasks, a capability es…",
-          "bits": [
-            "cs.CL",
-            "2026-10-13",
-            "Wenbo Hu 等"
-          ]
-        },
-        {
-          "title": "DoubtLess: Training-Free Contrastive Decoding for Efficient Reasoning",
-          "url": "https://arxiv.org/abs/2610.18862v1",
-          "detail": "Reasoning models achieve strong performance through long chains of thought (CoT), but often spend more tokens than needed to solve a problem. Existing ways to s…",
-          "bits": [
-            "cs.CL",
-            "2026-10-13",
-            "Minghao Luo 等"
-          ]
-        },
-        {
-          "title": "AesCode: Aesthetic Code Generation with Decoupled Cross-Modal Rewards",
-          "url": "https://arxiv.org/abs/2610.18860v1",
-          "detail": "Generating information-rich visual artifacts such as slides, posters, and dashboards as code is appealing because the outputs are structured, editable, and veri…",
+          "title": "Co-Evolving Acting and Forecasting for Language Agents",
+          "url": "https://arxiv.org/abs/2610.20597v1",
+          "detail": "Training language agents is bottlenecked by the high cost of long-horizon rollouts, yet standard agentic reinforcement learning (RL) learns only from a terminal…",
           "bits": [
             "cs.AI",
-            "2026-10-13",
-            "Xin Gao 等"
+            "2026-10-14",
+            "Haofei Yu 等"
           ]
         },
         {
-          "title": "Hybrid Reasoning Agents",
-          "url": "https://arxiv.org/abs/2610.18861v1",
-          "detail": "How can we build an agent that thinks beyond human language, yet still acts through it in the external environment? Modern LLM agents still reason and interact…",
+          "title": "Your Transformer Is Secretly Elastic",
+          "url": "https://arxiv.org/abs/2610.20588v1",
+          "detail": "Scaling up transformers has produced models with broad capabilities, deployed across heterogeneous hardware and fluctuating workloads. Yet, model families offer…",
           "bits": [
-            "cs.CL",
-            "2026-10-13",
-            "Jiaru Zou 等"
+            "cs.LG",
+            "2026-10-14",
+            "Walter Simoncini 等"
+          ]
+        },
+        {
+          "title": "Price of Anarchy of First-Price Auctions in Agentic Markets",
+          "url": "https://arxiv.org/abs/2610.20587v1",
+          "detail": "An agentic market is a decentralized serving-time market where AI agents bid to claim each user prompt. An agent's bid is based on its expected value for the pr…",
+          "bits": [
+            "cs.GT",
+            "2026-10-14",
+            "Shubhendu Trivedi 等"
+          ]
+        },
+        {
+          "title": "Continuum Attention",
+          "url": "https://arxiv.org/abs/2610.20586v1",
+          "detail": "We introduce Continuum Attention (CA), a causal Transformer attention operator that replaces discrete key and value lookup with integration over a continuous, p…",
+          "bits": [
+            "cs.LG",
+            "2026-10-14",
+            "Afshin Khadangi"
           ]
         }
       ]
@@ -80,8 +80,8 @@
           "url": "https://huggingface.co/jialinyyzz/humanizer",
           "detail": "",
           "bits": [
-            "1,543 次点赞",
-            "54,039 次下载"
+            "1,649 次点赞",
+            "65,616 次下载"
           ]
         },
         {
@@ -89,8 +89,8 @@
           "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
           "detail": "",
           "bits": [
-            "430 次点赞",
-            "269,829 次下载"
+            "461 次点赞",
+            "311,969 次下载"
           ]
         },
         {
@@ -98,17 +98,17 @@
           "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
           "detail": "",
           "bits": [
-            "201 次点赞",
-            "2,565 次下载"
+            "318 次点赞",
+            "4,067 次下载"
           ]
         },
         {
-          "title": "Aleph-Alpha/Kolibri-1",
-          "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+          "title": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+          "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking",
           "detail": "",
           "bits": [
-            "928 次点赞",
-            "15,335 次下载"
+            "133 次点赞",
+            "1,783 次下载"
           ]
         },
         {
@@ -116,17 +116,17 @@
           "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
           "detail": "",
           "bits": [
-            "2,680 次点赞",
-            "4,686,252 次下载"
+            "2,694 次点赞",
+            "4,786,442 次下载"
           ]
         },
         {
-          "title": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
-          "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
+          "title": "Aleph-Alpha/Kolibri-1",
+          "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
           "detail": "",
           "bits": [
-            "711 次点赞",
-            "58,000 次下载"
+            "933 次点赞",
+            "16,060 次下载"
           ]
         }
       ]
