@@ -1,7 +1,7 @@
 {
-  "h1": "10月15日",
+  "h1": "10月16日",
   "year": "2026",
-  "fetched_at": "2026-10-15 13:35",
+  "fetched_at": "2026-10-16 13:29",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion",
-          "url": "https://arxiv.org/abs/2610.20606v1",
-          "detail": "Recent advances in robot learning have driven rapid progress in humanoid control, enabling increasingly agile behaviors in the real world. However, humanoid con…",
+          "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+          "url": "https://arxiv.org/abs/2610.22372v1",
+          "detail": "Personalization is essential for general-purpose robots to transition into household environments and achieve true practicality. While general robotic manipulat…",
           "bits": [
             "cs.RO",
-            "2026-10-14",
-            "Huixuan Cheng 等"
+            "2026-10-15",
+            "Zhixu Li 等"
           ]
         },
         {
-          "title": "Hierarchical Residual Policy Learning for Real-World Mobile Manipulation with Sparse Human Guidance",
-          "url": "https://arxiv.org/abs/2610.20607v1",
-          "detail": "Mobile Manipulation (MoMa) is a cornerstone of autonomous robotic systems, yet real-world fine-tuning remains a formidable challenge because of high-dimensional…",
+          "title": "Discovering state-of-the-art quantum circuits with large language models",
+          "url": "https://arxiv.org/abs/2610.22367v1",
+          "detail": "Significant efforts are currently being directed toward the implementation of large-scale quantum information processors, but realizing useful quantum advantage…",
+          "bits": [
+            "quant-ph",
+            "2026-10-15",
+            "Andi Gu 等"
+          ]
+        },
+        {
+          "title": "T2-z: Test-Time Optimization of Environment Latents for Robotic World Models",
+          "url": "https://arxiv.org/abs/2610.22364v1",
+          "detail": "Predicting how the world responds to an action requires more than what can be seen: robots must account for environmental factors that are neither directly obse…",
           "bits": [
             "cs.RO",
-            "2026-10-14",
-            "Zhefei Gong 等"
+            "2026-10-15",
+            "Chenyuan Zhou 等"
           ]
         },
         {
-          "title": "Co-Evolving Acting and Forecasting for Language Agents",
-          "url": "https://arxiv.org/abs/2610.20597v1",
-          "detail": "Training language agents is bottlenecked by the high cost of long-horizon rollouts, yet standard agentic reinforcement learning (RL) learns only from a terminal…",
+          "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
+          "url": "https://arxiv.org/abs/2610.22362v1",
+          "detail": "Generative simulation can automate robot environment construction, but physically valid environments are not necessarily useful for training. The challenge is t…",
           "bits": [
-            "cs.AI",
-            "2026-10-14",
-            "Haofei Yu 等"
+            "cs.RO",
+            "2026-10-15",
+            "Tianjiao Yu 等"
           ]
         },
         {
-          "title": "Your Transformer Is Secretly Elastic",
-          "url": "https://arxiv.org/abs/2610.20588v1",
-          "detail": "Scaling up transformers has produced models with broad capabilities, deployed across heterogeneous hardware and fluctuating workloads. Yet, model families offer…",
+          "title": "OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling",
+          "url": "https://arxiv.org/abs/2610.22355v1",
+          "detail": "Generative visual verifiers play a crucial role in advancing multimodal intelligence. To enhance the robustness of visual verifiers in complex multimodal scenar…",
           "bits": [
-            "cs.LG",
-            "2026-10-14",
-            "Walter Simoncini 等"
+            "cs.CL",
+            "2026-10-15",
+            "Bowei Liu 等"
           ]
         },
         {
-          "title": "Price of Anarchy of First-Price Auctions in Agentic Markets",
-          "url": "https://arxiv.org/abs/2610.20587v1",
-          "detail": "An agentic market is a decentralized serving-time market where AI agents bid to claim each user prompt. An agent's bid is based on its expected value for the pr…",
-          "bits": [
-            "cs.GT",
-            "2026-10-14",
-            "Shubhendu Trivedi 等"
-          ]
-        },
-        {
-          "title": "Continuum Attention",
-          "url": "https://arxiv.org/abs/2610.20586v1",
-          "detail": "We introduce Continuum Attention (CA), a causal Transformer attention operator that replaces discrete key and value lookup with integration over a continuous, p…",
+          "title": "Rethinking Routing Exploration in Modern Mixture-of-Experts",
+          "url": "https://arxiv.org/abs/2610.22353v1",
+          "detail": "Mixture-of-experts (MoE) models have become an important approach for scaling model parameters. Modern MoE architectures increasingly combine two design choices…",
           "bits": [
             "cs.LG",
-            "2026-10-14",
-            "Afshin Khadangi"
+            "2026-10-15",
+            "Bingcong Li 等"
           ]
         }
       ]
@@ -80,17 +80,8 @@
           "url": "https://huggingface.co/jialinyyzz/humanizer",
           "detail": "",
           "bits": [
-            "1,649 次点赞",
-            "65,616 次下载"
-          ]
-        },
-        {
-          "title": "ConwayResearch/Underdog-Saluki-27B-1.0",
-          "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
-          "detail": "",
-          "bits": [
-            "461 次点赞",
-            "311,969 次下载"
+            "1,758 次点赞",
+            "75,253 次下载"
           ]
         },
         {
@@ -98,17 +89,26 @@
           "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
           "detail": "",
           "bits": [
-            "318 次点赞",
-            "4,067 次下载"
+            "393 次点赞",
+            "6,286 次下载"
           ]
         },
         {
-          "title": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
-          "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+          "title": "ConwayResearch/Underdog-Saluki-27B-1.0",
+          "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
           "detail": "",
           "bits": [
-            "133 次点赞",
-            "1,783 次下载"
+            "501 次点赞",
+            "344,177 次下载"
+          ]
+        },
+        {
+          "title": "LiquidAI/LFM2.5-24B-A2B-GGUF",
+          "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF",
+          "detail": "",
+          "bits": [
+            "170 次点赞",
+            "45,676 次下载"
           ]
         },
         {
@@ -116,17 +116,17 @@
           "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
           "detail": "",
           "bits": [
-            "2,694 次点赞",
-            "4,786,442 次下载"
+            "2,705 次点赞",
+            "4,849,199 次下载"
           ]
         },
         {
-          "title": "Aleph-Alpha/Kolibri-1",
-          "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+          "title": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+          "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking",
           "detail": "",
           "bits": [
-            "933 次点赞",
-            "16,060 次下载"
+            "154 次点赞",
+            "2,445 次下载"
           ]
         }
       ]
