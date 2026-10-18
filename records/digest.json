@@ -1,7 +1,7 @@
 {
-  "h1": "10月16日",
+  "h1": "10月18日",
   "year": "2026",
-  "fetched_at": "2026-10-16 13:29",
+  "fetched_at": "2026-10-18 13:27",
   "sections": [
     {
       "id": "papers",
@@ -80,8 +80,8 @@
           "url": "https://huggingface.co/jialinyyzz/humanizer",
           "detail": "",
           "bits": [
-            "1,758 次点赞",
-            "75,253 次下载"
+            "1,906 次点赞",
+            "95,870 次下载"
           ]
         },
         {
@@ -89,8 +89,8 @@
           "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
           "detail": "",
           "bits": [
-            "393 次点赞",
-            "6,286 次下载"
+            "449 次点赞",
+            "11,926 次下载"
           ]
         },
         {
@@ -98,8 +98,8 @@
           "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
           "detail": "",
           "bits": [
-            "501 次点赞",
-            "344,177 次下载"
+            "529 次点赞",
+            "394,277 次下载"
           ]
         },
         {
@@ -107,26 +107,26 @@
           "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF",
           "detail": "",
           "bits": [
-            "170 次点赞",
-            "45,676 次下载"
+            "198 次点赞",
+            "82,115 次下载"
           ]
         },
         {
-          "title": "prism-ml/Ternary-Bonsai-2-27B-gguf",
-          "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
+          "title": "tencent/Hy-Memory-30B-A3B",
+          "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B",
           "detail": "",
           "bits": [
-            "2,705 次点赞",
-            "4,849,199 次下载"
+            "165 次点赞",
+            "736 次下载"
           ]
         },
         {
-          "title": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
-          "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+          "title": "reflection/Beam-1.0-501B-A23B",
+          "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
           "detail": "",
           "bits": [
-            "154 次点赞",
-            "2,445 次下载"
+            "133 次点赞",
+            "1,148 次下载"
           ]
         }
       ]
