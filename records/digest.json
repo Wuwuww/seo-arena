@@ -1,7 +1,7 @@
 {
-  "h1": "10月18日",
+  "h1": "10月19日",
   "year": "2026",
-  "fetched_at": "2026-10-18 13:27",
+  "fetched_at": "2026-10-19 13:46",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
-          "url": "https://arxiv.org/abs/2610.22372v1",
-          "detail": "Personalization is essential for general-purpose robots to transition into household environments and achieve true practicality. While general robotic manipulat…",
+          "title": "Rethinking the design space of Vanilla Pixel Diffusion Transformers",
+          "url": "https://arxiv.org/abs/2610.23854v1",
+          "detail": "Pixel-space diffusion models have recently re-emerged as a compelling alternative to latent diffusion, avoiding the lossy latent bottleneck and separately train…",
           "bits": [
-            "cs.RO",
-            "2026-10-15",
-            "Zhixu Li 等"
+            "cs.CV",
+            "2026-10-16",
+            "Soumik Mukhopadhyay 等"
           ]
         },
         {
-          "title": "Discovering state-of-the-art quantum circuits with large language models",
-          "url": "https://arxiv.org/abs/2610.22367v1",
-          "detail": "Significant efforts are currently being directed toward the implementation of large-scale quantum information processors, but realizing useful quantum advantage…",
-          "bits": [
-            "quant-ph",
-            "2026-10-15",
-            "Andi Gu 等"
-          ]
-        },
-        {
-          "title": "T2-z: Test-Time Optimization of Environment Latents for Robotic World Models",
-          "url": "https://arxiv.org/abs/2610.22364v1",
-          "detail": "Predicting how the world responds to an action requires more than what can be seen: robots must account for environmental factors that are neither directly obse…",
-          "bits": [
-            "cs.RO",
-            "2026-10-15",
-            "Chenyuan Zhou 等"
-          ]
-        },
-        {
-          "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
-          "url": "https://arxiv.org/abs/2610.22362v1",
-          "detail": "Generative simulation can automate robot environment construction, but physically valid environments are not necessarily useful for training. The challenge is t…",
-          "bits": [
-            "cs.RO",
-            "2026-10-15",
-            "Tianjiao Yu 等"
-          ]
-        },
-        {
-          "title": "OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling",
-          "url": "https://arxiv.org/abs/2610.22355v1",
-          "detail": "Generative visual verifiers play a crucial role in advancing multimodal intelligence. To enhance the robustness of visual verifiers in complex multimodal scenar…",
+          "title": "Behavioral Couplings: From Formation to Behavioral Emergence in Language Models",
+          "url": "https://arxiv.org/abs/2610.23847v1",
+          "detail": "Fine-tuning large language models (LLMs) can induce behaviors beyond those explicitly targeted. For example, training a model to respond more warmly can make it…",
           "bits": [
             "cs.CL",
-            "2026-10-15",
-            "Bowei Liu 等"
+            "2026-10-16",
+            "Dongyoon Hahm 等"
           ]
         },
         {
-          "title": "Rethinking Routing Exploration in Modern Mixture-of-Experts",
-          "url": "https://arxiv.org/abs/2610.22353v1",
-          "detail": "Mixture-of-experts (MoE) models have become an important approach for scaling model parameters. Modern MoE architectures increasingly combine two design choices…",
+          "title": "AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery",
+          "url": "https://arxiv.org/abs/2610.23845v1",
+          "detail": "Reproducible and analytically robust research findings are essential to scientific progress, but evaluating these properties typically requires costly manual ef…",
           "bits": [
-            "cs.LG",
-            "2026-10-15",
-            "Bingcong Li 等"
+            "cs.AI",
+            "2026-10-16",
+            "Shicheng Liu 等"
+          ]
+        },
+        {
+          "title": "DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses",
+          "url": "https://arxiv.org/abs/2610.23839v1",
+          "detail": "Scientific discovery requires developing worthwhile hypotheses into practical investigations, yet learning from this evolving research process remains challengi…",
+          "bits": [
+            "cs.CL",
+            "2026-10-16",
+            "Jianyuan Zhong 等"
+          ]
+        },
+        {
+          "title": "Beyond the Answer: Student-Conditioned Trace Construction for Reasoning Distillation",
+          "url": "https://arxiv.org/abs/2610.23831v1",
+          "detail": "A reasoning trace can accompany a correct answer without providing effective supervision for a particular student. We study how to construct traces that improve…",
+          "bits": [
+            "cs.CL",
+            "2026-10-16",
+            "Shaoang Li 等"
+          ]
+        },
+        {
+          "title": "Self-Building Labs",
+          "url": "https://arxiv.org/abs/2610.23826v1",
+          "detail": "Self-driving laboratories (SDLs) accelerate scientific discovery by automating experimental execution and optimization. AI agents can increasingly propose new e…",
+          "bits": [
+            "cs.AI",
+            "2026-10-16",
+            "Jiaru Bai 等"
           ]
         }
       ]
@@ -80,8 +80,8 @@
           "url": "https://huggingface.co/jialinyyzz/humanizer",
           "detail": "",
           "bits": [
-            "1,906 次点赞",
-            "95,870 次下载"
+            "1,955 次点赞",
+            "103,709 次下载"
           ]
         },
         {
@@ -89,17 +89,8 @@
           "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
           "detail": "",
           "bits": [
-            "449 次点赞",
-            "11,926 次下载"
-          ]
-        },
-        {
-          "title": "ConwayResearch/Underdog-Saluki-27B-1.0",
-          "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
-          "detail": "",
-          "bits": [
-            "529 次点赞",
-            "394,277 次下载"
+            "476 次点赞",
+            "13,007 次下载"
           ]
         },
         {
@@ -107,8 +98,8 @@
           "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF",
           "detail": "",
           "bits": [
-            "198 次点赞",
-            "82,115 次下载"
+            "206 次点赞",
+            "107,599 次下载"
           ]
         },
         {
@@ -116,8 +107,17 @@
           "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B",
           "detail": "",
           "bits": [
-            "165 次点赞",
-            "736 次下载"
+            "194 次点赞",
+            "1,187 次下载"
+          ]
+        },
+        {
+          "title": "ConwayResearch/Underdog-Saluki-27B-1.0",
+          "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
+          "detail": "",
+          "bits": [
+            "545 次点赞",
+            "410,558 次下载"
           ]
         },
         {
@@ -125,8 +125,8 @@
           "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
           "detail": "",
           "bits": [
-            "133 次点赞",
-            "1,148 次下载"
+            "150 次点赞",
+            "1,591 次下载"
           ]
         }
       ]
