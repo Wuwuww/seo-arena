@@ -1,7 +1,7 @@
 {
-  "h1": "10月20日",
+  "h1": "10月21日",
   "year": "2026",
-  "fetched_at": "2026-10-20 13:41",
+  "fetched_at": "2026-10-21 13:45",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
-          "url": "https://arxiv.org/abs/2610.26860v1",
-          "detail": "Multimodal large language models (MLLMs) have made rapid progress on visual reasoning, yet many tasks require evidence that is difficult to obtain through inter…",
-          "bits": [
-            "cs.CL",
-            "2026-10-19",
-            "Yu Zhou 等"
-          ]
-        },
-        {
-          "title": "Can It Actually Work? Synthesizing Functional CAD Mechanisms",
-          "url": "https://arxiv.org/abs/2610.26861v1",
-          "detail": "While LLM agents can generate visually plausible CAD assemblies, these designs often fail to fulfill their intended physical functions. We study functional CAD…",
+          "title": "Joints, Camera, Action! Co-Generating 3D Motion and Video for Arbitrary Rigs",
+          "url": "https://arxiv.org/abs/2610.28632v1",
+          "detail": "Video generation models can now depict remarkably realistic motion. Yet it is unclear how to use this motion beyond pixels: to animate a specific 3D asset and r…",
           "bits": [
             "cs.CV",
-            "2026-10-19",
-            "Wenqian Zhang 等"
+            "2026-10-20",
+            "Noam Rotstein 等"
           ]
         },
         {
-          "title": "Reinforcement Learning with Visually Attributable On-Policy Self-Distillation",
-          "url": "https://arxiv.org/abs/2610.26856v1",
-          "detail": "Multimodal reinforcement learning with verifiable rewards (RLVR) provides reliable task-level supervision, yet offers limited guidance for localizing errors in…",
+          "title": "GBClaw: An agentic AI framework for atomistic grain boundary research and mechanistic discovery",
+          "url": "https://arxiv.org/abs/2610.28629v1",
+          "detail": "Agentic artificial intelligence (AI) systems hold immense potential for automating complex workflows in materials discovery and design, but extending them to do…",
+          "bits": [
+            "cond-mat.mtrl-sci",
+            "2026-10-20",
+            "Yazhuo Liu 等"
+          ]
+        },
+        {
+          "title": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
+          "url": "https://arxiv.org/abs/2610.28626v1",
+          "detail": "Motivated by the human ability to integrate experience across language, perception, and action, we introduce UniWALM, a unified world-action-language model that…",
+          "bits": [
+            "cs.RO",
+            "2026-10-20",
+            "Rahul Sajnani 等"
+          ]
+        },
+        {
+          "title": "Industrial ReMEmbR: Scaling Spatiotemporal Memory to Robot Fleets",
+          "url": "https://arxiv.org/abs/2610.28624v1",
+          "detail": "Warehouse robot fleets continuously observe operational conditions, but preserving these observations as reusable semantic memory incurs substantial computation…",
+          "bits": [
+            "cs.RO",
+            "2026-10-20",
+            "Jad Yammine 等"
+          ]
+        },
+        {
+          "title": "MindView: Benchmarking Generative Multi-View Spatial Intelligence",
+          "url": "https://arxiv.org/abs/2610.28622v1",
+          "detail": "Spatial intelligence has recently been assessed through generative tasks such as spatially grounded image editing, yet language-guided generation of spatially c…",
           "bits": [
             "cs.CV",
-            "2026-10-19",
-            "Shiao Xie 等"
+            "2026-10-20",
+            "Yanbo Wang 等"
           ]
         },
         {
-          "title": "CoopUQ: Robust Multi-Robot Social Navigation via Uncertainty-Aware Cooperative Forecasting",
-          "url": "https://arxiv.org/abs/2610.26852v1",
-          "detail": "Reinforcement learning enables mobile robots to make fast and scalable navigation decisions in constrained human-shared environments. However, directly extendin…",
+          "title": "Adaptive Multi-Token Prediction: How far should we go?",
+          "url": "https://arxiv.org/abs/2610.28619v1",
+          "detail": "Multi-token prediction (MTP) can accelerate language-model decoding by drafting several tokens and verifying them in a single target-model pass. However, the be…",
           "bits": [
-            "cs.RO",
-            "2026-10-19",
-            "Zehao Wang 等"
-          ]
-        },
-        {
-          "title": "Where is Physical RSI capability from? An Observational Scaling Law of LLM-as-policy",
-          "url": "https://arxiv.org/abs/2610.26848v1",
-          "detail": "In this paper, we systematically investigate the mechanisms, scaling behavior, and generalization of physical Recursive self-improvement. We introduce PhysRSI-e…",
-          "bits": [
-            "cs.RO",
-            "2026-10-19",
-            "Zekai Li 等"
-          ]
-        },
-        {
-          "title": "WeAct: Dynamic Weight Switching as Agent Actions",
-          "url": "https://arxiv.org/abs/2610.26847v1",
-          "detail": "Long-horizon agents must learn heterogeneous capabilities from interleaved trajectories. Updating shared parameters to learn new capabilities can degrade previo…",
-          "bits": [
-            "cs.LG",
-            "2026-10-19",
-            "Rui Shi 等"
+            "cs.AI",
+            "2026-10-20",
+            "Emile Anand 等"
           ]
         }
       ]
@@ -80,8 +80,8 @@
           "url": "https://huggingface.co/jialinyyzz/humanizer",
           "detail": "",
           "bits": [
-            "1,996 次点赞",
-            "109,937 次下载"
+            "2,029 次点赞",
+            "115,341 次下载"
           ]
         },
         {
@@ -89,8 +89,8 @@
           "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
           "detail": "",
           "bits": [
-            "501 次点赞",
-            "14,151 次下载"
+            "527 次点赞",
+            "15,410 次下载"
           ]
         },
         {
@@ -98,17 +98,8 @@
           "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B",
           "detail": "",
           "bits": [
-            "221 次点赞",
-            "1,571 次下载"
-          ]
-        },
-        {
-          "title": "LiquidAI/LFM2.5-24B-A2B-GGUF",
-          "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF",
-          "detail": "",
-          "bits": [
-            "214 次点赞",
-            "120,509 次下载"
+            "254 次点赞",
+            "2,145 次下载"
           ]
         },
         {
@@ -116,17 +107,26 @@
           "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
           "detail": "",
           "bits": [
-            "171 次点赞",
-            "2,097 次下载"
+            "189 次点赞",
+            "2,930 次下载"
           ]
         },
         {
-          "title": "ConwayResearch/Underdog-Saluki-27B-1.0",
-          "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
+          "title": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
           "detail": "",
           "bits": [
-            "571 次点赞",
-            "425,513 次下载"
+            "146 次点赞",
+            "2,480 次下载"
+          ]
+        },
+        {
+          "title": "inclusionAI/Ling-3.1-flash",
+          "url": "https://huggingface.co/inclusionAI/Ling-3.1-flash",
+          "detail": "",
+          "bits": [
+            "142 次点赞",
+            "2,905 次下载"
           ]
         }
       ]
