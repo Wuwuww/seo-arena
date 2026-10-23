@@ -1,7 +1,7 @@
 {
-  "h1": "10月22日",
+  "h1": "10月23日",
   "year": "2026",
-  "fetched_at": "2026-10-22 13:47",
+  "fetched_at": "2026-10-23 13:46",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data",
-          "url": "https://arxiv.org/abs/2610.30132v1",
-          "detail": "Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are lo…",
+          "title": "Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning",
+          "url": "https://arxiv.org/abs/2610.31667v1",
+          "detail": "Test-time scaling has emerged as a key inference strategy for reasoning models, where a model generates a large number of candidate solutions in the hope of fin…",
+          "bits": [
+            "cs.AI",
+            "2026-10-22",
+            "Mahdi Salmani 等"
+          ]
+        },
+        {
+          "title": "Cost-Aware Abstention for LLM-Based IT Ticket Classification",
+          "url": "https://arxiv.org/abs/2610.31657v1",
+          "detail": "Wrong automatic routing of an IT support ticket can cost more than human triage. We evaluate cost-aware abstention as an offline, cost-conditional readiness ass…",
+          "bits": [
+            "cs.LG",
+            "2026-10-22",
+            "Sachin Gupta"
+          ]
+        },
+        {
+          "title": "METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2610.31656v1",
+          "detail": "Meta-reinforcement learning aims to train agents that adapt quickly to unseen tasks from limited interaction, but this requires representing task evidence over…",
+          "bits": [
+            "cs.LG",
+            "2026-10-22",
+            "Ali Najar 等"
+          ]
+        },
+        {
+          "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+          "url": "https://arxiv.org/abs/2610.31650v1",
+          "detail": "Tool-using language model agents rely on environmental facts to decide whether an action is permitted. When a tool response omits a safety-relevant fact, an age…",
+          "bits": [
+            "cs.AI",
+            "2026-10-22",
+            "Qijin Zhang 等"
+          ]
+        },
+        {
+          "title": "Low-Bit N-Gram Embeddings for Language Models",
+          "url": "https://arxiv.org/abs/2610.31646v1",
+          "detail": "Many recent open-weight language models use n-gram embedding tables to improve performance. These tables store learned representations of short token sequences,…",
           "bits": [
             "cs.CL",
-            "2026-10-21",
-            "Zhennan Wan 等"
+            "2026-10-22",
+            "Stephen Chung 等"
           ]
         },
         {
-          "title": "Think Harder Where It Matters: Item-Level Adaptive Recursion for Sequential Recommendation",
-          "url": "https://arxiv.org/abs/2610.30128v1",
-          "detail": "Existing sequential recommenders usually allocate a fixed computational budget to every item in a user's interaction history, regardless of the item's contribut…",
+          "title": "Causal Chain of Thought: Mitigating Attention Leakage via Context Isolation",
+          "url": "https://arxiv.org/abs/2610.31639v1",
+          "detail": "Chain-of-thought (CoT) prompting elicits step-by-step rationales that appear to explain model predictions, but there is no guarantee these steps causally drive…",
           "bits": [
-            "cs.IR",
-            "2026-10-21",
-            "Zhanshuo Cao 等"
-          ]
-        },
-        {
-          "title": "PhysiCalWorld: In-Context Physics Calibration for World Models",
-          "url": "https://arxiv.org/abs/2610.30125v1",
-          "detail": "Existing world models typically perceive a scene through current visual frame or a narrow history window. However, these observations may not reveal the physics…",
-          "bits": [
-            "cs.RO",
-            "2026-10-21",
-            "Yunhao Luo 等"
-          ]
-        },
-        {
-          "title": "Environment Duels: A Microcosm of LLM Co-Evolution",
-          "url": "https://arxiv.org/abs/2610.30116v1",
-          "detail": "Through a tangle of real-world interactions, from synthetic training pipelines to data shared on the open web, frontier LLMs absorb what their predecessors and…",
-          "bits": [
-            "cs.CL",
-            "2026-10-21",
-            "Shibo Jin 等"
-          ]
-        },
-        {
-          "title": "The End of Consensus Research?",
-          "url": "https://arxiv.org/abs/2610.30114v1",
-          "detail": "Consensus is a fundamental problem in distributed computing and at the core of state machine replication (SMR). Despite decades of active human research, discov…",
-          "bits": [
-            "cs.DC",
-            "2026-10-21",
-            "Clément Burgelin 等"
-          ]
-        },
-        {
-          "title": "Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research",
-          "url": "https://arxiv.org/abs/2610.30113v1",
-          "detail": "Quantitative research is an iterative loop: a researcher proposes a market hypothesis, implements it as an executable signal, tests it on historical data, and d…",
-          "bits": [
-            "cs.CL",
-            "2026-10-21",
-            "Houde Qian 等"
+            "cs.LG",
+            "2026-10-22",
+            "Gabriele Dominici 等"
           ]
         }
       ]
@@ -76,21 +76,21 @@
       "note": "Hugging Face 上文本生成模型的趋势列表。",
       "items": [
         {
-          "title": "jialinyyzz/humanizer",
-          "url": "https://huggingface.co/jialinyyzz/humanizer",
-          "detail": "",
-          "bits": [
-            "2,070 次点赞",
-            "120,930 次下载"
-          ]
-        },
-        {
           "title": "RecursiveSI/flint",
           "url": "https://huggingface.co/RecursiveSI/flint",
           "detail": "",
           "bits": [
-            "300 次点赞",
-            "0 次下载"
+            "576 次点赞",
+            "420 次下载"
+          ]
+        },
+        {
+          "title": "jialinyyzz/humanizer",
+          "url": "https://huggingface.co/jialinyyzz/humanizer",
+          "detail": "",
+          "bits": [
+            "2,102 次点赞",
+            "124,773 次下载"
           ]
         },
         {
@@ -98,26 +98,8 @@
           "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B",
           "detail": "",
           "bits": [
-            "277 次点赞",
-            "2,682 次下载"
-          ]
-        },
-        {
-          "title": "LiquidAI/LFM2.5-24B-A2B",
-          "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
-          "detail": "",
-          "bits": [
-            "551 次点赞",
-            "16,939 次下载"
-          ]
-        },
-        {
-          "title": "reflection/Beam-1.0-501B-A23B",
-          "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
-          "detail": "",
-          "bits": [
-            "212 次点赞",
-            "3,555 次下载"
+            "291 次点赞",
+            "2,966 次下载"
           ]
         },
         {
@@ -125,8 +107,26 @@
           "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
           "detail": "",
           "bits": [
-            "192 次点赞",
-            "85 次下载"
+            "269 次点赞",
+            "482 次下载"
+          ]
+        },
+        {
+          "title": "InternScience/Sage-A1.5",
+          "url": "https://huggingface.co/InternScience/Sage-A1.5",
+          "detail": "",
+          "bits": [
+            "233 次点赞",
+            "396 次下载"
+          ]
+        },
+        {
+          "title": "reflection/Beam-1.0-501B-A23B",
+          "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+          "detail": "",
+          "bits": [
+            "231 次点赞",
+            "3,984 次下载"
           ]
         }
       ]
