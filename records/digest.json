@@ -1,7 +1,7 @@
 {
-  "h1": "10月24日",
+  "h1": "10月25日",
   "year": "2026",
-  "fetched_at": "2026-10-24 13:25",
+  "fetched_at": "2026-10-25 13:43",
   "sections": [
     {
       "id": "papers",
@@ -80,8 +80,8 @@
           "url": "https://huggingface.co/RecursiveSI/flint",
           "detail": "",
           "bits": [
-            "696 次点赞",
-            "1,904 次下载"
+            "787 次点赞",
+            "4,795 次下载"
           ]
         },
         {
@@ -89,8 +89,8 @@
           "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
           "detail": "",
           "bits": [
-            "421 次点赞",
-            "1,060 次下载"
+            "459 次点赞",
+            "2,537 次下载"
           ]
         },
         {
@@ -98,17 +98,8 @@
           "url": "https://huggingface.co/InternScience/Sage-A1.5",
           "detail": "",
           "bits": [
-            "254 次点赞",
-            "924 次下载"
-          ]
-        },
-        {
-          "title": "jialinyyzz/humanizer",
-          "url": "https://huggingface.co/jialinyyzz/humanizer",
-          "detail": "",
-          "bits": [
-            "2,119 次点赞",
-            "129,025 次下载"
+            "277 次点赞",
+            "2,033 次下载"
           ]
         },
         {
@@ -116,17 +107,26 @@
           "url": "https://huggingface.co/unsloth/flint-GGUF",
           "detail": "",
           "bits": [
-            "194 次点赞",
-            "33,277 次下载"
+            "230 次点赞",
+            "78,891 次下载"
           ]
         },
         {
-          "title": "tencent/Hy-Memory-30B-A3B",
-          "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B",
+          "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+          "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
           "detail": "",
           "bits": [
-            "304 次点赞",
-            "3,270 次下载"
+            "226 次点赞",
+            "32,479 次下载"
+          ]
+        },
+        {
+          "title": "jialinyyzz/humanizer",
+          "url": "https://huggingface.co/jialinyyzz/humanizer",
+          "detail": "",
+          "bits": [
+            "2,140 次点赞",
+            "138,556 次下载"
           ]
         }
       ]
