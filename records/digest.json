@@ -1,7 +1,7 @@
 {
-  "h1": "10月25日",
+  "h1": "10月26日",
   "year": "2026",
-  "fetched_at": "2026-10-25 13:43",
+  "fetched_at": "2026-10-26 13:47",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning",
-          "url": "https://arxiv.org/abs/2610.31667v1",
-          "detail": "Test-time scaling has emerged as a key inference strategy for reasoning models, where a model generates a large number of candidate solutions in the hope of fin…",
-          "bits": [
-            "cs.AI",
-            "2026-10-22",
-            "Mahdi Salmani 等"
-          ]
-        },
-        {
-          "title": "Cost-Aware Abstention for LLM-Based IT Ticket Classification",
-          "url": "https://arxiv.org/abs/2610.31657v1",
-          "detail": "Wrong automatic routing of an IT support ticket can cost more than human triage. We evaluate cost-aware abstention as an offline, cost-conditional readiness ass…",
-          "bits": [
-            "cs.LG",
-            "2026-10-22",
-            "Sachin Gupta"
-          ]
-        },
-        {
-          "title": "METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning",
-          "url": "https://arxiv.org/abs/2610.31656v1",
-          "detail": "Meta-reinforcement learning aims to train agents that adapt quickly to unseen tasks from limited interaction, but this requires representing task evidence over…",
-          "bits": [
-            "cs.LG",
-            "2026-10-22",
-            "Ali Najar 等"
-          ]
-        },
-        {
-          "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
-          "url": "https://arxiv.org/abs/2610.31650v1",
-          "detail": "Tool-using language model agents rely on environmental facts to decide whether an action is permitted. When a tool response omits a safety-relevant fact, an age…",
-          "bits": [
-            "cs.AI",
-            "2026-10-22",
-            "Qijin Zhang 等"
-          ]
-        },
-        {
-          "title": "Low-Bit N-Gram Embeddings for Language Models",
-          "url": "https://arxiv.org/abs/2610.31646v1",
-          "detail": "Many recent open-weight language models use n-gram embedding tables to improve performance. These tables store learned representations of short token sequences,…",
+          "title": "The Language of Instruction: Genre and Generative AI",
+          "url": "https://arxiv.org/abs/2610.32982v1",
+          "detail": "This article argues that instruction-fine-tuned language models should be understood as implementing a genre, what is proposed as the instructional-conversation…",
           "bits": [
             "cs.CL",
-            "2026-10-22",
-            "Stephen Chung 等"
+            "2026-10-23",
+            "James E. Dobson"
           ]
         },
         {
-          "title": "Causal Chain of Thought: Mitigating Attention Leakage via Context Isolation",
-          "url": "https://arxiv.org/abs/2610.31639v1",
-          "detail": "Chain-of-thought (CoT) prompting elicits step-by-step rationales that appear to explain model predictions, but there is no guarantee these steps causally drive…",
+          "title": "SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning",
+          "url": "https://arxiv.org/abs/2610.32978v1",
+          "detail": "Training generalizable embodied agents requires realistic, varied, and simulation-ready indoor environments. Language-guided methods support semantic planning a…",
+          "bits": [
+            "cs.CV",
+            "2026-10-23",
+            "Yuhan Liu 等"
+          ]
+        },
+        {
+          "title": "RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms",
+          "url": "https://arxiv.org/abs/2610.32971v1",
+          "detail": "Robust reinforcement learning (RL) is critical for reliable real-world deployment, where policies may fail under diverse shifts and disruptions. Existing robust…",
           "bits": [
             "cs.LG",
-            "2026-10-22",
-            "Gabriele Dominici 等"
+            "2026-10-23",
+            "Xi Chen 等"
+          ]
+        },
+        {
+          "title": "DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection",
+          "url": "https://arxiv.org/abs/2610.32969v1",
+          "detail": "Collecting high-quality demonstrations remains a central bottleneck for learning dexterous manipulation. Teleoperation records executable robot actions, but it…",
+          "bits": [
+            "cs.RO",
+            "2026-10-23",
+            "Amber Xie 等"
+          ]
+        },
+        {
+          "title": "Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox",
+          "url": "https://arxiv.org/abs/2610.32955v1",
+          "detail": "Personal email agents decide, for every message, what it is, whether it is urgent, whether to draft a reply, create a task, or ignore it. Their error rate is ra…",
+          "bits": [
+            "cs.CL",
+            "2026-10-23",
+            "Federico Lucca"
+          ]
+        },
+        {
+          "title": "Beyond Discrete Tokens: Preserving Numerical Continuity in Medical Vision-Language Models",
+          "url": "https://arxiv.org/abs/2610.32948v1",
+          "detail": "Objective: To develop a unified vision-language model for prompt-conditioned quantitative ultrasound measurement that addresses the mismatch between continuous…",
+          "bits": [
+            "cs.CV",
+            "2026-10-23",
+            "Dianye Huang 等"
           ]
         }
       ]
@@ -80,8 +80,8 @@
           "url": "https://huggingface.co/RecursiveSI/flint",
           "detail": "",
           "bits": [
-            "787 次点赞",
-            "4,795 次下载"
+            "867 次点赞",
+            "6,444 次下载"
           ]
         },
         {
@@ -89,8 +89,17 @@
           "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
           "detail": "",
           "bits": [
-            "459 次点赞",
-            "2,537 次下载"
+            "536 次点赞",
+            "3,488 次下载"
+          ]
+        },
+        {
+          "title": "Nanbeige/Nanbeige4.3-33B",
+          "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+          "detail": "",
+          "bits": [
+            "432 次点赞",
+            "0 次下载"
           ]
         },
         {
@@ -98,17 +107,8 @@
           "url": "https://huggingface.co/InternScience/Sage-A1.5",
           "detail": "",
           "bits": [
-            "277 次点赞",
-            "2,033 次下载"
-          ]
-        },
-        {
-          "title": "unsloth/flint-GGUF",
-          "url": "https://huggingface.co/unsloth/flint-GGUF",
-          "detail": "",
-          "bits": [
-            "230 次点赞",
-            "78,891 次下载"
+            "293 次点赞",
+            "3,875 次下载"
           ]
         },
         {
@@ -116,17 +116,17 @@
           "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
           "detail": "",
           "bits": [
-            "226 次点赞",
-            "32,479 次下载"
+            "294 次点赞",
+            "412,392 次下载"
           ]
         },
         {
-          "title": "jialinyyzz/humanizer",
-          "url": "https://huggingface.co/jialinyyzz/humanizer",
+          "title": "unsloth/flint-GGUF",
+          "url": "https://huggingface.co/unsloth/flint-GGUF",
           "detail": "",
           "bits": [
-            "2,140 次点赞",
-            "138,556 次下载"
+            "255 次点赞",
+            "103,369 次下载"
           ]
         }
       ]
