@@ -1,7 +1,7 @@
 {
-  "h1": "10月26日",
+  "h1": "10月28日",
   "year": "2026",
-  "fetched_at": "2026-10-26 13:47",
+  "fetched_at": "2026-10-28 14:39",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "The Language of Instruction: Genre and Generative AI",
-          "url": "https://arxiv.org/abs/2610.32982v1",
-          "detail": "This article argues that instruction-fine-tuned language models should be understood as implementing a genre, what is proposed as the instructional-conversation…",
-          "bits": [
-            "cs.CL",
-            "2026-10-23",
-            "James E. Dobson"
-          ]
-        },
-        {
-          "title": "SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning",
-          "url": "https://arxiv.org/abs/2610.32978v1",
-          "detail": "Training generalizable embodied agents requires realistic, varied, and simulation-ready indoor environments. Language-guided methods support semantic planning a…",
+          "title": "Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
+          "url": "https://arxiv.org/abs/2610.37668v1",
+          "detail": "Novel view synthesis and 3D reconstruction have advanced rapidly with radiance fields and splatting, yet their memory and computational demands limit their use…",
           "bits": [
             "cs.CV",
-            "2026-10-23",
-            "Yuhan Liu 等"
+            "2026-10-27",
+            "Prakhar Kaushik 等"
           ]
         },
         {
-          "title": "RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms",
-          "url": "https://arxiv.org/abs/2610.32971v1",
-          "detail": "Robust reinforcement learning (RL) is critical for reliable real-world deployment, where policies may fail under diverse shifts and disruptions. Existing robust…",
-          "bits": [
-            "cs.LG",
-            "2026-10-23",
-            "Xi Chen 等"
-          ]
-        },
-        {
-          "title": "DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection",
-          "url": "https://arxiv.org/abs/2610.32969v1",
-          "detail": "Collecting high-quality demonstrations remains a central bottleneck for learning dexterous manipulation. Teleoperation records executable robot actions, but it…",
+          "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+          "url": "https://arxiv.org/abs/2610.37666v1",
+          "detail": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and co…",
           "bits": [
             "cs.RO",
-            "2026-10-23",
-            "Amber Xie 等"
+            "2026-10-27",
+            "Chaehyun Kim 等"
           ]
         },
         {
-          "title": "Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox",
-          "url": "https://arxiv.org/abs/2610.32955v1",
-          "detail": "Personal email agents decide, for every message, what it is, whether it is urgent, whether to draft a reply, create a task, or ignore it. Their error rate is ra…",
+          "title": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
+          "url": "https://arxiv.org/abs/2610.37657v1",
+          "detail": "We introduce Heads of Security (HoS), a prompt injection defense that enforces instruction-data separation via a small set of learned per-head attention gates.…",
+          "bits": [
+            "cs.LG",
+            "2026-10-27",
+            "Igor Shilov 等"
+          ]
+        },
+        {
+          "title": "Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops",
+          "url": "https://arxiv.org/abs/2610.37656v1",
+          "detail": "Relations compose through the entity they share - Alice is Bob's mother and Bob is Carol's father, so Alice is Carol's grandmother - and the order matters, sinc…",
+          "bits": [
+            "cs.LG",
+            "2026-10-27",
+            "Aakash Sarkar 等"
+          ]
+        },
+        {
+          "title": "KPPax: preprocess differentiable kinetic ODE for machine learning in atmospheric chemistry",
+          "url": "https://arxiv.org/abs/2610.37655v1",
+          "detail": "Atmospheric chemical mechanisms are commonly distributed in the language of the Kinetic PreProcessor (KPP), which generates efficient Fortran or C code but does…",
+          "bits": [
+            "cs.AI",
+            "2026-10-27",
+            "Wenqing Peng 等"
+          ]
+        },
+        {
+          "title": "GEPA-Curator: Curated Learning for Self Improving Agents",
+          "url": "https://arxiv.org/abs/2610.37651v1",
+          "detail": "Large Language Models (LLMs) are increasingly used in multi-turn agentic workloads that require sustained interaction with complex environments. Existing reflec…",
           "bits": [
             "cs.CL",
-            "2026-10-23",
-            "Federico Lucca"
-          ]
-        },
-        {
-          "title": "Beyond Discrete Tokens: Preserving Numerical Continuity in Medical Vision-Language Models",
-          "url": "https://arxiv.org/abs/2610.32948v1",
-          "detail": "Objective: To develop a unified vision-language model for prompt-conditioned quantitative ultrasound measurement that addresses the mismatch between continuous…",
-          "bits": [
-            "cs.CV",
-            "2026-10-23",
-            "Dianye Huang 等"
+            "2026-10-27",
+            "Zack Yu 等"
           ]
         }
       ]
@@ -80,17 +80,8 @@
           "url": "https://huggingface.co/RecursiveSI/flint",
           "detail": "",
           "bits": [
-            "867 次点赞",
-            "6,444 次下载"
-          ]
-        },
-        {
-          "title": "XHToken/Spark-X2.6-4B",
-          "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
-          "detail": "",
-          "bits": [
-            "536 次点赞",
-            "3,488 次下载"
+            "1,085 次点赞",
+            "10,574 次下载"
           ]
         },
         {
@@ -98,17 +89,17 @@
           "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
           "detail": "",
           "bits": [
-            "432 次点赞",
-            "0 次下载"
+            "682 次点赞",
+            "4,785 次下载"
           ]
         },
         {
-          "title": "InternScience/Sage-A1.5",
-          "url": "https://huggingface.co/InternScience/Sage-A1.5",
+          "title": "XHToken/Spark-X2.6-4B",
+          "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
           "detail": "",
           "bits": [
-            "293 次点赞",
-            "3,875 次下载"
+            "814 次点赞",
+            "6,191 次下载"
           ]
         },
         {
@@ -116,8 +107,17 @@
           "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
           "detail": "",
           "bits": [
-            "294 次点赞",
-            "412,392 次下载"
+            "407 次点赞",
+            "1,105,751 次下载"
+          ]
+        },
+        {
+          "title": "InternScience/Sage-A1.5",
+          "url": "https://huggingface.co/InternScience/Sage-A1.5",
+          "detail": "",
+          "bits": [
+            "347 次点赞",
+            "6,613 次下载"
           ]
         },
         {
@@ -125,8 +125,8 @@
           "url": "https://huggingface.co/unsloth/flint-GGUF",
           "detail": "",
           "bits": [
-            "255 次点赞",
-            "103,369 次下载"
+            "299 次点赞",
+            "149,888 次下载"
           ]
         }
       ]
