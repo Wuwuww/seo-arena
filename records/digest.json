@@ -1,7 +1,7 @@
 {
-  "h1": "10月30日",
+  "h1": "10月31日",
   "year": "2026",
-  "fetched_at": "2026-10-30 14:49",
+  "fetched_at": "2026-10-31 14:39",
   "sections": [
     {
       "id": "papers",
@@ -80,8 +80,8 @@
           "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
           "detail": "",
           "bits": [
-            "782 次点赞",
-            "9,655 次下载"
+            "802 次点赞",
+            "12,178 次下载"
           ]
         },
         {
@@ -89,17 +89,8 @@
           "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
           "detail": "",
           "bits": [
-            "499 次点赞",
-            "15,885 次下载"
-          ]
-        },
-        {
-          "title": "RecursiveSI/flint",
-          "url": "https://huggingface.co/RecursiveSI/flint",
-          "detail": "",
-          "bits": [
-            "1,247 次点赞",
-            "16,598 次下载"
+            "579 次点赞",
+            "23,694 次下载"
           ]
         },
         {
@@ -107,8 +98,17 @@
           "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
           "detail": "",
           "bits": [
-            "481 次点赞",
-            "1,578,937 次下载"
+            "509 次点赞",
+            "1,747,945 次下载"
+          ]
+        },
+        {
+          "title": "RecursiveSI/flint",
+          "url": "https://huggingface.co/RecursiveSI/flint",
+          "detail": "",
+          "bits": [
+            "1,263 次点赞",
+            "19,015 次下载"
           ]
         },
         {
@@ -116,8 +116,8 @@
           "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
           "detail": "",
           "bits": [
-            "912 次点赞",
-            "10,163 次下载"
+            "925 次点赞",
+            "12,515 次下载"
           ]
         },
         {
@@ -125,8 +125,8 @@
           "url": "https://huggingface.co/orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
           "detail": "",
           "bits": [
-            "350 次点赞",
-            "28,763 次下载"
+            "379 次点赞",
+            "30,433 次下载"
           ]
         }
       ]
