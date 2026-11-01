@@ -1,7 +1,7 @@
 {
-  "h1": "10月31日",
+  "h1": "11月1日",
   "year": "2026",
-  "fetched_at": "2026-10-31 14:39",
+  "fetched_at": "2026-11-01 15:09",
   "sections": [
     {
       "id": "papers",
@@ -80,8 +80,8 @@
           "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
           "detail": "",
           "bits": [
-            "802 次点赞",
-            "12,178 次下载"
+            "924 次点赞",
+            "13,832 次下载"
           ]
         },
         {
@@ -89,26 +89,8 @@
           "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
           "detail": "",
           "bits": [
-            "579 次点赞",
-            "23,694 次下载"
-          ]
-        },
-        {
-          "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-          "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-          "detail": "",
-          "bits": [
-            "509 次点赞",
-            "1,747,945 次下载"
-          ]
-        },
-        {
-          "title": "RecursiveSI/flint",
-          "url": "https://huggingface.co/RecursiveSI/flint",
-          "detail": "",
-          "bits": [
-            "1,263 次点赞",
-            "19,015 次下载"
+            "645 次点赞",
+            "32,933 次下载"
           ]
         },
         {
@@ -116,17 +98,35 @@
           "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
           "detail": "",
           "bits": [
-            "925 次点赞",
-            "12,515 次下载"
+            "940 次点赞",
+            "14,515 次下载"
           ]
         },
         {
-          "title": "orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
-          "url": "https://huggingface.co/orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
+          "title": "RecursiveSI/flint",
+          "url": "https://huggingface.co/RecursiveSI/flint",
           "detail": "",
           "bits": [
-            "379 次点赞",
-            "30,433 次下载"
+            "1,280 次点赞",
+            "23,079 次下载"
+          ]
+        },
+        {
+          "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+          "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+          "detail": "",
+          "bits": [
+            "520 次点赞",
+            "2,076,624 次下载"
+          ]
+        },
+        {
+          "title": "Diffuspace/Clover-35B-A3B-Preview",
+          "url": "https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview",
+          "detail": "",
+          "bits": [
+            "193 次点赞",
+            "2,021 次下载"
           ]
         }
       ]
