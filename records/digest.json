@@ -1,7 +1,7 @@
 {
-  "h1": "11月1日",
+  "h1": "11月2日",
   "year": "2026",
-  "fetched_at": "2026-11-01 15:09",
+  "fetched_at": "2026-11-02 15:17",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "Elucidating the Design Space of LM Data Attribution",
-          "url": "https://arxiv.org/abs/2610.40655v1",
-          "detail": "Data attribution methods for Language Models (LMs) are typically evaluated using downstream tasks like fact retrieval. However, existing evaluations vary multip…",
+          "title": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
+          "url": "https://arxiv.org/abs/2610.42149v1",
+          "detail": "Unified Multimodal Models (UMMs) achieve remarkable success on diverse multimodal understanding and generation tasks, yet they still struggle to effectively lev…",
+          "bits": [
+            "cs.CV",
+            "2026-10-30",
+            "Byungwoo Jeon 等"
+          ]
+        },
+        {
+          "title": "Flide: Accelerating Decision Inference with Exact State Forking",
+          "url": "https://arxiv.org/abs/2610.42148v1",
+          "detail": "Decision models such as Jev have emerged as a highly promising paradigm for LLM agent systems, providing lightweight and reliable categorical reasoning for rapi…",
           "bits": [
             "cs.CL",
-            "2026-10-29",
-            "Steven Yu 等"
+            "2026-10-30",
+            "Bobo Li 等"
           ]
         },
         {
-          "title": "Rethinking Neural Thickets Without Weight Perturbations",
-          "url": "https://arxiv.org/abs/2610.40649v1",
-          "detail": "The Neural Thickets hypothesis posits that pretrained language models lie in dense neighborhoods of task-specific experts in weight space, which random Gaussian…",
+          "title": "Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention",
+          "url": "https://arxiv.org/abs/2610.42147v1",
+          "detail": "Agentic workflows are increasingly shifting towards long-horizon tasks, such as open-ended scientific work, where models benefit from long context windows. Howe…",
           "bits": [
-            "cs.LG",
-            "2026-10-29",
-            "Nicolas Dufour 等"
+            "cs.AI",
+            "2026-10-30",
+            "Ales Kubicek 等"
           ]
         },
         {
-          "title": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers",
-          "url": "https://arxiv.org/abs/2610.40647v1",
-          "detail": "Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasin…",
+          "title": "Hierarchical World Models with Implicit Dynamics",
+          "url": "https://arxiv.org/abs/2610.42146v1",
+          "detail": "Planning with world models enables test-time adaptation for embodied agents, offering superior generalization over direct policy learning. However, long-horizon…",
           "bits": [
-            "cs.CV",
-            "2026-10-29",
-            "Jiongfan Yang 等"
+            "cs.RO",
+            "2026-10-30",
+            "Gaoyue Zhou 等"
           ]
         },
         {
-          "title": "Luggage re-identification: A study of strategies towards a real-world application",
-          "url": "https://arxiv.org/abs/2610.40643v1",
-          "detail": "Luggage re-identification (ReID) is a critical task in video surveillance for forensics, security or border management (suspicious or abandoned luggage recognit…",
+          "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+          "url": "https://arxiv.org/abs/2610.42141v1",
+          "detail": "Recent work shows that a frozen robot policy performs far better inside an agent harness, where control code decides when to query the policy, consult vision to…",
           "bits": [
-            "cs.CV",
-            "2026-10-29",
-            "Quentin Dhôte 等"
+            "cs.RO",
+            "2026-10-30",
+            "Shengguang Wu 等"
           ]
         },
         {
-          "title": "From extreme weather to agricultural consequences with agentic AI",
-          "url": "https://arxiv.org/abs/2610.40641v1",
-          "detail": "Extreme weather is forecast days ahead, yet its consequences for agriculture remain hard to predict: a forecast says where a storm will strike, not which crops…",
+          "title": "DecisionRank: On-Policy Distillation for Decision-Model Rerankers",
+          "url": "https://arxiv.org/abs/2610.42128v1",
+          "detail": "Decision models target structured tasks by directly predicting choices or scores, avoiding autoregressive decoding latency. However, transferring a generative L…",
           "bits": [
-            "physics.ao-ph",
-            "2026-10-29",
-            "Minghan Yu 等"
-          ]
-        },
-        {
-          "title": "Probing Spatial State Representations in Visual Foundation Models",
-          "url": "https://arxiv.org/abs/2610.40636v1",
-          "detail": "An observer sees only part of the surrounding world, yet must keep track of what lies beyond the current view. Spatial perception therefore involves more than r…",
-          "bits": [
-            "cs.CV",
-            "2026-10-29",
-            "Baiqiao Yin 等"
+            "cs.CL",
+            "2026-10-30",
+            "Yanran Wu 等"
           ]
         }
       ]
@@ -76,21 +76,21 @@
       "note": "Hugging Face 上文本生成模型的趋势列表。",
       "items": [
         {
-          "title": "Nanbeige/Nanbeige4.3-33B",
-          "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
-          "detail": "",
-          "bits": [
-            "924 次点赞",
-            "13,832 次下载"
-          ]
-        },
-        {
           "title": "LiquidAI/LFM3-1.7B",
           "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
           "detail": "",
           "bits": [
-            "645 次点赞",
-            "32,933 次下载"
+            "740 次点赞",
+            "37,568 次下载"
+          ]
+        },
+        {
+          "title": "Nanbeige/Nanbeige4.3-33B",
+          "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+          "detail": "",
+          "bits": [
+            "987 次点赞",
+            "15,795 次下载"
           ]
         },
         {
@@ -98,8 +98,8 @@
           "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
           "detail": "",
           "bits": [
-            "940 次点赞",
-            "14,515 次下载"
+            "959 次点赞",
+            "16,707 次下载"
           ]
         },
         {
@@ -107,17 +107,8 @@
           "url": "https://huggingface.co/RecursiveSI/flint",
           "detail": "",
           "bits": [
-            "1,280 次点赞",
-            "23,079 次下载"
-          ]
-        },
-        {
-          "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-          "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-          "detail": "",
-          "bits": [
-            "520 次点赞",
-            "2,076,624 次下载"
+            "1,303 次点赞",
+            "26,703 次下载"
           ]
         },
         {
@@ -125,8 +116,17 @@
           "url": "https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview",
           "detail": "",
           "bits": [
-            "193 次点赞",
-            "2,021 次下载"
+            "214 次点赞",
+            "2,352 次下载"
+          ]
+        },
+        {
+          "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+          "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+          "detail": "",
+          "bits": [
+            "546 次点赞",
+            "2,294,642 次下载"
           ]
         }
       ]
