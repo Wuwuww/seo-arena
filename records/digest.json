@@ -1,7 +1,7 @@
 {
-  "h1": "11月2日",
+  "h1": "11月3日",
   "year": "2026",
-  "fetched_at": "2026-11-02 15:17",
+  "fetched_at": "2026-11-03 15:36",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
-          "url": "https://arxiv.org/abs/2610.42149v1",
-          "detail": "Unified Multimodal Models (UMMs) achieve remarkable success on diverse multimodal understanding and generation tasks, yet they still struggle to effectively lev…",
+          "title": "Pixel-UMI: Learning Environment-Aware Whole-Body Manipulation from Sensorized Human Demonstrations",
+          "url": "https://arxiv.org/abs/2611.03647v1",
+          "detail": "Sensorized human demonstrations offer scalable data for mobile manipulation, but embodiment differences complicate policy learning. We present Pixel-UMI, a pipe…",
           "bits": [
-            "cs.CV",
-            "2026-10-30",
-            "Byungwoo Jeon 等"
+            "cs.RO",
+            "2026-11-02",
+            "Jason Jingzhou Liu 等"
           ]
         },
         {
-          "title": "Flide: Accelerating Decision Inference with Exact State Forking",
-          "url": "https://arxiv.org/abs/2610.42148v1",
-          "detail": "Decision models such as Jev have emerged as a highly promising paradigm for LLM agent systems, providing lightweight and reliable categorical reasoning for rapi…",
+          "title": "Pixel: A Co-Designed Full-Stack Robot System for Learning General-Purpose Mobile Manipulation",
+          "url": "https://arxiv.org/abs/2611.03648v1",
+          "detail": "General-purpose mobile manipulation requires a combination of capable robot hardware, scalable demonstration collection, expressive whole-body control, and effe…",
           "bits": [
-            "cs.CL",
-            "2026-10-30",
-            "Bobo Li 等"
+            "cs.RO",
+            "2026-11-02",
+            "Tony Tao 等"
           ]
         },
         {
-          "title": "Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention",
-          "url": "https://arxiv.org/abs/2610.42147v1",
-          "detail": "Agentic workflows are increasingly shifting towards long-horizon tasks, such as open-ended scientific work, where models benefit from long context windows. Howe…",
+          "title": "From Natural Language to Exact Cover: A Neuro-Symbolic Approach to Zebra Puzzles",
+          "url": "https://arxiv.org/abs/2611.03641v1",
+          "detail": "Chain-of-Thought (CoT) generation has substantially improved the performance of Large Language Models (LLMs) on complex reasoning tasks, including code generati…",
           "bits": [
             "cs.AI",
-            "2026-10-30",
-            "Ales Kubicek 等"
+            "2026-11-02",
+            "Paulius Skaisgiris 等"
           ]
         },
         {
-          "title": "Hierarchical World Models with Implicit Dynamics",
-          "url": "https://arxiv.org/abs/2610.42146v1",
-          "detail": "Planning with world models enables test-time adaptation for embodied agents, offering superior generalization over direct policy learning. However, long-horizon…",
+          "title": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
+          "url": "https://arxiv.org/abs/2611.03634v1",
+          "detail": "GUI web agents require realistic and interactive environments that remain stable during both evaluation and training. Live website evaluation suffers from chang…",
+          "bits": [
+            "cs.AI",
+            "2026-11-02",
+            "Zhaoyang Wang 等"
+          ]
+        },
+        {
+          "title": "D&A: Decoupling Description and Assessment Enables VLMs as Zero-Shot Robotic Reward Models",
+          "url": "https://arxiv.org/abs/2611.03622v1",
+          "detail": "Vision-Language Models (VLMs) hold promise for zero-shot video task-progress estimation in robot learning, yet existing frameworks frequently suffer from confir…",
           "bits": [
             "cs.RO",
-            "2026-10-30",
-            "Gaoyue Zhou 等"
+            "2026-11-02",
+            "Marius Memmel 等"
           ]
         },
         {
-          "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
-          "url": "https://arxiv.org/abs/2610.42141v1",
-          "detail": "Recent work shows that a frozen robot policy performs far better inside an agent harness, where control code decides when to query the policy, consult vision to…",
+          "title": "Strategist: Evolving Reasoning with Agents",
+          "url": "https://arxiv.org/abs/2611.03618v1",
+          "detail": "A model is only half of an AI agent system. The other half is the inference strategy: the reasoning procedure that turns model calls into a response. Today that…",
           "bits": [
-            "cs.RO",
-            "2026-10-30",
-            "Shengguang Wu 等"
-          ]
-        },
-        {
-          "title": "DecisionRank: On-Policy Distillation for Decision-Model Rerankers",
-          "url": "https://arxiv.org/abs/2610.42128v1",
-          "detail": "Decision models target structured tasks by directly predicting choices or scores, avoiding autoregressive decoding latency. However, transferring a generative L…",
-          "bits": [
-            "cs.CL",
-            "2026-10-30",
-            "Yanran Wu 等"
+            "cs.AI",
+            "2026-11-02",
+            "Taiming Lu 等"
           ]
         }
       ]
@@ -80,8 +80,8 @@
           "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
           "detail": "",
           "bits": [
-            "740 次点赞",
-            "37,568 次下载"
+            "1,243 次点赞",
+            "42,384 次下载"
           ]
         },
         {
@@ -89,26 +89,8 @@
           "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
           "detail": "",
           "bits": [
-            "987 次点赞",
-            "15,795 次下载"
-          ]
-        },
-        {
-          "title": "XHToken/Spark-X2.6-4B",
-          "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
-          "detail": "",
-          "bits": [
-            "959 次点赞",
-            "16,707 次下载"
-          ]
-        },
-        {
-          "title": "RecursiveSI/flint",
-          "url": "https://huggingface.co/RecursiveSI/flint",
-          "detail": "",
-          "bits": [
-            "1,303 次点赞",
-            "26,703 次下载"
+            "1,014 次点赞",
+            "16,976 次下载"
           ]
         },
         {
@@ -116,17 +98,35 @@
           "url": "https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview",
           "detail": "",
           "bits": [
-            "214 次点赞",
-            "2,352 次下载"
+            "231 次点赞",
+            "2,679 次下载"
           ]
         },
         {
-          "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-          "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+          "title": "OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
+          "url": "https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
           "detail": "",
           "bits": [
-            "546 次点赞",
-            "2,294,642 次下载"
+            "224 次点赞",
+            "1,095 次下载"
+          ]
+        },
+        {
+          "title": "AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
+          "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
+          "detail": "",
+          "bits": [
+            "223 次点赞",
+            "30,284 次下载"
+          ]
+        },
+        {
+          "title": "AtomicChat/LFM3-1.7B-Uncensored-GGUF",
+          "url": "https://huggingface.co/AtomicChat/LFM3-1.7B-Uncensored-GGUF",
+          "detail": "",
+          "bits": [
+            "222 次点赞",
+            "59,832 次下载"
           ]
         }
       ]
