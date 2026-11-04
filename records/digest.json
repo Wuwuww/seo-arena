@@ -1,7 +1,7 @@
 {
-  "h1": "11月3日",
+  "h1": "11月4日",
   "year": "2026",
-  "fetched_at": "2026-11-03 15:36",
+  "fetched_at": "2026-11-04 15:16",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "Pixel-UMI: Learning Environment-Aware Whole-Body Manipulation from Sensorized Human Demonstrations",
-          "url": "https://arxiv.org/abs/2611.03647v1",
-          "detail": "Sensorized human demonstrations offer scalable data for mobile manipulation, but embodiment differences complicate policy learning. We present Pixel-UMI, a pipe…",
+          "title": "DreamX: Video Diffusion Model is a Universal Latent Action Learner",
+          "url": "https://arxiv.org/abs/2611.05377v1",
+          "detail": "Learning a universal action representation from video requires modeling dynamics that are consistent across different executions of the same action yet invarian…",
           "bits": [
-            "cs.RO",
-            "2026-11-02",
-            "Jason Jingzhou Liu 等"
+            "cs.CV",
+            "2026-11-03",
+            "Jisoo Kim 等"
           ]
         },
         {
-          "title": "Pixel: A Co-Designed Full-Stack Robot System for Learning General-Purpose Mobile Manipulation",
-          "url": "https://arxiv.org/abs/2611.03648v1",
-          "detail": "General-purpose mobile manipulation requires a combination of capable robot hardware, scalable demonstration collection, expressive whole-body control, and effe…",
+          "title": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
+          "url": "https://arxiv.org/abs/2611.05376v1",
+          "detail": "For a decade, progress in artificial intelligence has been measured by how much a machine can do on its own. Large foundation models now write code and run mult…",
           "bits": [
-            "cs.RO",
-            "2026-11-02",
-            "Tony Tao 等"
+            "cs.CL",
+            "2026-11-03",
+            "Hao Fei"
           ]
         },
         {
-          "title": "From Natural Language to Exact Cover: A Neuro-Symbolic Approach to Zebra Puzzles",
-          "url": "https://arxiv.org/abs/2611.03641v1",
-          "detail": "Chain-of-Thought (CoT) generation has substantially improved the performance of Large Language Models (LLMs) on complex reasoning tasks, including code generati…",
+          "title": "Aligning Language Models with General Preferences: An Empirical Study of Direct Nash Optimization",
+          "url": "https://arxiv.org/abs/2611.05373v1",
+          "detail": "Direct Nash Optimization (DNO) aligns a language model to a general preference function by approximating the Nash equilibrium of a two-player preference game. I…",
+          "bits": [
+            "cs.LG",
+            "2026-11-03",
+            "Austin Tsai 等"
+          ]
+        },
+        {
+          "title": "Suppressing Misaligned Behaviors in Language Models, Durably",
+          "url": "https://arxiv.org/abs/2611.05358v1",
+          "detail": "Undesired model behaviors can emerge or re-emerge at any stage of training. Once observed, how effectively can we suppress them? To study this question, we firs…",
+          "bits": [
+            "cs.CL",
+            "2026-11-03",
+            "Luxi He 等"
+          ]
+        },
+        {
+          "title": "Reading Why: Born-Measured Attention with Exact Word Evidence on Light and Qubits",
+          "url": "https://arxiv.org/abs/2611.05355v1",
+          "detail": "When a language model answers, we can usually only estimate why. We build a transformer in which every step is a Born measurement - attention $|\\langle q|k\\rang…",
+          "bits": [
+            "quant-ph",
+            "2026-11-03",
+            "Teerawat Tongloy 等"
+          ]
+        },
+        {
+          "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+          "url": "https://arxiv.org/abs/2611.05345v1",
+          "detail": "Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under t…",
           "bits": [
             "cs.AI",
-            "2026-11-02",
-            "Paulius Skaisgiris 等"
-          ]
-        },
-        {
-          "title": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
-          "url": "https://arxiv.org/abs/2611.03634v1",
-          "detail": "GUI web agents require realistic and interactive environments that remain stable during both evaluation and training. Live website evaluation suffers from chang…",
-          "bits": [
-            "cs.AI",
-            "2026-11-02",
-            "Zhaoyang Wang 等"
-          ]
-        },
-        {
-          "title": "D&A: Decoupling Description and Assessment Enables VLMs as Zero-Shot Robotic Reward Models",
-          "url": "https://arxiv.org/abs/2611.03622v1",
-          "detail": "Vision-Language Models (VLMs) hold promise for zero-shot video task-progress estimation in robot learning, yet existing frameworks frequently suffer from confir…",
-          "bits": [
-            "cs.RO",
-            "2026-11-02",
-            "Marius Memmel 等"
-          ]
-        },
-        {
-          "title": "Strategist: Evolving Reasoning with Agents",
-          "url": "https://arxiv.org/abs/2611.03618v1",
-          "detail": "A model is only half of an AI agent system. The other half is the inference strategy: the reasoning procedure that turns model calls into a response. Today that…",
-          "bits": [
-            "cs.AI",
-            "2026-11-02",
-            "Taiming Lu 等"
+            "2026-11-03",
+            "Hongyin Luo 等"
           ]
         }
       ]
@@ -80,35 +80,8 @@
           "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
           "detail": "",
           "bits": [
-            "1,243 次点赞",
-            "42,384 次下载"
-          ]
-        },
-        {
-          "title": "Nanbeige/Nanbeige4.3-33B",
-          "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
-          "detail": "",
-          "bits": [
-            "1,014 次点赞",
-            "16,976 次下载"
-          ]
-        },
-        {
-          "title": "Diffuspace/Clover-35B-A3B-Preview",
-          "url": "https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview",
-          "detail": "",
-          "bits": [
-            "231 次点赞",
-            "2,679 次下载"
-          ]
-        },
-        {
-          "title": "OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
-          "url": "https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
-          "detail": "",
-          "bits": [
-            "224 次点赞",
-            "1,095 次下载"
+            "1,425 次点赞",
+            "47,817 次下载"
           ]
         },
         {
@@ -116,8 +89,35 @@
           "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
           "detail": "",
           "bits": [
-            "223 次点赞",
-            "30,284 次下载"
+            "270 次点赞",
+            "53,913 次下载"
+          ]
+        },
+        {
+          "title": "Nanbeige/Nanbeige4.3-33B",
+          "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+          "detail": "",
+          "bits": [
+            "1,028 次点赞",
+            "17,839 次下载"
+          ]
+        },
+        {
+          "title": "OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
+          "url": "https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
+          "detail": "",
+          "bits": [
+            "236 次点赞",
+            "1,643 次下载"
+          ]
+        },
+        {
+          "title": "Diffuspace/Clover-35B-A3B-Preview",
+          "url": "https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview",
+          "detail": "",
+          "bits": [
+            "236 次点赞",
+            "3,017 次下载"
           ]
         },
         {
@@ -125,8 +125,8 @@
           "url": "https://huggingface.co/AtomicChat/LFM3-1.7B-Uncensored-GGUF",
           "detail": "",
           "bits": [
-            "222 次点赞",
-            "59,832 次下载"
+            "240 次点赞",
+            "72,919 次下载"
           ]
         }
       ]
