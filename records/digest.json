@@ -1,7 +1,7 @@
 {
-  "h1": "11月4日",
+  "h1": "11月5日",
   "year": "2026",
-  "fetched_at": "2026-11-04 15:16",
+  "fetched_at": "2026-11-05 15:43",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "DreamX: Video Diffusion Model is a Universal Latent Action Learner",
-          "url": "https://arxiv.org/abs/2611.05377v1",
-          "detail": "Learning a universal action representation from video requires modeling dynamics that are consistent across different executions of the same action yet invarian…",
+          "title": "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
+          "url": "https://arxiv.org/abs/2611.06914v1",
+          "detail": "Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape…",
           "bits": [
-            "cs.CV",
-            "2026-11-03",
-            "Jisoo Kim 等"
+            "cs.MA",
+            "2026-11-04",
+            "Mattia Greiche 等"
           ]
         },
         {
-          "title": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
-          "url": "https://arxiv.org/abs/2611.05376v1",
-          "detail": "For a decade, progress in artificial intelligence has been measured by how much a machine can do on its own. Large foundation models now write code and run mult…",
-          "bits": [
-            "cs.CL",
-            "2026-11-03",
-            "Hao Fei"
-          ]
-        },
-        {
-          "title": "Aligning Language Models with General Preferences: An Empirical Study of Direct Nash Optimization",
-          "url": "https://arxiv.org/abs/2611.05373v1",
-          "detail": "Direct Nash Optimization (DNO) aligns a language model to a general preference function by approximating the Nash equilibrium of a two-player preference game. I…",
-          "bits": [
-            "cs.LG",
-            "2026-11-03",
-            "Austin Tsai 等"
-          ]
-        },
-        {
-          "title": "Suppressing Misaligned Behaviors in Language Models, Durably",
-          "url": "https://arxiv.org/abs/2611.05358v1",
-          "detail": "Undesired model behaviors can emerge or re-emerge at any stage of training. Once observed, how effectively can we suppress them? To study this question, we firs…",
-          "bits": [
-            "cs.CL",
-            "2026-11-03",
-            "Luxi He 等"
-          ]
-        },
-        {
-          "title": "Reading Why: Born-Measured Attention with Exact Word Evidence on Light and Qubits",
-          "url": "https://arxiv.org/abs/2611.05355v1",
-          "detail": "When a language model answers, we can usually only estimate why. We build a transformer in which every step is a Born measurement - attention $|\\langle q|k\\rang…",
-          "bits": [
-            "quant-ph",
-            "2026-11-03",
-            "Teerawat Tongloy 等"
-          ]
-        },
-        {
-          "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
-          "url": "https://arxiv.org/abs/2611.05345v1",
-          "detail": "Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under t…",
+          "title": "BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories",
+          "url": "https://arxiv.org/abs/2611.06911v1",
+          "detail": "Self-Driving Chemical Laboratories (SDCLs) are moving chemical experimentation toward embodied automation, where machines must perceive laboratory scenes, reaso…",
           "bits": [
             "cs.AI",
-            "2026-11-03",
-            "Hongyin Luo 等"
+            "2026-11-04",
+            "Fei Lin 等"
+          ]
+        },
+        {
+          "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+          "url": "https://arxiv.org/abs/2611.06910v1",
+          "detail": "AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated sub-tasks…",
+          "bits": [
+            "cs.AI",
+            "2026-11-04",
+            "Bingran You 等"
+          ]
+        },
+        {
+          "title": "Perceptive Humanoid Motion from Simulation",
+          "url": "https://arxiv.org/abs/2611.06908v1",
+          "detail": "Humanoid robots have the potential to automate a wide range of physical tasks. Progress toward generalist humanoid autonomy, however, remains constrained by a d…",
+          "bits": [
+            "cs.RO",
+            "2026-11-04",
+            "Siyuan Hu 等"
+          ]
+        },
+        {
+          "title": "Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues",
+          "url": "https://arxiv.org/abs/2611.06899v1",
+          "detail": "Knowing that a pedestrian is occluded is useful to a robot even when the detector cannot recover the hidden pixels, but occlusion estimators are normally traine…",
+          "bits": [
+            "cs.CV",
+            "2026-11-04",
+            "Chibueze Praise Onyenweaku 等"
+          ]
+        },
+        {
+          "title": "Dull, Dirty, Dangerous? Working Conditions and the Limits of Occupational AI Exposure",
+          "url": "https://arxiv.org/abs/2611.06888v1",
+          "detail": "Automation is often justified as relief from dull, dirty, and dangerous work. I examine how these conditions relate to occupational AI exposure using 21 O*NET i…",
+          "bits": [
+            "cs.AI",
+            "2026-11-04",
+            "Siyi Yu"
           ]
         }
       ]
@@ -80,8 +80,8 @@
           "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
           "detail": "",
           "bits": [
-            "1,425 次点赞",
-            "47,817 次下载"
+            "1,495 次点赞",
+            "54,959 次下载"
           ]
         },
         {
@@ -89,17 +89,8 @@
           "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
           "detail": "",
           "bits": [
-            "270 次点赞",
-            "53,913 次下载"
-          ]
-        },
-        {
-          "title": "Nanbeige/Nanbeige4.3-33B",
-          "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
-          "detail": "",
-          "bits": [
-            "1,028 次点赞",
-            "17,839 次下载"
+            "300 次点赞",
+            "73,659 次下载"
           ]
         },
         {
@@ -107,8 +98,26 @@
           "url": "https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
           "detail": "",
           "bits": [
-            "236 次点赞",
-            "1,643 次下载"
+            "251 次点赞",
+            "1,979 次下载"
+          ]
+        },
+        {
+          "title": "Nanbeige/Nanbeige4.3-33B",
+          "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+          "detail": "",
+          "bits": [
+            "1,043 次点赞",
+            "18,657 次下载"
+          ]
+        },
+        {
+          "title": "ccore/Qwen3.5-4B-GLB-3D-Coder",
+          "url": "https://huggingface.co/ccore/Qwen3.5-4B-GLB-3D-Coder",
+          "detail": "",
+          "bits": [
+            "153 次点赞",
+            "8,652 次下载"
           ]
         },
         {
@@ -116,17 +125,8 @@
           "url": "https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview",
           "detail": "",
           "bits": [
-            "236 次点赞",
-            "3,017 次下载"
-          ]
-        },
-        {
-          "title": "AtomicChat/LFM3-1.7B-Uncensored-GGUF",
-          "url": "https://huggingface.co/AtomicChat/LFM3-1.7B-Uncensored-GGUF",
-          "detail": "",
-          "bits": [
-            "240 次点赞",
-            "72,919 次下载"
+            "243 次点赞",
+            "3,341 次下载"
           ]
         }
       ]
