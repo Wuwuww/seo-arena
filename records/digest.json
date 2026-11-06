@@ -1,7 +1,7 @@
 {
-  "h1": "11月5日",
+  "h1": "11月6日",
   "year": "2026",
-  "fetched_at": "2026-11-05 15:43",
+  "fetched_at": "2026-11-06 15:41",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
-          "url": "https://arxiv.org/abs/2611.06914v1",
-          "detail": "Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape…",
-          "bits": [
-            "cs.MA",
-            "2026-11-04",
-            "Mattia Greiche 等"
-          ]
-        },
-        {
-          "title": "BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories",
-          "url": "https://arxiv.org/abs/2611.06911v1",
-          "detail": "Self-Driving Chemical Laboratories (SDCLs) are moving chemical experimentation toward embodied automation, where machines must perceive laboratory scenes, reaso…",
+          "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+          "url": "https://arxiv.org/abs/2611.08483v1",
+          "detail": "LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining hi…",
           "bits": [
             "cs.AI",
-            "2026-11-04",
-            "Fei Lin 等"
+            "2026-11-05",
+            "Qile Jiang 等"
           ]
         },
         {
-          "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
-          "url": "https://arxiv.org/abs/2611.06910v1",
-          "detail": "AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated sub-tasks…",
+          "title": "Scientist World: Grow a Research World for AI-Scientists",
+          "url": "https://arxiv.org/abs/2611.08478v1",
+          "detail": "AI-Scientists arrived, but a world for them to grow in did not. Human scientists take theirs for granted $-$ centuries of open problems and shared ideas, waitin…",
           "bits": [
             "cs.AI",
-            "2026-11-04",
-            "Bingran You 等"
+            "2026-11-05",
+            "Taiming Lu 等"
           ]
         },
         {
-          "title": "Perceptive Humanoid Motion from Simulation",
-          "url": "https://arxiv.org/abs/2611.06908v1",
-          "detail": "Humanoid robots have the potential to automate a wide range of physical tasks. Progress toward generalist humanoid autonomy, however, remains constrained by a d…",
+          "title": "XStack: A Benchmark for ML Repo Migration",
+          "url": "https://arxiv.org/abs/2611.08472v1",
+          "detail": "ML code should run where researchers choose, not where it was first written. Today, machine learning code mainly lives in two ecosystems, PyTorch on NVIDIA GPUs…",
           "bits": [
-            "cs.RO",
-            "2026-11-04",
-            "Siyuan Hu 等"
+            "cs.LG",
+            "2026-11-05",
+            "Linrong Cai 等"
           ]
         },
         {
-          "title": "Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues",
-          "url": "https://arxiv.org/abs/2611.06899v1",
-          "detail": "Knowing that a pedestrian is occluded is useful to a robot even when the detector cannot recover the hidden pixels, but occlusion estimators are normally traine…",
+          "title": "Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information",
+          "url": "https://arxiv.org/abs/2611.08469v1",
+          "detail": "Interpretability, AI auditing and assessments of machine consciousness increasingly rest on mechanism-level quantities: functionals of a system's causal transit…",
           "bits": [
-            "cs.CV",
-            "2026-11-04",
-            "Chibueze Praise Onyenweaku 等"
+            "cs.LG",
+            "2026-11-05",
+            "Linqian Wu 等"
           ]
         },
         {
-          "title": "Dull, Dirty, Dangerous? Working Conditions and the Limits of Occupational AI Exposure",
-          "url": "https://arxiv.org/abs/2611.06888v1",
-          "detail": "Automation is often justified as relief from dull, dirty, and dangerous work. I examine how these conditions relate to occupational AI exposure using 21 O*NET i…",
+          "title": "Towards interpreting any residual stream direction by scaling activation inversion",
+          "url": "https://arxiv.org/abs/2611.08465v1",
+          "detail": "To interpret a direction in a language model's residual stream, we can look for text that strongly activates it. But when such text is found by scanning a corpu…",
           "bits": [
-            "cs.AI",
-            "2026-11-04",
-            "Siyi Yu"
+            "cs.LG",
+            "2026-11-05",
+            "Celeste De Schamphelaere 等"
+          ]
+        },
+        {
+          "title": "Unpacking the Compute Efficiency of Strong-to-Weak OPD against GRPO",
+          "url": "https://arxiv.org/abs/2611.08453v1",
+          "detail": "On-policy distillation (OPD) trains a student on its own rollouts under a frozen teacher's per-token supervision. Does this dense signal reduce the training FLO…",
+          "bits": [
+            "cs.LG",
+            "2026-11-05",
+            "Zeyu Leo Liu 等"
           ]
         }
       ]
@@ -76,21 +76,21 @@
       "note": "Hugging Face 上文本生成模型的趋势列表。",
       "items": [
         {
-          "title": "LiquidAI/LFM3-1.7B",
-          "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
-          "detail": "",
-          "bits": [
-            "1,495 次点赞",
-            "54,959 次下载"
-          ]
-        },
-        {
           "title": "AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
           "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
           "detail": "",
           "bits": [
-            "300 次点赞",
-            "73,659 次下载"
+            "328 次点赞",
+            "92,333 次下载"
+          ]
+        },
+        {
+          "title": "LiquidAI/LFM3-1.7B",
+          "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+          "detail": "",
+          "bits": [
+            "1,515 次点赞",
+            "60,681 次下载"
           ]
         },
         {
@@ -98,17 +98,8 @@
           "url": "https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
           "detail": "",
           "bits": [
-            "251 次点赞",
-            "1,979 次下载"
-          ]
-        },
-        {
-          "title": "Nanbeige/Nanbeige4.3-33B",
-          "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
-          "detail": "",
-          "bits": [
-            "1,043 次点赞",
-            "18,657 次下载"
+            "263 次点赞",
+            "2,296 次下载"
           ]
         },
         {
@@ -116,17 +107,26 @@
           "url": "https://huggingface.co/ccore/Qwen3.5-4B-GLB-3D-Coder",
           "detail": "",
           "bits": [
-            "153 次点赞",
-            "8,652 次下载"
+            "193 次点赞",
+            "12,206 次下载"
           ]
         },
         {
-          "title": "Diffuspace/Clover-35B-A3B-Preview",
-          "url": "https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview",
+          "title": "baidu/ERNIE-5.5-Flash-Base",
+          "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base",
           "detail": "",
           "bits": [
-            "243 次点赞",
-            "3,341 次下载"
+            "193 次点赞",
+            "13 次下载"
+          ]
+        },
+        {
+          "title": "webAI-Official/TwIL-8B",
+          "url": "https://huggingface.co/webAI-Official/TwIL-8B",
+          "detail": "",
+          "bits": [
+            "132 次点赞",
+            "3,563 次下载"
           ]
         }
       ]
