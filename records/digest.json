@@ -1,7 +1,7 @@
 {
-  "h1": "11月6日",
+  "h1": "11月7日",
   "year": "2026",
-  "fetched_at": "2026-11-06 15:41",
+  "fetched_at": "2026-11-07 14:50",
   "sections": [
     {
       "id": "papers",
@@ -80,17 +80,8 @@
           "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
           "detail": "",
           "bits": [
-            "328 次点赞",
-            "92,333 次下载"
-          ]
-        },
-        {
-          "title": "LiquidAI/LFM3-1.7B",
-          "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
-          "detail": "",
-          "bits": [
-            "1,515 次点赞",
-            "60,681 次下载"
+            "357 次点赞",
+            "108,162 次下载"
           ]
         },
         {
@@ -98,8 +89,17 @@
           "url": "https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
           "detail": "",
           "bits": [
-            "263 次点赞",
-            "2,296 次下载"
+            "269 次点赞",
+            "2,640 次下载"
+          ]
+        },
+        {
+          "title": "LiquidAI/LFM3-1.7B",
+          "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+          "detail": "",
+          "bits": [
+            "1,530 次点赞",
+            "66,003 次下载"
           ]
         },
         {
@@ -107,17 +107,8 @@
           "url": "https://huggingface.co/ccore/Qwen3.5-4B-GLB-3D-Coder",
           "detail": "",
           "bits": [
-            "193 次点赞",
-            "12,206 次下载"
-          ]
-        },
-        {
-          "title": "baidu/ERNIE-5.5-Flash-Base",
-          "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base",
-          "detail": "",
-          "bits": [
-            "193 次点赞",
-            "13 次下载"
+            "228 次点赞",
+            "20,256 次下载"
           ]
         },
         {
@@ -125,8 +116,17 @@
           "url": "https://huggingface.co/webAI-Official/TwIL-8B",
           "detail": "",
           "bits": [
-            "132 次点赞",
-            "3,563 次下载"
+            "182 次点赞",
+            "8,209 次下载"
+          ]
+        },
+        {
+          "title": "baidu/ERNIE-5.5-Flash-Base",
+          "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base",
+          "detail": "",
+          "bits": [
+            "213 次点赞",
+            "526 次下载"
           ]
         }
       ]
