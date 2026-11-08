@@ -1,7 +1,7 @@
 {
-  "h1": "11月7日",
+  "h1": "11月8日",
   "year": "2026",
-  "fetched_at": "2026-11-07 14:50",
+  "fetched_at": "2026-11-08 14:56",
   "sections": [
     {
       "id": "papers",
@@ -76,30 +76,12 @@
       "note": "Hugging Face 上文本生成模型的趋势列表。",
       "items": [
         {
-          "title": "AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
-          "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
+          "title": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+          "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
           "detail": "",
           "bits": [
-            "357 次点赞",
-            "108,162 次下载"
-          ]
-        },
-        {
-          "title": "OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
-          "url": "https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
-          "detail": "",
-          "bits": [
-            "269 次点赞",
-            "2,640 次下载"
-          ]
-        },
-        {
-          "title": "LiquidAI/LFM3-1.7B",
-          "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
-          "detail": "",
-          "bits": [
-            "1,530 次点赞",
-            "66,003 次下载"
+            "578 次点赞",
+            "1,369 次下载"
           ]
         },
         {
@@ -107,8 +89,26 @@
           "url": "https://huggingface.co/ccore/Qwen3.5-4B-GLB-3D-Coder",
           "detail": "",
           "bits": [
-            "228 次点赞",
-            "20,256 次下载"
+            "264 次点赞",
+            "24,479 次下载"
+          ]
+        },
+        {
+          "title": "AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
+          "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
+          "detail": "",
+          "bits": [
+            "382 次点赞",
+            "117,016 次下载"
+          ]
+        },
+        {
+          "title": "NousResearch/Arete-27B",
+          "url": "https://huggingface.co/NousResearch/Arete-27B",
+          "detail": "",
+          "bits": [
+            "236 次点赞",
+            "989 次下载"
           ]
         },
         {
@@ -116,17 +116,17 @@
           "url": "https://huggingface.co/webAI-Official/TwIL-8B",
           "detail": "",
           "bits": [
-            "182 次点赞",
-            "8,209 次下载"
+            "215 次点赞",
+            "15,324 次下载"
           ]
         },
         {
-          "title": "baidu/ERNIE-5.5-Flash-Base",
-          "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base",
+          "title": "LiquidAI/LFM3-1.7B",
+          "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
           "detail": "",
           "bits": [
-            "213 次点赞",
-            "526 次下载"
+            "1,550 次点赞",
+            "70,034 次下载"
           ]
         }
       ]
