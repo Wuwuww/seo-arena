@@ -1,7 +1,7 @@
 {
-  "h1": "11月9日",
+  "h1": "11月10日",
   "year": "2026",
-  "fetched_at": "2026-11-09 15:40",
+  "fetched_at": "2026-11-10 16:00",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "On Agentic Manipulation Policies",
-          "url": "https://arxiv.org/abs/2611.09892v1",
-          "detail": "Recent work on robot manipulation has focused on specialist policies trained on demonstrations. We show that generalist AI models can control manipulators more…",
-          "bits": [
-            "cs.RO",
-            "2026-11-06",
-            "Chen Chen 等"
-          ]
-        },
-        {
-          "title": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
-          "url": "https://arxiv.org/abs/2611.09891v1",
-          "detail": "Large language models reinvent the wheel all the time. They conflate task-solving with the execution of the solutions, which forces them to solve every problem…",
-          "bits": [
-            "cs.AI",
-            "2026-11-06",
-            "Peter Belcak 等"
-          ]
-        },
-        {
-          "title": "On the Reliability of Majority-Vote Pseudo-Labels in Test-Time Reinforcement Learning",
-          "url": "https://arxiv.org/abs/2611.09872v1",
-          "detail": "Test-time reinforcement learning (TTRL) adapts pretrained language models to unlabeled target-domain data using self-generated pseudo-labels, whose reliability…",
-          "bits": [
-            "cs.AI",
-            "2026-11-06",
-            "Haoyu Wang 等"
-          ]
-        },
-        {
-          "title": "CodeQuant2: Enhanced Outlier Mitigation and Adaptive Clustering for Low-Precision LRMs",
-          "url": "https://arxiv.org/abs/2611.09868v1",
-          "detail": "Large reasoning models (LRMs) improve task performance by generating longer intermediate reasoning traces, but this substantially increases inference costs and…",
+          "title": "HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents",
+          "url": "https://arxiv.org/abs/2611.12872v1",
+          "detail": "As multimodal agents accumulate increasingly long interaction histories, effectively retrieving and utilizing past information becomes critical for long-term in…",
           "bits": [
             "cs.CL",
-            "2026-11-06",
-            "Xingyu Liu 等"
+            "2026-11-09",
+            "Haozhen Zhang 等"
           ]
         },
         {
-          "title": "GRAC: Graph-Based Retrieval-Augmented Captioning for Surgical Scene Description",
-          "url": "https://arxiv.org/abs/2611.09866v1",
-          "detail": "Purpose: Surgical operative reports support procedural documentation, surgical training, performance assessment, and workflow review. However, extracting meanin…",
+          "title": "Shortcuts and Boundaries: Verifiable RL Misalignment and Contextual Safety Learning",
+          "url": "https://arxiv.org/abs/2611.12865v1",
+          "detail": "Reinforcement learning (RL) can improve an agent's task capability while reinforcing behavior that violates contextual execution requirements. We study this rew…",
           "bits": [
-            "cs.CV",
-            "2026-11-06",
-            "Rochak Dhakal 等"
+            "cs.AI",
+            "2026-11-09",
+            "Xinjie Shen"
           ]
         },
         {
-          "title": "Grasp-TAGS: Task-Aware Grasp Selection via Critic Distillation for Prehensile Loco-Manipulation",
-          "url": "https://arxiv.org/abs/2611.09864v1",
-          "detail": "Loco-manipulation, which requires mobile manipulators to coordinate locomotion and manipulation over long horizons, is a key capability for large-object rearran…",
+          "title": "Is Persona Generalization Predictable?",
+          "url": "https://arxiv.org/abs/2611.12864v1",
+          "detail": "Persona generalization occurs when fine-tuning a language model in one domain induces behavioral changes in others -- for example, the broadly unsafe behavior o…",
           "bits": [
-            "cs.RO",
-            "2026-11-06",
-            "Xun Tu 等"
+            "cs.CL",
+            "2026-11-09",
+            "Olina Mukherjee 等"
+          ]
+        },
+        {
+          "title": "WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems",
+          "url": "https://arxiv.org/abs/2611.12856v1",
+          "detail": "Large language model agents are increasingly deployed as multi-agent systems rather than as a standalone model operating within a single context. Recent agent h…",
+          "bits": [
+            "cs.CL",
+            "2026-11-09",
+            "Zheng Jiang 等"
+          ]
+        },
+        {
+          "title": "Programming Prescience: Issues in Human Construction of Forecasting Bots",
+          "url": "https://arxiv.org/abs/2611.12834v1",
+          "detail": "AI models' growing capacity for complex reasoning has made them attractive tools for forecasting, or the systematic prediction of the future based on past and p…",
+          "bits": [
+            "cs.HC",
+            "2026-11-09",
+            "Priya Dhawka 等"
+          ]
+        },
+        {
+          "title": "MaxIM: Maximally Informative Incremental Summarization via Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2611.12825v1",
+          "detail": "AI systems must often maintain bounded memory of unbounded interaction histories. However, optimizing the memory representation, and its updates, for downstream…",
+          "bits": [
+            "cs.AI",
+            "2026-11-09",
+            "Jihwan Jeong 等"
           ]
         }
       ]
@@ -80,8 +80,8 @@
           "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
           "detail": "",
           "bits": [
-            "925 次点赞",
-            "7,088 次下载"
+            "1,087 次点赞",
+            "11,755 次下载"
           ]
         },
         {
@@ -89,8 +89,8 @@
           "url": "https://huggingface.co/NousResearch/Arete-27B",
           "detail": "",
           "bits": [
-            "312 次点赞",
-            "1,747 次下载"
+            "374 次点赞",
+            "2,407 次下载"
           ]
         },
         {
@@ -98,26 +98,17 @@
           "url": "https://huggingface.co/webAI-Official/TwIL-8B",
           "detail": "",
           "bits": [
-            "242 次点赞",
-            "22,737 次下载"
+            "262 次点赞",
+            "34,546 次下载"
           ]
         },
         {
-          "title": "ccore/Qwen3.5-4B-GLB-3D-Coder",
-          "url": "https://huggingface.co/ccore/Qwen3.5-4B-GLB-3D-Coder",
+          "title": "LiquidAI/LFM3-1.7B",
+          "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
           "detail": "",
           "bits": [
-            "276 次点赞",
-            "33,641 次下载"
-          ]
-        },
-        {
-          "title": "AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
-          "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
-          "detail": "",
-          "bits": [
-            "394 次点赞",
-            "130,020 次下载"
+            "1,579 次点赞",
+            "78,750 次下载"
           ]
         },
         {
@@ -125,8 +116,17 @@
           "url": "https://huggingface.co/Scantist/GLM-5.3-SLIM-GGUF",
           "detail": "",
           "bits": [
-            "1,292 次点赞",
-            "4,938 次下载"
+            "1,298 次点赞",
+            "7,884 次下载"
+          ]
+        },
+        {
+          "title": "baidu/ERNIE-5.5-Flash-Base",
+          "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base",
+          "detail": "",
+          "bits": [
+            "246 次点赞",
+            "1,699 次下载"
           ]
         }
       ]
