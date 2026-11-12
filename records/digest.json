@@ -1,7 +1,7 @@
 {
-  "h1": "11月11日",
+  "h1": "11月12日",
   "year": "2026",
-  "fetched_at": "2026-11-11 15:30",
+  "fetched_at": "2026-11-12 15:58",
   "sections": [
     {
       "id": "papers",
@@ -80,8 +80,8 @@
           "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
           "detail": "",
           "bits": [
-            "1,259 次点赞",
-            "14,378 次下载"
+            "4,504 次点赞",
+            "16,693 次下载"
           ]
         },
         {
@@ -89,8 +89,8 @@
           "url": "https://huggingface.co/NousResearch/Arete-27B",
           "detail": "",
           "bits": [
-            "413 次点赞",
-            "3,431 次下载"
+            "445 次点赞",
+            "4,023 次下载"
           ]
         },
         {
@@ -98,26 +98,8 @@
           "url": "https://huggingface.co/webAI-Official/TwIL-8B",
           "detail": "",
           "bits": [
-            "279 次点赞",
-            "43,175 次下载"
-          ]
-        },
-        {
-          "title": "baidu/ERNIE-5.5-Flash-Base",
-          "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base",
-          "detail": "",
-          "bits": [
-            "253 次点赞",
-            "2,111 次下载"
-          ]
-        },
-        {
-          "title": "ccore/Qwen3.5-4B-GLB-3D-Coder",
-          "url": "https://huggingface.co/ccore/Qwen3.5-4B-GLB-3D-Coder",
-          "detail": "",
-          "bits": [
-            "307 次点赞",
-            "43,008 次下载"
+            "316 次点赞",
+            "47,087 次下载"
           ]
         },
         {
@@ -125,8 +107,26 @@
           "url": "https://huggingface.co/tencent/Qwen3.8-27B-DSpine-b16",
           "detail": "",
           "bits": [
-            "170 次点赞",
-            "2,627 次下载"
+            "203 次点赞",
+            "3,241 次下载"
+          ]
+        },
+        {
+          "title": "ccore/Qwen3.5-4B-GLB-3D-Coder",
+          "url": "https://huggingface.co/ccore/Qwen3.5-4B-GLB-3D-Coder",
+          "detail": "",
+          "bits": [
+            "335 次点赞",
+            "46,272 次下载"
+          ]
+        },
+        {
+          "title": "Scantist/GLM-5.3-SLIM-GGUF",
+          "url": "https://huggingface.co/Scantist/GLM-5.3-SLIM-GGUF",
+          "detail": "",
+          "bits": [
+            "1,348 次点赞",
+            "13,488 次下载"
           ]
         }
       ]
