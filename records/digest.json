@@ -1,7 +1,7 @@
 {
-  "h1": "11月12日",
+  "h1": "11月13日",
   "year": "2026",
-  "fetched_at": "2026-11-12 15:58",
+  "fetched_at": "2026-11-13 15:38",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "Medical Image Segmentation: Foundation Model Adaptation versus Task-Specific Training",
-          "url": "https://arxiv.org/abs/2611.14519v1",
-          "detail": "Foundation models pretrained on large natural-image collections are increasingly adapted for medical image segmentation, in the expectation that they will repla…",
+          "title": "ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research",
+          "url": "https://arxiv.org/abs/2611.17332v1",
+          "detail": "Model architecture shapes the scaling behavior, training efficiency, and inference cost of LLMs, making it a central focus of both industry and academia. In ind…",
           "bits": [
-            "cs.CV",
-            "2026-11-10",
-            "Emre Kutlusan 等"
+            "cs.CL",
+            "2026-11-12",
+            "Jie Wang 等"
           ]
         },
         {
-          "title": "Toward Foundation Detection Models via Example-Based Grounding in EM-DETR",
-          "url": "https://arxiv.org/abs/2611.14518v1",
-          "detail": "DeepLearning (DL)-based Computer-Aided Diagnostic (CAD) systems have shown great promise in supporting clinicians, but their performance heavily depends on the…",
+          "title": "AgentSSL: Can MLE Agents Leverage Unlabeled Data?",
+          "url": "https://arxiv.org/abs/2611.17323v1",
+          "detail": "Applying machine learning systems to new domains introduces bottlenecks in both labeled data acquisition and manual pipeline engineering. While recent MLE agent…",
           "bits": [
-            "cs.CV",
-            "2026-11-10",
-            "Sheethal Bhat 等"
+            "cs.AI",
+            "2026-11-12",
+            "Ethan Lin 等"
           ]
         },
         {
-          "title": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
-          "url": "https://arxiv.org/abs/2611.14515v1",
-          "detail": "Reinforcement learning with verifiable rewards (RLVR) produces rich training experience, yet outcome rewards reduce each attempt to a single number and leave mo…",
+          "title": "Learning When Diffusion Language Models Should Regenerate",
+          "url": "https://arxiv.org/abs/2611.17320v1",
+          "detail": "Remasking allows diffusion language models to revisit generated text, but effective correction requires knowing when and what to revise. Our diagnosis on Sudoku…",
+          "bits": [
+            "cs.CL",
+            "2026-11-12",
+            "Minhae Oh 等"
+          ]
+        },
+        {
+          "title": "CoReMem: Cost-Internalizing Memory for Successive Coding Tasks with Prospective Valuation",
+          "url": "https://arxiv.org/abs/2611.17316v1",
+          "detail": "Coding agents tackle successive tasks on an evolving repository, carrying forward edits and writing memory before the next task is known. Selecting memory for u…",
+          "bits": [
+            "cs.AI",
+            "2026-11-12",
+            "Peiwen Li 等"
+          ]
+        },
+        {
+          "title": "Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces",
+          "url": "https://arxiv.org/abs/2611.17314v1",
+          "detail": "Humans can learn rapidly from limited experience, while neural networks typically require extensive training. In this work, we investigate what properties of a…",
           "bits": [
             "cs.LG",
-            "2026-11-10",
-            "Zijian Zhang 等"
+            "2026-11-12",
+            "Abigail L. Tenenbaum 等"
           ]
         },
         {
-          "title": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
-          "url": "https://arxiv.org/abs/2611.14514v1",
-          "detail": "LLM agents are increasingly used for open-ended, data-driven scientific discovery, yet most of them evaluate hypotheses pointwise, testing an empirical claim $h…",
+          "title": "Sketching Language Models for Context Attribution",
+          "url": "https://arxiv.org/abs/2611.17313v1",
+          "detail": "Context attribution asks how removing parts of a prompt changes a language model's output. We study leave-one-out (LOO) attribution for a prompt of $n$ tokens a…",
           "bits": [
-            "cs.AI",
-            "2026-11-10",
-            "Ziang Liu 等"
-          ]
-        },
-        {
-          "title": "Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents",
-          "url": "https://arxiv.org/abs/2611.14493v1",
-          "detail": "Deploying LLM-based analytics agents in enterprise settings requires evaluation frameworks that can reliably detect failures across complex, multi-tool workflow…",
-          "bits": [
-            "cs.AI",
-            "2026-11-10",
-            "Howard Zhang 等"
-          ]
-        },
-        {
-          "title": "ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows",
-          "url": "https://arxiv.org/abs/2611.14492v1",
-          "detail": "Business process automation runs the same Standard Operating Procedure (SOP) again and again on new inputs. Large Language Model (LLM) agents can follow an SOP…",
-          "bits": [
-            "cs.AI",
-            "2026-11-10",
-            "Kaiyuan Hou 等"
+            "cs.DS",
+            "2026-11-12",
+            "Christopher Liaw 等"
           ]
         }
       ]
@@ -80,8 +80,8 @@
           "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
           "detail": "",
           "bits": [
-            "4,504 次点赞",
-            "16,693 次下载"
+            "4,801 次点赞",
+            "18,933 次下载"
           ]
         },
         {
@@ -89,17 +89,8 @@
           "url": "https://huggingface.co/NousResearch/Arete-27B",
           "detail": "",
           "bits": [
-            "445 次点赞",
-            "4,023 次下载"
-          ]
-        },
-        {
-          "title": "webAI-Official/TwIL-8B",
-          "url": "https://huggingface.co/webAI-Official/TwIL-8B",
-          "detail": "",
-          "bits": [
-            "316 次点赞",
-            "47,087 次下载"
+            "503 次点赞",
+            "4,669 次下载"
           ]
         },
         {
@@ -107,17 +98,17 @@
           "url": "https://huggingface.co/tencent/Qwen3.8-27B-DSpine-b16",
           "detail": "",
           "bits": [
-            "203 次点赞",
-            "3,241 次下载"
+            "220 次点赞",
+            "3,738 次下载"
           ]
         },
         {
-          "title": "ccore/Qwen3.5-4B-GLB-3D-Coder",
-          "url": "https://huggingface.co/ccore/Qwen3.5-4B-GLB-3D-Coder",
+          "title": "webAI-Official/TwIL-8B",
+          "url": "https://huggingface.co/webAI-Official/TwIL-8B",
           "detail": "",
           "bits": [
-            "335 次点赞",
-            "46,272 次下载"
+            "330 次点赞",
+            "49,861 次下载"
           ]
         },
         {
@@ -125,8 +116,17 @@
           "url": "https://huggingface.co/Scantist/GLM-5.3-SLIM-GGUF",
           "detail": "",
           "bits": [
-            "1,348 次点赞",
-            "13,488 次下载"
+            "1,360 次点赞",
+            "15,693 次下载"
+          ]
+        },
+        {
+          "title": "AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
+          "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
+          "detail": "",
+          "bits": [
+            "558 次点赞",
+            "165,893 次下载"
           ]
         }
       ]
