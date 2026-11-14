@@ -1,7 +1,7 @@
 {
-  "h1": "11月13日",
+  "h1": "11月14日",
   "year": "2026",
-  "fetched_at": "2026-11-13 15:38",
+  "fetched_at": "2026-11-14 15:22",
   "sections": [
     {
       "id": "papers",
@@ -80,8 +80,8 @@
           "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
           "detail": "",
           "bits": [
-            "4,801 次点赞",
-            "18,933 次下载"
+            "6,770 次点赞",
+            "21,586 次下载"
           ]
         },
         {
@@ -89,8 +89,8 @@
           "url": "https://huggingface.co/NousResearch/Arete-27B",
           "detail": "",
           "bits": [
-            "503 次点赞",
-            "4,669 次下载"
+            "574 次点赞",
+            "5,545 次下载"
           ]
         },
         {
@@ -98,17 +98,26 @@
           "url": "https://huggingface.co/tencent/Qwen3.8-27B-DSpine-b16",
           "detail": "",
           "bits": [
-            "220 次点赞",
-            "3,738 次下载"
+            "258 次点赞",
+            "4,332 次下载"
           ]
         },
         {
-          "title": "webAI-Official/TwIL-8B",
-          "url": "https://huggingface.co/webAI-Official/TwIL-8B",
+          "title": "Edge0/Edge0-145B-NVFP4",
+          "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
           "detail": "",
           "bits": [
-            "330 次点赞",
-            "49,861 次下载"
+            "214 次点赞",
+            "14,134 次下载"
+          ]
+        },
+        {
+          "title": "LiquidAI/LFM3-1.7B",
+          "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+          "detail": "",
+          "bits": [
+            "1,777 次点赞",
+            "96,615 次下载"
           ]
         },
         {
@@ -116,17 +125,8 @@
           "url": "https://huggingface.co/Scantist/GLM-5.3-SLIM-GGUF",
           "detail": "",
           "bits": [
-            "1,360 次点赞",
-            "15,693 次下载"
-          ]
-        },
-        {
-          "title": "AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
-          "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
-          "detail": "",
-          "bits": [
-            "558 次点赞",
-            "165,893 次下载"
+            "1,402 次点赞",
+            "18,066 次下载"
           ]
         }
       ]
