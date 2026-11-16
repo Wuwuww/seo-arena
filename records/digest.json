@@ -1,7 +1,7 @@
 {
-  "h1": "11月15日",
+  "h1": "11月16日",
   "year": "2026",
-  "fetched_at": "2026-11-15 15:35",
+  "fetched_at": "2026-11-16 15:40",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research",
-          "url": "https://arxiv.org/abs/2611.17332v1",
-          "detail": "Model architecture shapes the scaling behavior, training efficiency, and inference cost of LLMs, making it a central focus of both industry and academia. In ind…",
-          "bits": [
-            "cs.CL",
-            "2026-11-12",
-            "Jie Wang 等"
-          ]
-        },
-        {
-          "title": "AgentSSL: Can MLE Agents Leverage Unlabeled Data?",
-          "url": "https://arxiv.org/abs/2611.17323v1",
-          "detail": "Applying machine learning systems to new domains introduces bottlenecks in both labeled data acquisition and manual pipeline engineering. While recent MLE agent…",
-          "bits": [
-            "cs.AI",
-            "2026-11-12",
-            "Ethan Lin 等"
-          ]
-        },
-        {
-          "title": "Learning When Diffusion Language Models Should Regenerate",
-          "url": "https://arxiv.org/abs/2611.17320v1",
-          "detail": "Remasking allows diffusion language models to revisit generated text, but effective correction requires knowing when and what to revise. Our diagnosis on Sudoku…",
-          "bits": [
-            "cs.CL",
-            "2026-11-12",
-            "Minhae Oh 等"
-          ]
-        },
-        {
-          "title": "CoReMem: Cost-Internalizing Memory for Successive Coding Tasks with Prospective Valuation",
-          "url": "https://arxiv.org/abs/2611.17316v1",
-          "detail": "Coding agents tackle successive tasks on an evolving repository, carrying forward edits and writing memory before the next task is known. Selecting memory for u…",
-          "bits": [
-            "cs.AI",
-            "2026-11-12",
-            "Peiwen Li 等"
-          ]
-        },
-        {
-          "title": "Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces",
-          "url": "https://arxiv.org/abs/2611.17314v1",
-          "detail": "Humans can learn rapidly from limited experience, while neural networks typically require extensive training. In this work, we investigate what properties of a…",
+          "title": "WeightBench: Evaluating Language Models as Weight-Space Programmers",
+          "url": "https://arxiv.org/abs/2611.18553v1",
+          "detail": "Recent work shows that large language models (LLMs) can operate directly on the parameters of other neural networks. They can read what a network was trained to…",
           "bits": [
             "cs.LG",
-            "2026-11-12",
-            "Abigail L. Tenenbaum 等"
+            "2026-11-13",
+            "Aayush Marasini 等"
           ]
         },
         {
-          "title": "Sketching Language Models for Context Attribution",
-          "url": "https://arxiv.org/abs/2611.17313v1",
-          "detail": "Context attribution asks how removing parts of a prompt changes a language model's output. We study leave-one-out (LOO) attribution for a prompt of $n$ tokens a…",
+          "title": "Imitation Bootstrapped Multi-Agent Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2611.18543v1",
+          "detail": "Demonstrations are an effective way to accelerate single-agent reinforcement learning (RL), but extending this idea to multi-agent reinforcement learning (MARL)…",
           "bits": [
-            "cs.DS",
-            "2026-11-12",
-            "Christopher Liaw 等"
+            "cs.AI",
+            "2026-11-13",
+            "Tony H. Zhang 等"
+          ]
+        },
+        {
+          "title": "Elliptic Sampling: Optimal Interpolant Schedules for Gaussians and Beyond",
+          "url": "https://arxiv.org/abs/2611.18542v1",
+          "detail": "Generative modeling based on stochastic interpolants requires specifying two key choices: an interpolant schedule bridging the initial and target distributions,…",
+          "bits": [
+            "stat.ML",
+            "2026-11-13",
+            "Cole Becker 等"
+          ]
+        },
+        {
+          "title": "ModHarness-RL: Recasting Harnesses as Learnable and Evolving Programs for Agentic RL",
+          "url": "https://arxiv.org/abs/2611.18533v1",
+          "detail": "Agentic reinforcement learning (RL) increasingly relies on a harness, the scaffold around the model that decides what it sees of its own interaction and what gu…",
+          "bits": [
+            "cs.AI",
+            "2026-11-13",
+            "Zelin He 等"
+          ]
+        },
+        {
+          "title": "Alignment by Socialization: Learning Tradeoffs Under Selection",
+          "url": "https://arxiv.org/abs/2611.18531v1",
+          "detail": "Artificial intelligence (AI) agents are expected to complete tasks while following rules of conduct, but these objectives can conflict. We study how evolutionar…",
+          "bits": [
+            "cs.AI",
+            "2026-11-13",
+            "Thomas Brennan 等"
+          ]
+        },
+        {
+          "title": "WaferTetris: Efficient Freeform Mapping on Wafer-Scale Accelerators",
+          "url": "https://arxiv.org/abs/2611.18527v1",
+          "detail": "Wafer-scale accelerators offer massive compute capacity through hundreds of thousands of processing elements (PEs) interconnected across a single wafer, but rea…",
+          "bits": [
+            "cs.AR",
+            "2026-11-13",
+            "Dayou Du 等"
           ]
         }
       ]
@@ -80,17 +80,8 @@
           "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
           "detail": "",
           "bits": [
-            "7,405 次点赞",
-            "24,470 次下载"
-          ]
-        },
-        {
-          "title": "NousResearch/Arete-27B",
-          "url": "https://huggingface.co/NousResearch/Arete-27B",
-          "detail": "",
-          "bits": [
-            "599 次点赞",
-            "6,191 次下载"
+            "7,596 次点赞",
+            "27,037 次下载"
           ]
         },
         {
@@ -98,17 +89,17 @@
           "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
           "detail": "",
           "bits": [
-            "270 次点赞",
-            "33,819 次下载"
+            "313 次点赞",
+            "41,606 次下载"
           ]
         },
         {
-          "title": "tencent/Qwen3.8-27B-DSpine-b16",
-          "url": "https://huggingface.co/tencent/Qwen3.8-27B-DSpine-b16",
+          "title": "NousResearch/Arete-27B",
+          "url": "https://huggingface.co/NousResearch/Arete-27B",
           "detail": "",
           "bits": [
-            "274 次点赞",
-            "4,873 次下载"
+            "617 次点赞",
+            "7,497 次下载"
           ]
         },
         {
@@ -116,8 +107,8 @@
           "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
           "detail": "",
           "bits": [
-            "1,794 次点赞",
-            "100,643 次下载"
+            "1,803 次点赞",
+            "103,744 次下载"
           ]
         },
         {
@@ -125,8 +116,17 @@
           "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
           "detail": "",
           "bits": [
-            "656 次点赞",
-            "189,334 次下载"
+            "663 次点赞",
+            "200,993 次下载"
+          ]
+        },
+        {
+          "title": "taobao-mnn/MNN-Pocket-0.3B",
+          "url": "https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B",
+          "detail": "",
+          "bits": [
+            "290 次点赞",
+            "4,580 次下载"
           ]
         }
       ]
