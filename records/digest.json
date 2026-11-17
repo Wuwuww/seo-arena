@@ -1,7 +1,7 @@
 {
-  "h1": "11月16日",
+  "h1": "11月17日",
   "year": "2026",
-  "fetched_at": "2026-11-16 15:40",
+  "fetched_at": "2026-11-17 16:49",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "WeightBench: Evaluating Language Models as Weight-Space Programmers",
-          "url": "https://arxiv.org/abs/2611.18553v1",
-          "detail": "Recent work shows that large language models (LLMs) can operate directly on the parameters of other neural networks. They can read what a network was trained to…",
+          "title": "Latent Lattice Language Models",
+          "url": "https://arxiv.org/abs/2611.21608v1",
+          "detail": "Language models typically increase per-token computation through deeper or looped layers and latent reasoning steps, while richer residual connections improve i…",
           "bits": [
             "cs.LG",
-            "2026-11-13",
-            "Aayush Marasini 等"
+            "2026-11-16",
+            "Shivam Duggal 等"
           ]
         },
         {
-          "title": "Imitation Bootstrapped Multi-Agent Reinforcement Learning",
-          "url": "https://arxiv.org/abs/2611.18543v1",
-          "detail": "Demonstrations are an effective way to accelerate single-agent reinforcement learning (RL), but extending this idea to multi-agent reinforcement learning (MARL)…",
+          "title": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
+          "url": "https://arxiv.org/abs/2611.21605v1",
+          "detail": "Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existing agents often answer from common sense…",
           "bits": [
-            "cs.AI",
-            "2026-11-13",
-            "Tony H. Zhang 等"
+            "cs.CV",
+            "2026-11-16",
+            "Huawei Lin 等"
           ]
         },
         {
-          "title": "Elliptic Sampling: Optimal Interpolant Schedules for Gaussians and Beyond",
-          "url": "https://arxiv.org/abs/2611.18542v1",
-          "detail": "Generative modeling based on stochastic interpolants requires specifying two key choices: an interpolant schedule bridging the initial and target distributions,…",
+          "title": "Quantifying the added value of human forecaster discussions for tropical cyclone intensity prediction",
+          "url": "https://arxiv.org/abs/2611.21602v1",
+          "detail": "The National Hurricane Center routinely releases Tropical Cyclone Discussions that offer insights into its tropical cyclone forecasts. This study examines the a…",
           "bits": [
-            "stat.ML",
-            "2026-11-13",
-            "Cole Becker 等"
+            "cs.LG",
+            "2026-11-16",
+            "Ilia Azizi 等"
           ]
         },
         {
-          "title": "ModHarness-RL: Recasting Harnesses as Learnable and Evolving Programs for Agentic RL",
-          "url": "https://arxiv.org/abs/2611.18533v1",
-          "detail": "Agentic reinforcement learning (RL) increasingly relies on a harness, the scaffold around the model that decides what it sees of its own interaction and what gu…",
+          "title": "How VLMs Plan What's Next",
+          "url": "https://arxiv.org/abs/2611.21600v1",
+          "detail": "When a vision-language model describes an image, it names one object at a time and it rarely repeats itself, yet how the model plans this order is far from obvi…",
           "bits": [
-            "cs.AI",
-            "2026-11-13",
-            "Zelin He 等"
+            "cs.CV",
+            "2026-11-16",
+            "Rohit Gandikota 等"
           ]
         },
         {
-          "title": "Alignment by Socialization: Learning Tradeoffs Under Selection",
-          "url": "https://arxiv.org/abs/2611.18531v1",
-          "detail": "Artificial intelligence (AI) agents are expected to complete tasks while following rules of conduct, but these objectives can conflict. We study how evolutionar…",
+          "title": "Mitigating Catastrophic Forgetting with Physics-Indexed Specialist Memory: the Evolutionary Neuroplastic Agent",
+          "url": "https://arxiv.org/abs/2611.21598v1",
+          "detail": "Continual reinforcement learning requires adaptation to changing conditions while preserving performance under previously encountered dynamics. It was investiga…",
           "bits": [
-            "cs.AI",
-            "2026-11-13",
-            "Thomas Brennan 等"
+            "cs.LG",
+            "2026-11-16",
+            "Blas Eugenio Vicco Zarate 等"
           ]
         },
         {
-          "title": "WaferTetris: Efficient Freeform Mapping on Wafer-Scale Accelerators",
-          "url": "https://arxiv.org/abs/2611.18527v1",
-          "detail": "Wafer-scale accelerators offer massive compute capacity through hundreds of thousands of processing elements (PEs) interconnected across a single wafer, but rea…",
+          "title": "Beyond Job Titles: Interpreting Early-Career Job Advertisements with Sparse Autoencoders and Semantic Clustering",
+          "url": "https://arxiv.org/abs/2611.21586v1",
+          "detail": "Job titles and job descriptions alone provide limited insight into how technical roles differ in a changing job market. To assess how such roles differ in their…",
           "bits": [
-            "cs.AR",
-            "2026-11-13",
-            "Dayou Du 等"
+            "cs.CL",
+            "2026-11-16",
+            "Yisong Cao 等"
           ]
         }
       ]
@@ -80,17 +80,8 @@
           "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
           "detail": "",
           "bits": [
-            "7,596 次点赞",
-            "27,037 次下载"
-          ]
-        },
-        {
-          "title": "Edge0/Edge0-145B-NVFP4",
-          "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
-          "detail": "",
-          "bits": [
-            "313 次点赞",
-            "41,606 次下载"
+            "9,387 次点赞",
+            "29,567 次下载"
           ]
         },
         {
@@ -98,17 +89,17 @@
           "url": "https://huggingface.co/NousResearch/Arete-27B",
           "detail": "",
           "bits": [
-            "617 次点赞",
-            "7,497 次下载"
+            "676 次点赞",
+            "9,187 次下载"
           ]
         },
         {
-          "title": "LiquidAI/LFM3-1.7B",
-          "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+          "title": "Edge0/Edge0-145B-NVFP4",
+          "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
           "detail": "",
           "bits": [
-            "1,803 次点赞",
-            "103,744 次下载"
+            "465 次点赞",
+            "55,335 次下载"
           ]
         },
         {
@@ -116,8 +107,17 @@
           "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
           "detail": "",
           "bits": [
-            "663 次点赞",
-            "200,993 次下载"
+            "723 次点赞",
+            "207,466 次下载"
+          ]
+        },
+        {
+          "title": "LiquidAI/LFM3-1.7B",
+          "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+          "detail": "",
+          "bits": [
+            "1,898 次点赞",
+            "106,961 次下载"
           ]
         },
         {
@@ -125,8 +125,8 @@
           "url": "https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B",
           "detail": "",
           "bits": [
-            "290 次点赞",
-            "4,580 次下载"
+            "364 次点赞",
+            "5,009 次下载"
           ]
         }
       ]
