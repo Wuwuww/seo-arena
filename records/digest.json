@@ -1,7 +1,7 @@
 {
-  "h1": "11月17日",
+  "h1": "11月18日",
   "year": "2026",
-  "fetched_at": "2026-11-17 16:49",
+  "fetched_at": "2026-11-18 16:14",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "Latent Lattice Language Models",
-          "url": "https://arxiv.org/abs/2611.21608v1",
-          "detail": "Language models typically increase per-token computation through deeper or looped layers and latent reasoning steps, while richer residual connections improve i…",
+          "title": "Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching",
+          "url": "https://arxiv.org/abs/2611.23229v1",
+          "detail": "Collecting large-scale, diverse, and high-quality post-training datasets for autoregressive language models is challenging. Consequently, Supervised Fine-Tuning…",
           "bits": [
             "cs.LG",
-            "2026-11-16",
-            "Shivam Duggal 等"
+            "2026-11-17",
+            "Giannis Daras 等"
           ]
         },
         {
-          "title": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
-          "url": "https://arxiv.org/abs/2611.21605v1",
-          "detail": "Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existing agents often answer from common sense…",
+          "title": "StringQFT: A Multiuse Textbook Resource for AI-Assisted Theoretical Physics",
+          "url": "https://arxiv.org/abs/2611.23225v1",
+          "detail": "We present StringQFT as a textbook collection for string constructions of quantum field theory and as infrastructure for AI-assisted theoretical physics. The co…",
           "bits": [
-            "cs.CV",
-            "2026-11-16",
-            "Huawei Lin 等"
+            "hep-th",
+            "2026-11-17",
+            "Xingyang Yu"
           ]
         },
         {
-          "title": "Quantifying the added value of human forecaster discussions for tropical cyclone intensity prediction",
-          "url": "https://arxiv.org/abs/2611.21602v1",
-          "detail": "The National Hurricane Center routinely releases Tropical Cyclone Discussions that offer insights into its tropical cyclone forecasts. This study examines the a…",
-          "bits": [
-            "cs.LG",
-            "2026-11-16",
-            "Ilia Azizi 等"
-          ]
-        },
-        {
-          "title": "How VLMs Plan What's Next",
-          "url": "https://arxiv.org/abs/2611.21600v1",
-          "detail": "When a vision-language model describes an image, it names one object at a time and it rarely repeats itself, yet how the model plans this order is far from obvi…",
-          "bits": [
-            "cs.CV",
-            "2026-11-16",
-            "Rohit Gandikota 等"
-          ]
-        },
-        {
-          "title": "Mitigating Catastrophic Forgetting with Physics-Indexed Specialist Memory: the Evolutionary Neuroplastic Agent",
-          "url": "https://arxiv.org/abs/2611.21598v1",
-          "detail": "Continual reinforcement learning requires adaptation to changing conditions while preserving performance under previously encountered dynamics. It was investiga…",
+          "title": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
+          "url": "https://arxiv.org/abs/2611.23219v1",
+          "detail": "LLM agents increasingly drive their own learning. Self-improvement methods delegate various components of model optimization to the models themselves. As models…",
           "bits": [
             "cs.LG",
-            "2026-11-16",
-            "Blas Eugenio Vicco Zarate 等"
+            "2026-11-17",
+            "Shobhita Sundaram 等"
           ]
         },
         {
-          "title": "Beyond Job Titles: Interpreting Early-Career Job Advertisements with Sparse Autoencoders and Semantic Clustering",
-          "url": "https://arxiv.org/abs/2611.21586v1",
-          "detail": "Job titles and job descriptions alone provide limited insight into how technical roles differ in a changing job market. To assess how such roles differ in their…",
+          "title": "What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution",
+          "url": "https://arxiv.org/abs/2611.23218v1",
+          "detail": "Methods that localise social bias in large language models to individual attention heads and remove it by ablation are validated by their effect on a fairness m…",
           "bits": [
             "cs.CL",
-            "2026-11-16",
-            "Yisong Cao 等"
+            "2026-11-17",
+            "S. M Seefat Alam"
+          ]
+        },
+        {
+          "title": "Higher-Scoring Coding Models Did Not Get More Work Done",
+          "url": "https://arxiv.org/abs/2611.23216v1",
+          "detail": "New coding models advertise themselves on score improvements of coding benchmarks. Yet no study has tested if a model that scores higher on these benchmarks get…",
+          "bits": [
+            "cs.SE",
+            "2026-11-17",
+            "Yining Hua"
+          ]
+        },
+        {
+          "title": "Reading Scene States: Uncovering Safety Failures in Vision-Language Models",
+          "url": "https://arxiv.org/abs/2611.23206v1",
+          "detail": "Vision-language models (VLMs) can provide harmful assistance by interpreting visual events, even without an explicit request for the underlying harmful objectiv…",
+          "bits": [
+            "cs.CV",
+            "2026-11-17",
+            "Tongxi Wu 等"
           ]
         }
       ]
@@ -76,21 +76,12 @@
       "note": "Hugging Face 上文本生成模型的趋势列表。",
       "items": [
         {
-          "title": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-          "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+          "title": "maxwell-model/Maxwell-V1-Flash",
+          "url": "https://huggingface.co/maxwell-model/Maxwell-V1-Flash",
           "detail": "",
           "bits": [
-            "9,387 次点赞",
-            "29,567 次下载"
-          ]
-        },
-        {
-          "title": "NousResearch/Arete-27B",
-          "url": "https://huggingface.co/NousResearch/Arete-27B",
-          "detail": "",
-          "bits": [
-            "676 次点赞",
-            "9,187 次下载"
+            "195 次点赞",
+            "287 次下载"
           ]
         },
         {
@@ -98,35 +89,44 @@
           "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
           "detail": "",
           "bits": [
-            "465 次点赞",
-            "55,335 次下载"
+            "512 次点赞",
+            "61,591 次下载"
           ]
         },
         {
-          "title": "AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
-          "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
+          "title": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic",
+          "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic",
           "detail": "",
           "bits": [
-            "723 次点赞",
-            "207,466 次下载"
+            "253 次点赞",
+            "21,167 次下载"
           ]
         },
         {
-          "title": "LiquidAI/LFM3-1.7B",
-          "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+          "title": "NousResearch/Arete-27B",
+          "url": "https://huggingface.co/NousResearch/Arete-27B",
           "detail": "",
           "bits": [
-            "1,898 次点赞",
-            "106,961 次下载"
+            "704 次点赞",
+            "10,670 次下载"
           ]
         },
         {
-          "title": "taobao-mnn/MNN-Pocket-0.3B",
-          "url": "https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B",
+          "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
           "detail": "",
           "bits": [
-            "364 次点赞",
-            "5,009 次下载"
+            "510 次点赞",
+            "157,536 次下载"
+          ]
+        },
+        {
+          "title": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+          "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+          "detail": "",
+          "bits": [
+            "9,513 次点赞",
+            "32,356 次下载"
           ]
         }
       ]
