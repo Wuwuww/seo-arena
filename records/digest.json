@@ -1,7 +1,7 @@
 {
-  "h1": "11月18日",
+  "h1": "11月19日",
   "year": "2026",
-  "fetched_at": "2026-11-18 16:14",
+  "fetched_at": "2026-11-19 16:25",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching",
-          "url": "https://arxiv.org/abs/2611.23229v1",
-          "detail": "Collecting large-scale, diverse, and high-quality post-training datasets for autoregressive language models is challenging. Consequently, Supervised Fine-Tuning…",
-          "bits": [
-            "cs.LG",
-            "2026-11-17",
-            "Giannis Daras 等"
-          ]
-        },
-        {
-          "title": "StringQFT: A Multiuse Textbook Resource for AI-Assisted Theoretical Physics",
-          "url": "https://arxiv.org/abs/2611.23225v1",
-          "detail": "We present StringQFT as a textbook collection for string constructions of quantum field theory and as infrastructure for AI-assisted theoretical physics. The co…",
-          "bits": [
-            "hep-th",
-            "2026-11-17",
-            "Xingyang Yu"
-          ]
-        },
-        {
-          "title": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
-          "url": "https://arxiv.org/abs/2611.23219v1",
-          "detail": "LLM agents increasingly drive their own learning. Self-improvement methods delegate various components of model optimization to the models themselves. As models…",
-          "bits": [
-            "cs.LG",
-            "2026-11-17",
-            "Shobhita Sundaram 等"
-          ]
-        },
-        {
-          "title": "What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution",
-          "url": "https://arxiv.org/abs/2611.23218v1",
-          "detail": "Methods that localise social bias in large language models to individual attention heads and remove it by ablation are validated by their effect on a fairness m…",
+          "title": "Jailbreak Detection on Large Language Models via Contrastive Prototype Structures",
+          "url": "https://arxiv.org/abs/2611.24936v1",
+          "detail": "Jailbreak attempts and harmful prompts remain a challenge for the safe deployment of large language models. We study whether contrastively learned representatio…",
           "bits": [
             "cs.CL",
-            "2026-11-17",
-            "S. M Seefat Alam"
+            "2026-11-18",
+            "Yan Qiu 等"
           ]
         },
         {
-          "title": "Higher-Scoring Coding Models Did Not Get More Work Done",
-          "url": "https://arxiv.org/abs/2611.23216v1",
-          "detail": "New coding models advertise themselves on score improvements of coding benchmarks. Yet no study has tested if a model that scores higher on these benchmarks get…",
+          "title": "Knowing What You Know: A Trait Theory of Reviewer Value in Human-AI Cognitive Systems",
+          "url": "https://arxiv.org/abs/2611.24932v1",
+          "detail": "When a capable model and a human reviewer cooperate on the same decision, which human still adds value? We argue this is a question about a single cognitive tra…",
+          "bits": [
+            "cs.AI",
+            "2026-11-18",
+            "Priyanka Sinha 等"
+          ]
+        },
+        {
+          "title": "Mapping the AI Supply Chain: Dependencies, Vulnerabilities, and Market Concentration in the AI Ecosystem",
+          "url": "https://arxiv.org/abs/2611.24927v1",
+          "detail": "AI systems are built across many organizations that contribute models, data, compute, capital, talent, and other assets. While the layers of the AI stack are re…",
+          "bits": [
+            "cs.CY",
+            "2026-11-18",
+            "Sarah H. Cen 等"
+          ]
+        },
+        {
+          "title": "Agentic Harness Engineering Beta: Requirement-Centered Evolution of Agent Harnesses",
+          "url": "https://arxiv.org/abs/2611.24924v1",
+          "detail": "Real-world harness engineering is driven by explicit and implicit user requirements, which guide development and validation. However, existing harness evolution…",
           "bits": [
             "cs.SE",
-            "2026-11-17",
-            "Yining Hua"
+            "2026-11-18",
+            "Jiahang Lin 等"
           ]
         },
         {
-          "title": "Reading Scene States: Uncovering Safety Failures in Vision-Language Models",
-          "url": "https://arxiv.org/abs/2611.23206v1",
-          "detail": "Vision-language models (VLMs) can provide harmful assistance by interpreting visual events, even without an explicit request for the underlying harmful objectiv…",
+          "title": "Who are you? The Personal Imitation Game",
+          "url": "https://arxiv.org/abs/2611.24888v1",
+          "detail": "Large Language Models (LLMs) now perform strongly on Alan Turing's 1950 Imitation Game, so we propose a harder challenge, the Personal Imitation Game, which ask…",
           "bits": [
-            "cs.CV",
-            "2026-11-17",
-            "Tongxi Wu 等"
+            "cs.HC",
+            "2026-11-18",
+            "Muhammad Rizky Wellyanto 等"
+          ]
+        },
+        {
+          "title": "Ground, Iterate, Trace: Decomposing AI Research Ideation",
+          "url": "https://arxiv.org/abs/2611.24887v1",
+          "detail": "Large language models have been widely used to generate plausible research ideas, yet it remains unclear what makes automated ideation effective and how generat…",
+          "bits": [
+            "cs.CL",
+            "2026-11-18",
+            "Samson Yu 等"
           ]
         }
       ]
@@ -80,8 +80,8 @@
           "url": "https://huggingface.co/maxwell-model/Maxwell-V1-Flash",
           "detail": "",
           "bits": [
-            "195 次点赞",
-            "287 次下载"
+            "243 次点赞",
+            "1,052 次下载"
           ]
         },
         {
@@ -89,26 +89,8 @@
           "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
           "detail": "",
           "bits": [
-            "512 次点赞",
-            "61,591 次下载"
-          ]
-        },
-        {
-          "title": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic",
-          "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic",
-          "detail": "",
-          "bits": [
-            "253 次点赞",
-            "21,167 次下载"
-          ]
-        },
-        {
-          "title": "NousResearch/Arete-27B",
-          "url": "https://huggingface.co/NousResearch/Arete-27B",
-          "detail": "",
-          "bits": [
-            "704 次点赞",
-            "10,670 次下载"
+            "533 次点赞",
+            "73,309 次下载"
           ]
         },
         {
@@ -116,8 +98,26 @@
           "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
           "detail": "",
           "bits": [
-            "510 次点赞",
-            "157,536 次下载"
+            "567 次点赞",
+            "163,423 次下载"
+          ]
+        },
+        {
+          "title": "NousResearch/Arete-27B",
+          "url": "https://huggingface.co/NousResearch/Arete-27B",
+          "detail": "",
+          "bits": [
+            "729 次点赞",
+            "12,167 次下载"
+          ]
+        },
+        {
+          "title": "nvidia/Qwen3.5-4B-Qwen3.8-27B-Draft",
+          "url": "https://huggingface.co/nvidia/Qwen3.5-4B-Qwen3.8-27B-Draft",
+          "detail": "",
+          "bits": [
+            "99 次点赞",
+            "290 次下载"
           ]
         },
         {
@@ -125,8 +125,8 @@
           "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
           "detail": "",
           "bits": [
-            "9,513 次点赞",
-            "32,356 次下载"
+            "9,617 次点赞",
+            "35,450 次下载"
           ]
         }
       ]
