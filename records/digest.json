@@ -1,7 +1,7 @@
 {
-  "h1": "11月19日",
+  "h1": "11月20日",
   "year": "2026",
-  "fetched_at": "2026-11-19 16:25",
+  "fetched_at": "2026-11-20 16:06",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "Jailbreak Detection on Large Language Models via Contrastive Prototype Structures",
-          "url": "https://arxiv.org/abs/2611.24936v1",
-          "detail": "Jailbreak attempts and harmful prompts remain a challenge for the safe deployment of large language models. We study whether contrastively learned representatio…",
-          "bits": [
-            "cs.CL",
-            "2026-11-18",
-            "Yan Qiu 等"
-          ]
-        },
-        {
-          "title": "Knowing What You Know: A Trait Theory of Reviewer Value in Human-AI Cognitive Systems",
-          "url": "https://arxiv.org/abs/2611.24932v1",
-          "detail": "When a capable model and a human reviewer cooperate on the same decision, which human still adds value? We argue this is a question about a single cognitive tra…",
+          "title": "PlayCraft: Designing Engaging Games from Agent Play Experience",
+          "url": "https://arxiv.org/abs/2611.26624v1",
+          "detail": "Recent AI agents can generate playable games, but these games are not necessarily engaging. Mastery is a key source of engagement, yet designing for it requires…",
           "bits": [
             "cs.AI",
-            "2026-11-18",
-            "Priyanka Sinha 等"
+            "2026-11-19",
+            "Weihao Cheng"
           ]
         },
         {
-          "title": "Mapping the AI Supply Chain: Dependencies, Vulnerabilities, and Market Concentration in the AI Ecosystem",
-          "url": "https://arxiv.org/abs/2611.24927v1",
-          "detail": "AI systems are built across many organizations that contribute models, data, compute, capital, talent, and other assets. While the layers of the AI stack are re…",
+          "title": "One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning",
+          "url": "https://arxiv.org/abs/2611.26617v1",
+          "detail": "Videos reveal how the world changes, but rarely the actions that cause those changes. Latent action learning recovers such supervision from visual transitions,…",
           "bits": [
-            "cs.CY",
-            "2026-11-18",
-            "Sarah H. Cen 等"
+            "cs.CV",
+            "2026-11-19",
+            "Yuxin Jiang 等"
           ]
         },
         {
-          "title": "Agentic Harness Engineering Beta: Requirement-Centered Evolution of Agent Harnesses",
-          "url": "https://arxiv.org/abs/2611.24924v1",
-          "detail": "Real-world harness engineering is driven by explicit and implicit user requirements, which guide development and validation. However, existing harness evolution…",
+          "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
+          "url": "https://arxiv.org/abs/2611.26613v1",
+          "detail": "Frontier multimodal language agents such as GPT-6 Astra have demonstrated strong capabilities in controlling robots directly via low-level numerical actions wit…",
           "bits": [
-            "cs.SE",
-            "2026-11-18",
-            "Jiahang Lin 等"
+            "cs.RO",
+            "2026-11-19",
+            "Yiyang Du 等"
           ]
         },
         {
-          "title": "Who are you? The Personal Imitation Game",
-          "url": "https://arxiv.org/abs/2611.24888v1",
-          "detail": "Large Language Models (LLMs) now perform strongly on Alan Turing's 1950 Imitation Game, so we propose a harder challenge, the Personal Imitation Game, which ask…",
+          "title": "SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research",
+          "url": "https://arxiv.org/abs/2611.26601v1",
+          "detail": "LLM-based agents are becoming increasingly capable at discovering, validating and patching vulnerabilities in real software, and vendors and researchers report…",
           "bits": [
-            "cs.HC",
-            "2026-11-18",
-            "Muhammad Rizky Wellyanto 等"
+            "cs.CR",
+            "2026-11-19",
+            "Amine Lbath 等"
           ]
         },
         {
-          "title": "Ground, Iterate, Trace: Decomposing AI Research Ideation",
-          "url": "https://arxiv.org/abs/2611.24887v1",
-          "detail": "Large language models have been widely used to generate plausible research ideas, yet it remains unclear what makes automated ideation effective and how generat…",
+          "title": "Active Feature Acquisition by Distilling an Oracle Teacher",
+          "url": "https://arxiv.org/abs/2611.26598v1",
+          "detail": "Acquiring every feature of an instance is often costly: a measurement can carry a monetary price, a time delay, or a privacy cost. Active Feature Acquisition (A…",
           "bits": [
-            "cs.CL",
-            "2026-11-18",
-            "Samson Yu 等"
+            "cs.LG",
+            "2026-11-19",
+            "Yang Meng 等"
+          ]
+        },
+        {
+          "title": "PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation",
+          "url": "https://arxiv.org/abs/2611.26596v1",
+          "detail": "Robotic vision-language-action (VLA) models can execute diverse individual manipulation skills, yet they still struggle with long-horizon loco-manipulation task…",
+          "bits": [
+            "cs.RO",
+            "2026-11-19",
+            "Kai Lu 等"
           ]
         }
       ]
@@ -76,12 +76,21 @@
       "note": "Hugging Face 上文本生成模型的趋势列表。",
       "items": [
         {
+          "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+          "detail": "",
+          "bits": [
+            "627 次点赞",
+            "172,088 次下载"
+          ]
+        },
+        {
           "title": "maxwell-model/Maxwell-V1-Flash",
           "url": "https://huggingface.co/maxwell-model/Maxwell-V1-Flash",
           "detail": "",
           "bits": [
-            "243 次点赞",
-            "1,052 次下载"
+            "298 次点赞",
+            "1,703 次下载"
           ]
         },
         {
@@ -89,17 +98,8 @@
           "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
           "detail": "",
           "bits": [
-            "533 次点赞",
-            "73,309 次下载"
-          ]
-        },
-        {
-          "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
-          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
-          "detail": "",
-          "bits": [
-            "567 次点赞",
-            "163,423 次下载"
+            "618 次点赞",
+            "80,481 次下载"
           ]
         },
         {
@@ -107,26 +107,26 @@
           "url": "https://huggingface.co/NousResearch/Arete-27B",
           "detail": "",
           "bits": [
-            "729 次点赞",
-            "12,167 次下载"
+            "803 次点赞",
+            "13,499 次下载"
           ]
         },
         {
-          "title": "nvidia/Qwen3.5-4B-Qwen3.8-27B-Draft",
-          "url": "https://huggingface.co/nvidia/Qwen3.5-4B-Qwen3.8-27B-Draft",
+          "title": "microsoft/Aion-1.0-Instruct-2.3B",
+          "url": "https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B",
           "detail": "",
           "bits": [
-            "99 次点赞",
-            "290 次下载"
+            "75 次点赞",
+            "788 次下载"
           ]
         },
         {
-          "title": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-          "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+          "title": "meta-llama/Meta-Llama-3-8B-Instruct",
+          "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
           "detail": "",
           "bits": [
-            "9,617 次点赞",
-            "35,450 次下载"
+            "6,369 次点赞",
+            "430,110 次下载"
           ]
         }
       ]
