@@ -1,7 +1,7 @@
 {
-  "h1": "11月20日",
+  "h1": "11月22日",
   "year": "2026",
-  "fetched_at": "2026-11-20 16:06",
+  "fetched_at": "2026-11-22 15:46",
   "sections": [
     {
       "id": "papers",
@@ -76,48 +76,21 @@
       "note": "Hugging Face 上文本生成模型的趋势列表。",
       "items": [
         {
-          "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
-          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
-          "detail": "",
-          "bits": [
-            "627 次点赞",
-            "172,088 次下载"
-          ]
-        },
-        {
           "title": "maxwell-model/Maxwell-V1-Flash",
           "url": "https://huggingface.co/maxwell-model/Maxwell-V1-Flash",
           "detail": "",
           "bits": [
-            "298 次点赞",
-            "1,703 次下载"
+            "330 次点赞",
+            "2,959 次下载"
           ]
         },
         {
-          "title": "Edge0/Edge0-145B-NVFP4",
-          "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
+          "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
           "detail": "",
           "bits": [
-            "618 次点赞",
-            "80,481 次下载"
-          ]
-        },
-        {
-          "title": "NousResearch/Arete-27B",
-          "url": "https://huggingface.co/NousResearch/Arete-27B",
-          "detail": "",
-          "bits": [
-            "803 次点赞",
-            "13,499 次下载"
-          ]
-        },
-        {
-          "title": "microsoft/Aion-1.0-Instruct-2.3B",
-          "url": "https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B",
-          "detail": "",
-          "bits": [
-            "75 次点赞",
-            "788 次下载"
+            "692 次点赞",
+            "195,916 次下载"
           ]
         },
         {
@@ -125,8 +98,35 @@
           "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
           "detail": "",
           "bits": [
-            "6,369 次点赞",
-            "430,110 次下载"
+            "6,456 次点赞",
+            "428,267 次下载"
+          ]
+        },
+        {
+          "title": "microsoft/Aion-1.0-Instruct-2.3B",
+          "url": "https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B",
+          "detail": "",
+          "bits": [
+            "193 次点赞",
+            "3,099 次下载"
+          ]
+        },
+        {
+          "title": "Edge0/Edge0-145B-NVFP4",
+          "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
+          "detail": "",
+          "bits": [
+            "697 次点赞",
+            "88,713 次下载"
+          ]
+        },
+        {
+          "title": "OVHaiLLM/Olala-v1.0-mini-7A1B",
+          "url": "https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B",
+          "detail": "",
+          "bits": [
+            "196 次点赞",
+            "1,517 次下载"
           ]
         }
       ]
