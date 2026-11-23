@@ -1,7 +1,7 @@
 {
-  "h1": "11月22日",
+  "h1": "11月23日",
   "year": "2026",
-  "fetched_at": "2026-11-22 15:46",
+  "fetched_at": "2026-11-23 16:36",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "PlayCraft: Designing Engaging Games from Agent Play Experience",
-          "url": "https://arxiv.org/abs/2611.26624v1",
-          "detail": "Recent AI agents can generate playable games, but these games are not necessarily engaging. Mastery is a key source of engagement, yet designing for it requires…",
+          "title": "Optimal Linear Regression Without a Variance",
+          "url": "https://arxiv.org/abs/2611.27983v1",
+          "detail": "We study high-probability linear regression in the infinite variance regime, wherecthe regression noise has only a finite conditional $α$-moment $ν$ for some un…",
           "bits": [
-            "cs.AI",
-            "2026-11-19",
-            "Weihao Cheng"
+            "stat.ML",
+            "2026-11-20",
+            "Artin Tajdini 等"
           ]
         },
         {
-          "title": "One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning",
-          "url": "https://arxiv.org/abs/2611.26617v1",
-          "detail": "Videos reveal how the world changes, but rarely the actions that cause those changes. Latent action learning recovers such supervision from visual transitions,…",
+          "title": "MemOnce: A Scalable Memory Architecture for Large Language Models",
+          "url": "https://arxiv.org/abs/2611.27973v1",
+          "detail": "Deploying large language models (LLMs) in long-horizon and continual interactions requires maintaining reusable memory states for future inference, posing chall…",
+          "bits": [
+            "cs.CL",
+            "2026-11-20",
+            "Chang Nie 等"
+          ]
+        },
+        {
+          "title": "Non-penetrating World Models",
+          "url": "https://arxiv.org/abs/2611.27963v1",
+          "detail": "We study a new problem of preventing object penetration in interactive video world models. To understand how existing models handle this, we introduce NoPeBench…",
           "bits": [
             "cs.CV",
-            "2026-11-19",
-            "Yuxin Jiang 等"
+            "2026-11-20",
+            "Yuhang Dai 等"
           ]
         },
         {
-          "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
-          "url": "https://arxiv.org/abs/2611.26613v1",
-          "detail": "Frontier multimodal language agents such as GPT-6 Astra have demonstrated strong capabilities in controlling robots directly via low-level numerical actions wit…",
-          "bits": [
-            "cs.RO",
-            "2026-11-19",
-            "Yiyang Du 等"
-          ]
-        },
-        {
-          "title": "SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research",
-          "url": "https://arxiv.org/abs/2611.26601v1",
-          "detail": "LLM-based agents are becoming increasingly capable at discovering, validating and patching vulnerabilities in real software, and vendors and researchers report…",
-          "bits": [
-            "cs.CR",
-            "2026-11-19",
-            "Amine Lbath 等"
-          ]
-        },
-        {
-          "title": "Active Feature Acquisition by Distilling an Oracle Teacher",
-          "url": "https://arxiv.org/abs/2611.26598v1",
-          "detail": "Acquiring every feature of an instance is often costly: a measurement can carry a monetary price, a time delay, or a privacy cost. Active Feature Acquisition (A…",
+          "title": "Model Carving: Training Transformers That Optimize Their Own Topology",
+          "url": "https://arxiv.org/abs/2611.27962v1",
+          "detail": "Machine learning has largely kept separate the choice of architecture and the process of training. A classic Transformer, for instance, trains a fixed set of at…",
           "bits": [
             "cs.LG",
-            "2026-11-19",
-            "Yang Meng 等"
+            "2026-11-20",
+            "Kaden Zheng 等"
           ]
         },
         {
-          "title": "PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation",
-          "url": "https://arxiv.org/abs/2611.26596v1",
-          "detail": "Robotic vision-language-action (VLA) models can execute diverse individual manipulation skills, yet they still struggle with long-horizon loco-manipulation task…",
+          "title": "BioEmu2: Scalable Emulation of Biomolecular Dynamics",
+          "url": "https://arxiv.org/abs/2611.27924v1",
+          "detail": "Despite major advances in structure prediction, modelling the motions and interactions that drive biomolecular function at scale remains a central challenge. We…",
           "bits": [
-            "cs.RO",
-            "2026-11-19",
-            "Kai Lu 等"
+            "cs.AI",
+            "2026-11-20",
+            "Michael Gastegger 等"
+          ]
+        },
+        {
+          "title": "SUAF: Spectral Universal Advantage Features for Zero-Shot Policy Improvement",
+          "url": "https://arxiv.org/abs/2611.27919v1",
+          "detail": "Reward-independent representations enable reinforcement learning agents to reuse knowledge across tasks, but limited representation capacity raises three fundam…",
+          "bits": [
+            "cs.LG",
+            "2026-11-20",
+            "Huaze Tang 等"
           ]
         }
       ]
@@ -80,8 +80,8 @@
           "url": "https://huggingface.co/maxwell-model/Maxwell-V1-Flash",
           "detail": "",
           "bits": [
-            "330 次点赞",
-            "2,959 次下载"
+            "365 次点赞",
+            "3,317 次下载"
           ]
         },
         {
@@ -89,17 +89,17 @@
           "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
           "detail": "",
           "bits": [
-            "692 次点赞",
-            "195,916 次下载"
+            "1,461 次点赞",
+            "203,420 次下载"
           ]
         },
         {
-          "title": "meta-llama/Meta-Llama-3-8B-Instruct",
-          "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+          "title": "inclusionAI/LingSante-3.1-flash",
+          "url": "https://huggingface.co/inclusionAI/LingSante-3.1-flash",
           "detail": "",
           "bits": [
-            "6,456 次点赞",
-            "428,267 次下载"
+            "71 次点赞",
+            "0 次下载"
           ]
         },
         {
@@ -107,17 +107,8 @@
           "url": "https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B",
           "detail": "",
           "bits": [
-            "193 次点赞",
-            "3,099 次下载"
-          ]
-        },
-        {
-          "title": "Edge0/Edge0-145B-NVFP4",
-          "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
-          "detail": "",
-          "bits": [
-            "697 次点赞",
-            "88,713 次下载"
+            "265 次点赞",
+            "3,836 次下载"
           ]
         },
         {
@@ -125,8 +116,17 @@
           "url": "https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B",
           "detail": "",
           "bits": [
-            "196 次点赞",
-            "1,517 次下载"
+            "278 次点赞",
+            "62,806 次下载"
+          ]
+        },
+        {
+          "title": "meta-llama/Meta-Llama-3-8B-Instruct",
+          "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+          "detail": "",
+          "bits": [
+            "6,557 次点赞",
+            "433,087 次下载"
           ]
         }
       ]
