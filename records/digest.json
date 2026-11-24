@@ -1,7 +1,7 @@
 {
-  "h1": "11月23日",
+  "h1": "11月24日",
   "year": "2026",
-  "fetched_at": "2026-11-23 16:36",
+  "fetched_at": "2026-11-24 18:41",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "Optimal Linear Regression Without a Variance",
-          "url": "https://arxiv.org/abs/2611.27983v1",
-          "detail": "We study high-probability linear regression in the infinite variance regime, wherecthe regression noise has only a finite conditional $α$-moment $ν$ for some un…",
-          "bits": [
-            "stat.ML",
-            "2026-11-20",
-            "Artin Tajdini 等"
-          ]
-        },
-        {
-          "title": "MemOnce: A Scalable Memory Architecture for Large Language Models",
-          "url": "https://arxiv.org/abs/2611.27973v1",
-          "detail": "Deploying large language models (LLMs) in long-horizon and continual interactions requires maintaining reusable memory states for future inference, posing chall…",
-          "bits": [
-            "cs.CL",
-            "2026-11-20",
-            "Chang Nie 等"
-          ]
-        },
-        {
-          "title": "Non-penetrating World Models",
-          "url": "https://arxiv.org/abs/2611.27963v1",
-          "detail": "We study a new problem of preventing object penetration in interactive video world models. To understand how existing models handle this, we introduce NoPeBench…",
-          "bits": [
-            "cs.CV",
-            "2026-11-20",
-            "Yuhang Dai 等"
-          ]
-        },
-        {
-          "title": "Model Carving: Training Transformers That Optimize Their Own Topology",
-          "url": "https://arxiv.org/abs/2611.27962v1",
-          "detail": "Machine learning has largely kept separate the choice of architecture and the process of training. A classic Transformer, for instance, trains a fixed set of at…",
-          "bits": [
-            "cs.LG",
-            "2026-11-20",
-            "Kaden Zheng 等"
-          ]
-        },
-        {
-          "title": "BioEmu2: Scalable Emulation of Biomolecular Dynamics",
-          "url": "https://arxiv.org/abs/2611.27924v1",
-          "detail": "Despite major advances in structure prediction, modelling the motions and interactions that drive biomolecular function at scale remains a central challenge. We…",
+          "title": "Language Models Steer on Injected Uncertainty Tokens, but Fail to Self-Monitor In Situ",
+          "url": "https://arxiv.org/abs/2611.31228v1",
+          "detail": "Prompting language models to verbalize stepwise numerical confidence during generation is an increasingly popular approach for triggering backtracking and error…",
           "bits": [
             "cs.AI",
-            "2026-11-20",
-            "Michael Gastegger 等"
+            "2026-11-23",
+            "Daniel Theron"
           ]
         },
         {
-          "title": "SUAF: Spectral Universal Advantage Features for Zero-Shot Policy Improvement",
-          "url": "https://arxiv.org/abs/2611.27919v1",
-          "detail": "Reward-independent representations enable reinforcement learning agents to reuse knowledge across tasks, but limited representation capacity raises three fundam…",
+          "title": "CTLink: A Text-Prompted Segmentation Model for Linking Radiology Report Findings to 3D Chest CT Scans",
+          "url": "https://arxiv.org/abs/2611.31222v1",
+          "detail": "Radiology reports describe findings in text only, without visually marking them on the scan, so readers cannot directly see which abnormality each reported find…",
+          "bits": [
+            "cs.CV",
+            "2026-11-23",
+            "Mohammed Baharoon 等"
+          ]
+        },
+        {
+          "title": "Seeking in Space: Benchmarking Purposeful Active Exploration of Vision-Language Models for Spatial Reasoning",
+          "url": "https://arxiv.org/abs/2611.31215v1",
+          "detail": "Humans explore unfamiliar spaces with purpose, deciding where to look until they have gathered the evidence a spatial question requires. However, can vision-lan…",
+          "bits": [
+            "cs.AI",
+            "2026-11-23",
+            "Xiwei Liu 等"
+          ]
+        },
+        {
+          "title": "ToolSmith: An Automatic Tool-Generation Framework for Multimodal Search Agents",
+          "url": "https://arxiv.org/abs/2611.31198v1",
+          "detail": "Recent multimodal search agents use reasoning, vision, and live web search across many turns to answer questions beyond parametric knowledge by orchestrating a…",
+          "bits": [
+            "cs.CL",
+            "2026-11-23",
+            "Rui Sun 等"
+          ]
+        },
+        {
+          "title": "Learning Neurovascular Codes for EEG-to-fMRI Synthesis",
+          "url": "https://arxiv.org/abs/2611.31194v1",
+          "detail": "In this paper, we introduce Neurovascular Codes as shared EEG representations for fMRI generation. We first train a separate EEG encoder to predict each fMRI si…",
           "bits": [
             "cs.LG",
-            "2026-11-20",
-            "Huaze Tang 等"
+            "2026-11-23",
+            "Yiming Sun 等"
+          ]
+        },
+        {
+          "title": "Know When to Abstain: Conformal Confidence Estimation for Text-to-SQL",
+          "url": "https://arxiv.org/abs/2611.31190v1",
+          "detail": "Text-to-SQL systems often return queries that execute successfully but answer the wrong question. Detecting these errors at deployment is hard because execution…",
+          "bits": [
+            "cs.AI",
+            "2026-11-23",
+            "Avinash Kumar Singh 等"
           ]
         }
       ]
@@ -76,12 +76,21 @@
       "note": "Hugging Face 上文本生成模型的趋势列表。",
       "items": [
         {
+          "title": "inclusionAI/LingSante-3.1-flash",
+          "url": "https://huggingface.co/inclusionAI/LingSante-3.1-flash",
+          "detail": "",
+          "bits": [
+            "132 次点赞",
+            "1,070 次下载"
+          ]
+        },
+        {
           "title": "maxwell-model/Maxwell-V1-Flash",
           "url": "https://huggingface.co/maxwell-model/Maxwell-V1-Flash",
           "detail": "",
           "bits": [
-            "365 次点赞",
-            "3,317 次下载"
+            "395 次点赞",
+            "4,056 次下载"
           ]
         },
         {
@@ -89,44 +98,35 @@
           "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
           "detail": "",
           "bits": [
-            "1,461 次点赞",
-            "203,420 次下载"
+            "1,492 次点赞",
+            "196,409 次下载"
           ]
         },
         {
-          "title": "inclusionAI/LingSante-3.1-flash",
-          "url": "https://huggingface.co/inclusionAI/LingSante-3.1-flash",
+          "title": "MemTensor/MemT-1.0-Pro",
+          "url": "https://huggingface.co/MemTensor/MemT-1.0-Pro",
           "detail": "",
           "bits": [
-            "71 次点赞",
-            "0 次下载"
+            "82 次点赞",
+            "397 次下载"
           ]
         },
         {
-          "title": "microsoft/Aion-1.0-Instruct-2.3B",
-          "url": "https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B",
+          "title": "Aleph-Alpha/Kolibri-1.1",
+          "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
           "detail": "",
           "bits": [
-            "265 次点赞",
-            "3,836 次下载"
+            "63 次点赞",
+            "272 次下载"
           ]
         },
         {
-          "title": "OVHaiLLM/Olala-v1.0-mini-7A1B",
-          "url": "https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B",
+          "title": "orcarouter/Inkling-2-Mini-abliterated-GGUF",
+          "url": "https://huggingface.co/orcarouter/Inkling-2-Mini-abliterated-GGUF",
           "detail": "",
           "bits": [
-            "278 次点赞",
-            "62,806 次下载"
-          ]
-        },
-        {
-          "title": "meta-llama/Meta-Llama-3-8B-Instruct",
-          "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
-          "detail": "",
-          "bits": [
-            "6,557 次点赞",
-            "433,087 次下载"
+            "98 次点赞",
+            "5,446 次下载"
           ]
         }
       ]
