@@ -1,7 +1,7 @@
 {
-  "h1": "11月24日",
+  "h1": "11月25日",
   "year": "2026",
-  "fetched_at": "2026-11-24 18:41",
+  "fetched_at": "2026-11-25 17:35",
   "sections": [
     {
       "id": "papers",
@@ -9,63 +9,63 @@
       "note": "arXiv 最新提交，分类 cs.CL 和 cs.AI。",
       "items": [
         {
-          "title": "Language Models Steer on Injected Uncertainty Tokens, but Fail to Self-Monitor In Situ",
-          "url": "https://arxiv.org/abs/2611.31228v1",
-          "detail": "Prompting language models to verbalize stepwise numerical confidence during generation is an increasingly popular approach for triggering backtracking and error…",
+          "title": "OmniAct: One Policy, One Million Embodiments",
+          "url": "https://arxiv.org/abs/2611.33158v1",
+          "detail": "A single policy that controls diverse robots must not only transfer task knowledge across embodiments, but also adapt its behavior to each robot's capabilities.…",
           "bits": [
-            "cs.AI",
-            "2026-11-23",
-            "Daniel Theron"
+            "cs.RO",
+            "2026-11-24",
+            "Xiang Fan 等"
           ]
         },
         {
-          "title": "CTLink: A Text-Prompted Segmentation Model for Linking Radiology Report Findings to 3D Chest CT Scans",
-          "url": "https://arxiv.org/abs/2611.31222v1",
-          "detail": "Radiology reports describe findings in text only, without visually marking them on the scan, so readers cannot directly see which abnormality each reported find…",
+          "title": "DiaCap: Jointly Learning Who Speaks When for Audiovisual Dialogue Captioning",
+          "url": "https://arxiv.org/abs/2611.33153v1",
+          "detail": "We present DiaCap, an audiovisual LLM for comprehensive dialogue captioning, which produces the transcript, timestamps, and a visual description of the speaker…",
           "bits": [
             "cs.CV",
-            "2026-11-23",
-            "Mohammed Baharoon 等"
+            "2026-11-24",
+            "Binfei Ji 等"
           ]
         },
         {
-          "title": "Seeking in Space: Benchmarking Purposeful Active Exploration of Vision-Language Models for Spatial Reasoning",
-          "url": "https://arxiv.org/abs/2611.31215v1",
-          "detail": "Humans explore unfamiliar spaces with purpose, deciding where to look until they have gathered the evidence a spatial question requires. However, can vision-lan…",
-          "bits": [
-            "cs.AI",
-            "2026-11-23",
-            "Xiwei Liu 等"
-          ]
-        },
-        {
-          "title": "ToolSmith: An Automatic Tool-Generation Framework for Multimodal Search Agents",
-          "url": "https://arxiv.org/abs/2611.31198v1",
-          "detail": "Recent multimodal search agents use reasoning, vision, and live web search across many turns to answer questions beyond parametric knowledge by orchestrating a…",
+          "title": "CoT-Proxy: Cross-Format Transfer for Distilling Long-Horizon Policies",
+          "url": "https://arxiv.org/abs/2611.33148v1",
+          "detail": "Reasoning models become long-horizon agents through reinforcement learning or, more cheaply, through fine-tuning on a stronger teacher's trajectories, which con…",
           "bits": [
             "cs.CL",
-            "2026-11-23",
-            "Rui Sun 等"
+            "2026-11-24",
+            "Dawid J. Kopiczko 等"
           ]
         },
         {
-          "title": "Learning Neurovascular Codes for EEG-to-fMRI Synthesis",
-          "url": "https://arxiv.org/abs/2611.31194v1",
-          "detail": "In this paper, we introduce Neurovascular Codes as shared EEG representations for fMRI generation. We first train a separate EEG encoder to predict each fMRI si…",
+          "title": "BriConstrain: Geometrically Constrained Decoding for Autoregressive Brick Assembly Generation",
+          "url": "https://arxiv.org/abs/2611.33135v1",
+          "detail": "Language models can generate LEGO$^\\circledR$ assemblies from text, but their builds often contain parts that collide or attach to nothing. The usual approach o…",
+          "bits": [
+            "cs.CV",
+            "2026-11-24",
+            "Nadav Magar 等"
+          ]
+        },
+        {
+          "title": "A Bias in Disguise: Tiny Gradient Edits Stop a Small Language Model's Thinking Loops and Complement a Frontier Model's Weight Edit",
+          "url": "https://arxiv.org/abs/2611.33133v1",
+          "detail": "Qwen3.5-0.8B rarely finishes reasoning in thinking mode: at a 4,096-token budget only 1 or 2 of 500 MATH-500 answers close their think block (two seeds), and ac…",
           "bits": [
             "cs.LG",
-            "2026-11-23",
-            "Yiming Sun 等"
+            "2026-11-24",
+            "Hussamuddin Syed"
           ]
         },
         {
-          "title": "Know When to Abstain: Conformal Confidence Estimation for Text-to-SQL",
-          "url": "https://arxiv.org/abs/2611.31190v1",
-          "detail": "Text-to-SQL systems often return queries that execute successfully but answer the wrong question. Detecting these errors at deployment is hard because execution…",
+          "title": "SAG-Mem-1.0 Technical Report",
+          "url": "https://arxiv.org/abs/2611.33124v1",
+          "detail": "Long-term conversational memory requires retrieving complementary facts scattered across dialogue sessions, including intermediate evidence with limited similar…",
           "bits": [
-            "cs.AI",
-            "2026-11-23",
-            "Avinash Kumar Singh 等"
+            "cs.CL",
+            "2026-11-24",
+            "Yuchao Wu 等"
           ]
         }
       ]
@@ -76,39 +76,21 @@
       "note": "Hugging Face 上文本生成模型的趋势列表。",
       "items": [
         {
+          "title": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
+          "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
+          "detail": "",
+          "bits": [
+            "188 次点赞",
+            "0 次下载"
+          ]
+        },
+        {
           "title": "inclusionAI/LingSante-3.1-flash",
           "url": "https://huggingface.co/inclusionAI/LingSante-3.1-flash",
           "detail": "",
           "bits": [
-            "132 次点赞",
+            "168 次点赞",
             "1,070 次下载"
-          ]
-        },
-        {
-          "title": "maxwell-model/Maxwell-V1-Flash",
-          "url": "https://huggingface.co/maxwell-model/Maxwell-V1-Flash",
-          "detail": "",
-          "bits": [
-            "395 次点赞",
-            "4,056 次下载"
-          ]
-        },
-        {
-          "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
-          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
-          "detail": "",
-          "bits": [
-            "1,492 次点赞",
-            "196,409 次下载"
-          ]
-        },
-        {
-          "title": "MemTensor/MemT-1.0-Pro",
-          "url": "https://huggingface.co/MemTensor/MemT-1.0-Pro",
-          "detail": "",
-          "bits": [
-            "82 次点赞",
-            "397 次下载"
           ]
         },
         {
@@ -116,7 +98,7 @@
           "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
           "detail": "",
           "bits": [
-            "63 次点赞",
+            "122 次点赞",
             "272 次下载"
           ]
         },
@@ -125,8 +107,26 @@
           "url": "https://huggingface.co/orcarouter/Inkling-2-Mini-abliterated-GGUF",
           "detail": "",
           "bits": [
-            "98 次点赞",
+            "169 次点赞",
             "5,446 次下载"
+          ]
+        },
+        {
+          "title": "baidu/ERNIE-5.5-Flash-Preview",
+          "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview",
+          "detail": "",
+          "bits": [
+            "273 次点赞",
+            "75 次下载"
+          ]
+        },
+        {
+          "title": "MemTensor/MemT-1.0-Pro",
+          "url": "https://huggingface.co/MemTensor/MemT-1.0-Pro",
+          "detail": "",
+          "bits": [
+            "100 次点赞",
+            "397 次下载"
           ]
         }
       ]
