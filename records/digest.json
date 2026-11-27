@@ -1,7 +1,7 @@
 {
-  "h1": "11月26日",
+  "h1": "11月27日",
   "year": "2026",
-  "fetched_at": "2026-11-26 17:11",
+  "fetched_at": "2026-11-27 17:27",
   "sections": [
     {
       "id": "papers",
@@ -80,26 +80,8 @@
           "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
           "detail": "",
           "bits": [
-            "403 次点赞",
+            "565 次点赞",
             "59,366 次下载"
-          ]
-        },
-        {
-          "title": "inclusionAI/LingSante-3.1-flash",
-          "url": "https://huggingface.co/inclusionAI/LingSante-3.1-flash",
-          "detail": "",
-          "bits": [
-            "197 次点赞",
-            "1,487 次下载"
-          ]
-        },
-        {
-          "title": "Aleph-Alpha/Kolibri-1.1",
-          "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
-          "detail": "",
-          "bits": [
-            "160 次点赞",
-            "837 次下载"
           ]
         },
         {
@@ -107,8 +89,26 @@
           "url": "https://huggingface.co/orcarouter/Inkling-2-Mini-abliterated-GGUF",
           "detail": "",
           "bits": [
-            "234 次点赞",
+            "303 次点赞",
             "12,157 次下载"
+          ]
+        },
+        {
+          "title": "ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
+          "url": "https://huggingface.co/ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
+          "detail": "",
+          "bits": [
+            "165 次点赞",
+            "0 次下载"
+          ]
+        },
+        {
+          "title": "Aleph-Alpha/Kolibri-1.1",
+          "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+          "detail": "",
+          "bits": [
+            "190 次点赞",
+            "837 次下载"
           ]
         },
         {
@@ -116,7 +116,7 @@
           "url": "https://huggingface.co/KRAFTON/Raon-1-mini",
           "detail": "",
           "bits": [
-            "124 次点赞",
+            "170 次点赞",
             "264 次下载"
           ]
         },
@@ -125,7 +125,7 @@
           "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview",
           "detail": "",
           "bits": [
-            "317 次点赞",
+            "356 次点赞",
             "1,193 次下载"
           ]
         }
