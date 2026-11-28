@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-27 17:27",
+  "fetched_at": "2026-11-28 16:41",
   "steps": [
     {
       "tool": "fetch_papers",
@@ -26,7 +26,7 @@
     },
     {
       "tool": "compose",
-      "h1": "11月27日"
+      "h1": "11月28日"
     },
     {
       "tool": "audit",

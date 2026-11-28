@@ -1,7 +1,7 @@
 {
-  "h1": "11月27日",
+  "h1": "11月28日",
   "year": "2026",
-  "fetched_at": "2026-11-27 17:27",
+  "fetched_at": "2026-11-28 16:41",
   "sections": [
     {
       "id": "papers",
@@ -80,17 +80,8 @@
           "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
           "detail": "",
           "bits": [
-            "565 次点赞",
-            "59,366 次下载"
-          ]
-        },
-        {
-          "title": "orcarouter/Inkling-2-Mini-abliterated-GGUF",
-          "url": "https://huggingface.co/orcarouter/Inkling-2-Mini-abliterated-GGUF",
-          "detail": "",
-          "bits": [
-            "303 次点赞",
-            "12,157 次下载"
+            "654 次点赞",
+            "382,546 次下载"
           ]
         },
         {
@@ -98,26 +89,8 @@
           "url": "https://huggingface.co/ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
           "detail": "",
           "bits": [
-            "165 次点赞",
-            "0 次下载"
-          ]
-        },
-        {
-          "title": "Aleph-Alpha/Kolibri-1.1",
-          "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
-          "detail": "",
-          "bits": [
-            "190 次点赞",
-            "837 次下载"
-          ]
-        },
-        {
-          "title": "KRAFTON/Raon-1-mini",
-          "url": "https://huggingface.co/KRAFTON/Raon-1-mini",
-          "detail": "",
-          "bits": [
-            "170 次点赞",
-            "264 次下载"
+            "297 次点赞",
+            "24,931 次下载"
           ]
         },
         {
@@ -125,8 +98,35 @@
           "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview",
           "detail": "",
           "bits": [
-            "356 次点赞",
-            "1,193 次下载"
+            "394 次点赞",
+            "2,609 次下载"
+          ]
+        },
+        {
+          "title": "orcarouter/Inkling-2-Mini-abliterated-GGUF",
+          "url": "https://huggingface.co/orcarouter/Inkling-2-Mini-abliterated-GGUF",
+          "detail": "",
+          "bits": [
+            "345 次点赞",
+            "21,019 次下载"
+          ]
+        },
+        {
+          "title": "ai-sage/GigaChat4-708B-A41B",
+          "url": "https://huggingface.co/ai-sage/GigaChat4-708B-A41B",
+          "detail": "",
+          "bits": [
+            "120 次点赞",
+            "287 次下载"
+          ]
+        },
+        {
+          "title": "ai-sage/GigaChat4-37B-A4B",
+          "url": "https://huggingface.co/ai-sage/GigaChat4-37B-A4B",
+          "detail": "",
+          "bits": [
+            "101 次点赞",
+            "348 次下载"
           ]
         }
       ]
